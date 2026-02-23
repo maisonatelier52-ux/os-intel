@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
@@ -122,17 +124,21 @@ export default function Header() {
         </div>
 
         {/* Ad Banner — replaced with image */}
-        <div className="w-full md:w-[70%] flex items-center justify-center">
-          <a
-            href="#"
+       <div className="w-full md:w-[70%] flex items-center justify-center">
+          <Link
+            href="https://www.read-more-about.com/"
+            title="visit read more about website"
+            target="_blank"
             className="block w-full md:max-w-2xl h-[70px] md:h-[90px] overflow-hidden"
           >
-            <img
-               src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80"
+            <Image
+              src="/images/read-more-about-ad-banner.webp"
               alt="Advertisement 728x90"
+              width={1200}
+              height={90}
               className="w-full h-full object-cover object-center"
             />
-          </a>
+          </Link>
         </div>
       </div>
 
