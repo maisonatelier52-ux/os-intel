@@ -72,32 +72,17 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
 
           {/* Ad Banner */}
           <div className="mt-6">
-            <div className="relative w-full h-[110px] overflow-hidden flex items-center bg-[#1a1a1a]">
-              <div
-                className="absolute inset-0 opacity-40"
-                style={{
-                  background:
-                    "repeating-linear-gradient(45deg, #333 0px, #333 1px, transparent 1px, transparent 10px), repeating-linear-gradient(-45deg, #444 0px, #444 1px, transparent 1px, transparent 10px)",
-                }}
-              />
-              <div
-                className="absolute right-0 top-0 bottom-0 w-48 opacity-60"
-                style={{
-                  background:
-                    "repeating-linear-gradient(90deg, #555 0px, #555 1px, #333 1px, #333 8px)",
-                }}
-              />
-              <div className="relative z-10 px-8 flex items-center">
-                <div>
-                  <p className="text-gray-400 text-xs font-playfair tracking-widest uppercase mb-1">
-                    Advertisement
-                  </p>
-                  <h3 className="text-white text-xl font-black font-playfair tracking-wide">
-                    Place for your Advertisement
-                  </h3>
-                </div>
+            <Link href="https://www.read-more-about.com" title="Advertisement" target="_blank">
+              <div className="relative w-full h-[110px] overflow-hidden">
+                <Image
+                  src="/images/read-more-about-ad-banner.webp" // place your banner in /public/ads/
+                  alt="Advertisement"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
-            </div>
+            </Link>
           </div>
         </div>
 

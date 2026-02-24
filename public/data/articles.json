@@ -11,8 +11,9 @@
       "category": "world",
       "newsType": "news",
       "type": "normal",
-      "date": "12/02/2026",
+      "date": "12/03/2025",
       "readTime": "8 Min Read",
+      "isPublished":"true",
       "image": "/images/news/indigenous-deaths-custody-australia-first-image.webp",
       "imageAlt": "Large protest crowd gathered outside Flinders Street Station in Melbourne demanding justice for Indigenous deaths in custody Australia.",
       "keywords": [
@@ -115,6 +116,7 @@
       "type": "normal",
       "date": "05/12/2025",
       "readTime": "9 Min Read",
+      "isPublished": "true",
       "image": "/images/news/putin-rejects-us-ukraine-peace-plan-talks-image.webp",
       "imageAlt": "",
       "keywords": [
@@ -195,8 +197,863 @@
           "text": "It remains to be seen if the India visit causes any changes behind the scenes. Modi may persuade Putin to speak more softly, or at the very least, maintain lines of communication. However, this battle is destined to continue until someone takes action over territory and security. It is costly, brutal, and tragically far from being resolved."
         }
       ]
+    },
+    {
+      "id": 3,
+      "slug": "trump-defends-tariffs-prices-rise-allies-push-back-2026",
+      "metaTitle": "Trump Stands Firm on Tariffs Amid Rising Prices",
+      "metaDescription": "President Trump defends new tariffs despite higher consumer prices, inflation fears, and backlash from allies like EU and China after Supreme Court ruling forces policy pivot in February 2026.",
+      "title": "Trump Still Stands by His Tariffs Even as Prices Rise and Allies Push Back",
+      "excerpt": "With new global tariffs hitting imports at 10-15% after Supreme Court setback, Trump insists they protect US jobs, but families face higher costs, businesses scramble, and trading partners threaten retaliation.",
+      "category": "world",
+      "newsType": "news",
+      "type": "normal",
+      "date": "05/12/2025",
+      "readTime": "10 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/trump-defends-tariffs-prices-rise-allies-push-back-image.webp",
+      "imageAlt": "Trump announces new U.S. tariffs while presenting global tariff chart at White House.",
+      "keywords": [
+        "Trump tariffs 2026",
+        "US global tariffs prices rise",
+        "Trump Supreme Court tariffs ruling",
+        "inflation from tariffs 2026",
+        "EU China reaction Trump tariffs",
+        "trade war Trump second term",
+        "consumer prices tariffs impact",
+        "Section 122 tariffs February 2026",
+        "US economy tariffs backlash",
+        "Trump defends protectionism"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Trump still stands by his tariffs, even though prices are going up and allies are against them."
+        },
+        {
+          "type": "paragraph",
+          "text": "President Donald Trump is not backing down at all. Even though shop shelves are getting more expensive every week and trading partners are angry, he still says that these huge new tariffs are the best thing for the American economy. The White House says that this shake-up is needed to bring jobs back to the US and make things fair for American workers. But in the real world, businesses are rushing, families are already feeling the pinch at the checkout lines, and analysts are worried about slower GDP growth and higher inflation."
+        },
+        {
+          "type": "paragraph",
+          "text": "After the Supreme Court stepped in earlier this week and threw out a big part of Trump's more detailed tariff plans from last year, things really started to move. As is usual, the president didn't miss a beat. He quickly changed his mind and announced a new set of taxes, starting with 10% on a wide range of imports and then quickly raising them to 15%. These new rules, which will go into effect right away under a different legal authority, affected goods from almost everywhere, with a few important exceptions like certain minerals, cars, and agricultural products. What is the goal? Help American businesses that have been hurt by cheap foreign competitors for years and deal with those stubborn trade deficits."
+        },
+        {
+          "type": "paragraph",
+          "text": "The results haven't been good. Big stores are already sounding the alarm; some have said that prices for common items like kitchen appliances, washing machines, and smartphones have gone up by 8% to 12% or more. Walmart's finance chief said on a recent earnings call that tariff costs are making prices go up by more than 3% in some categories of general goods. This is after companies tried to take in as much as they could last year. People in the Midwest and along the coast are becoming aware of it when they buy a new TV or replace a broken refrigerator. A small business owner in Ohio told me that his costs for imported parts went up 15% in the last month. He had to either eat the difference or pass it on to his already overworked customers."
+        },
+        {
+          "type": "paragraph",
+          "text": "The diplomatic situation is getting tense very quickly. European leaders from Brussels to Berlin have called the actions \"pure protectionism\" and threatened to retaliate, probably by putting tariffs on American whiskey, soybeans, or Harley-Davidson motorcycles, which are often the subject of these disputes. China has also spoken out, calling it a clear violation of international law and hinting that they might put their own taxes on American planes, energy equipment, and agricultural goods. Do you remember the soybean farmers in Illinois and Iowa who got burned during Trump's first term? They're getting ready for round two because export markets may be drying up and agricultural prices are going down."
+        },
+        {
+          "type": "paragraph",
+          "text": "The International Monetary Fund recently lowered its prediction for U.S. GDP this year because of the trade problems and extra inflationary pressure that these tariffs will cause. The Federal Reserve is also keeping a close eye on this. Some officials have hinted that it could make their jobs harder, which could mean that interest rates stay high for longer than expected, just when everyone was hoping for some relief. People who work in manufacturing are especially worried. The most recent Business Roundtable study shows that CEO confidence is at its lowest point in two years. Supply chains are still complicated, and the cost of inputs keeps going up. Small businesses that rely on imported electronics or steel are the most affected. Some are putting off growth or even firing employees because they can't keep up."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is happening in more than just boardrooms. Polls show that most Americans are getting nervous. About 68% of the people who answered said they were worried about how rising costs would affect their plans for holiday shopping, filling up their gas tanks, and paying for groceries. This unease is having an effect on politics. A few Republican members in battleground districts, especially those that represent manufacturing centers or agricultural areas, are subtly telling the administration to slow down or at least make more exceptions. They don't want people to blame their party for higher costs as they get ready for the midterm elections."
+        },
+        {
+          "type": "paragraph",
+          "text": "The White House is now fully operational. On Sunday shows and cable news, the Commerce Secretary and other high-ranking officials have been saying the same thing over and over: yes, there will be some short-term pain, but it will all be worth it in the end. A senior adviser said in a recent interview, \"These tariffs are about bringing manufacturing back to the US and giving our workers a fair chance.\" Trump defended the strategy on social media, saying it was a response to countries that have taken advantage of the US for a long time. Voters who are independent or live in the suburbs are more skeptical, but his core supporters seem to accept it—polls show that his base still supports his tough-on-trade stance."
+        },
+        {
+          "type": "paragraph",
+          "text": "The critics are not quiet. The head of the National Retail Federation said, \"We understand the goal of protecting American industry, but these tariffs are basically a tax on our own consumers and businesses.\" If this turns into a full-blown trade war, the effects could be very bad. Businesses have already sued, saying that the president is abusing his power under current trade rules. Democrats on Capitol Hill suggested a plan to limit the president's power to set tariffs, but it is unlikely to pass the Republican-controlled Senate. Reports say that people inside the administration are talking behind closed doors about how to make changes—maybe more exemptions for allies or certain products—without seeming to give in."
+        },
+        {
+          "type": "paragraph",
+          "text": "The financial markets have been on edge since the last statements. After the news, investors thought about the risks of inflation and the possible benefits for domestic producers. This led to one of the biggest single-day drops in the Dow in months. The dollar went up a little against other currencies, and bond rates went up because people were worried about prices staying the same. Analysts are guessing about a lot of different things that could happen, like the White House making side deals, putting the tariffs into effect more slowly, or using them as leverage in bigger talks with China and Europe. But if nothing changes, most analysts think that things will get worse, with rising prices affecting everything from clothes to cars and possibly causing some industries to shrink or hire more slowly."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is similar to the tariff rounds that happened in 2018 and 2019. Some steel jobs were temporarily boosted, but farmers needed billions of dollars in bailouts, and the economy as a whole took a small step back. Because the global economy is still recovering from the pandemic and supply chain scars, this time seems bigger. Even though there was a lot of talk about a renaissance, government data shows that manufacturing jobs actually fell by more than 100,000 last year. That makes the story a little less believable for skeptics."
+        },
+        {
+          "type": "paragraph",
+          "text": "The administration does, however, point out some areas where things are going well, like companies starting to move some operations back to the US or some US producers raising prices without losing market share. People are wondering if the long-term benefits will show up before the short-term problems turn the political climate into a toxic one. Because the midterms are coming up, there is a lot of stress. In town halls, vulnerable Republicans are already feeling the effects as residents complain about everything from higher appliance prices to lower export revenue for local farms."
+        },
+        {
+          "type": "paragraph",
+          "text": "People all over the world are also glued to their TVs. Will Trump's economic numbers make him change his mind, or will he stick to his guns? It could have a big effect on next month's business surveys and inflation data. People and businesses are being careful right now. Some are looking for other options, some are stockpiling when they can, and some are just hoping for a negotiated off-ramp that will settle real trade issues without making everyone pay more and be more uncertain."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the end, this is more than just numbers on a spreadsheet and trade balance sheet points. The factory worker waiting for the promised job boom, the retiree on a fixed income who sees the cost of groceries going up, and the farmer who wonders if foreign customers will come back are all real people. Trump is hoping that Americans will put up with the trouble if it means they will have more power in future international trade. How quickly the pain goes away or how loudly the anger grows will decide if that gamble is worth it. The tariffs are in place, prices have gone up, and the conversation is far from over."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "us-revokes-85000-visas-2025-security-crackdown",
+      "metaTitle": "US Revokes 85,000 Visas in 2025 Security Push",
+      "metaDescription": "US State Department revokes 85,000 visas in 2025 under Trump admin, including 8,000+ student visas, citing crimes, continuous vetting, and public safety. Impacts universities, businesses, and global applicants amid lawsuits and concerns.",
+      "title": "US Revokes 85,000 Visas in 2025: 'Community Safety First' as Revocations Surge Under New Administration",
+      "excerpt": "Officials confirm 85,000 visas revoked so far in 2025 to boost national security and community safety, with over 8,000 student visas canceled—more than double last year—amid stricter continuous vetting and crime-related flags.",
+      "category": "world",
+      "newsType": "news",
+      "type": "normal",
+      "date": "05/12/2025",
+      "readTime": "10 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/us-revokes-85000-visas-2025-security-first-image.webp",
+      "imageAlt": "U.S. Citizenship and Immigration Services office entrance with Department of Homeland Security signage and visitors entering the facility.",
+      "keywords": [
+        "US visa revocations 2025",
+        "85,000 visas revoked Trump",
+        "State Department continuous vetting",
+        "student visas canceled 2025",
+        "US immigration crackdown",
+        "visa security policy 2025",
+        "H-1B backlog impact",
+        "international students US",
+        "visa crimes DUI assault",
+        "Trump administration immigration"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Officials say that the United States has stopped giving out 85,000 visas so far in 2025 in order to keep communities safe and improve national security in ways that weren't possible before. A senior State Department official confirmed the number and said that it is part of a larger effort under the new administration to put \"community safety first\" during a call with reporters on Monday. They're not holding back: this is a stricter policy about who can enter and stay, especially because of recent high-profile domestic events that made people worry about the threats posed by visa holders."
+        },
+        {
+          "type": "paragraph",
+          "text": "The revocations apply to all kinds of visas, such as work, student, tourist, and others. More than 8,000 of them were student visas, which is more than twice as many as were canceled in the whole previous year. The official said that more than half of the cases involve crimes like theft, assault, and driving under the influence. The source said very simply, \"We don't want these people walking our streets or campuses.\" \"We're acting on it if someone has a record that shows they could hurt someone here. No apologies.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "This is linked to a very different view of vetting, so it's not just random. For the tens of millions of foreign nationals who now have valid U.S. visas, the government put in place the \"continuous vetting\" policy. This means regularly checking data from foreign police partners, using automated tools to rate how dangerous something is, and getting information from different agencies. They are extra careful with people from places that the government thinks are dangerous, like Afghanistan after the chaotic exit. It takes a long time to process humanitarian cases in Afghanistan or special immigrant visas because every background check is very thorough. This includes checking biometrics, looking for suspicious activity on social media, and going through long criminal records. The official said again, \"We'll take whatever time it needs.\" \"We won't give anyone a visa until we're sure they won't hurt Americans.\""
+        },
+        {
+          "type": "image",
+          "src": "/images/news/us-revokes-85000-visas-2025-security-second-image.webp",
+          "alt": "Close-up of a U.S. visa stamp inside a passport, highlighting immigration and travel documentation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The effect on students is very bad. Universities are already getting fewer international applications and approvals. Some schools are worried that they will have fewer students in the fall because the Institute of International Education reported that fewer visas were being issued by a number of important countries. A representative from the American Council on Education says that while campus safety is important, this sends a bad message to smart students from all over the world who are thinking about studying here. The United States has always drawn the best minds from around the world because it keeps us competitive. But if the message is \"you're guilty until proven innocent,\" that advantage might go away."
+        },
+        {
+          "type": "paragraph",
+          "text": "Numbers also tell part of the story. In some big markets, the number of student visas that were accepted fell from about 85% to 72%. There are 15% fewer applications this year than last year. Processing times went up. The average wait time went from 45 days to more than 60 days, and for high-risk areas, it is already close to 90 days or more. 30% more people are now being flagged for further examinations because of automated algorithms that look at dozens of data points for each candidate. Only about 12% of appeals are successful because the bar is set higher with a \"presumption of risk\" approach."
+        },
+        {
+          "type": "paragraph",
+          "text": "People all over the world are paying attention to the crackdown. In private, diplomats from friendly countries have said that some revocations seem too harsh, treating a small mistake outside as though it were a big one here. At least 15 countries have made their concerns known in an official way. This hurts and may ease tensions in countries where sending workers or students to the US is a big part of their culture or economy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Business leaders are also not happy, especially in fields like healthcare, technology, and engineering where there aren't enough skilled workers from other countries to fill the gaps. Companies are rushing and waiting longer because the H-1B backlog is getting more attention, which is already a problem. One industry group's chairman says that security can't be compromised, but the system also needs to work, or else we might lose our own creativity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Lawsuits have been filed by groups like the American Civil Liberties Union, which says that many revocations don't follow due process because there is no real notice, no chance to challenge the decision, and sometimes they are based on old or questionable accusations. Some people say that this is a trend that puts justice ahead of speed. The administration strongly disagrees, saying that internal data shows a 65% drop in crimes linked to visa holders over the last period. There is disagreement about whether the numbers are accurate, but officials say that the method works to find dangers early."
+        },
+        {
+          "type": "paragraph",
+          "text": "The effects could add up financially. The Migration Policy Institute says that fewer international students will cost billions of dollars in lost tuition and spending, or about $5.7 billion a year if things stay the same. That money is used to pay for jobs in retail, housing, and other local services. Certain industries may also have trouble finding enough skilled workers, which could slow growth."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the future, expect more of the same. Officials call it the \"new normal\"—putting safety first without cutting corners, even if it means longer lines and stricter rules for all applicants. Privacy activists, on the other hand, are worried about too much power."
+        },
+        {
+          "type": "paragraph",
+          "text": "Congressional hearings are set for early next month, and both sides are expected to get involved and make things tense. Immigration is always a hot topic, but this visa sweep seems to show that the door is still open, but only after looking at each warning sign twice. It's a tense wait to see if the balance shifts back toward openness or stays locked down tight for applicants who are stuck in limbo, families back home, and schools that rely on international talent."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "maria-corina-machado-nobel-oslo-appearance-canceled-safety-fears",
+      "metaTitle": "Machado Nobel Oslo Appearance Canceled Over Safety",
+      "metaDescription": "Venezuelan Nobel Peace Prize winner María Corina Machado's Oslo press conference canceled due to safety concerns after 11 months in hiding; uncertainty over attendance at ceremony amid repression fears.",
+      "title": "Venezuelan Nobel Laureate María Corina Machado's Oslo Appearance Canceled Amid Grave Safety Concerns",
+      "excerpt": "Due to serious worries about her safety, Nobel Peace Prize winner María Corina Machado will not make it to Oslo as planned, with her pre-ceremony news conference suddenly canceled, leaving millions of Venezuelans in suspense.",
+      "category": "world",
+      "newsType": "news",
+      "type": "normal",
+      "date": "10/12/2025",
+      "readTime": "9 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/maria-corina-machado-nobel-oslo-appearance-canceled-image.webp",
+      "imageAlt": "Venezuelan opposition leader María Corina Machado raises her fist while speaking at a pro-democracy rally.",
+      "keywords": [
+        "María Corina Machado Nobel",
+        "Nobel Peace Prize Venezuela 2025",
+        "Machado Oslo appearance canceled",
+        "Venezuela opposition leader hiding",
+        "Maduro repression Nobel",
+        "Venezuela democracy fight",
+        "Nobel ceremony absence",
+        "Machado safety concerns",
+        "Venezuelan political prisoners",
+        "Nobel Peace Prize 2025"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Because of worries about her safety, María Corina Machado, a Venezuelan Nobel Peace Prize winner, will not be able to go to Oslo as planned."
+        },
+        {
+          "type": "paragraph",
+          "text": "The news hit millions of Venezuelans who were hoping for some good news from the outside world hard. People were worried that the brave opposition leader wouldn't be able to make it to the important event in the Norwegian capital on Wednesday after María Corina Machado suddenly called off her news conference in Oslo on Tuesday. This was the usual briefing before the ceremony for her Nobel Peace Prize."
+        },
+        {
+          "type": "paragraph",
+          "text": "People hadn't seen Machado, 58, in public in more than 11 months. At the Norwegian Nobel Institute, she was supposed to talk to the press about her fight for democracy in her home country and maybe explain what this award really means. But for no reason, the ceremony was put off for hours on end. Later in the day, officials made it very clear that the conference \"will not take place today.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "The institute made a well-thought-out statement acknowledging the huge challenges she must face to get there. They said, \"María Corina Machado has said in interviews how hard it will be to get to Oslo, Norway.\" If you're paying close attention to this situation, this update is the kind that makes you feel sick.So, at this time, we can't give you any more information about when and how she will get to the Nobel Peace Prize ceremony."
+        },
+        {
+          "type": "paragraph",
+          "text": "Let's think about why this is so important for a moment. On October 10, 2025, the Nobel Peace Prize went to Machado, a strong-willed Venezuelan woman who has been putting her life on the line to protect the promise of democracy in one of the most oppressive places on Earth. This shocked the world because it wasn't given to a well-known diplomat or head of state. People called her \"someone who keeps the flame of democracy burning in the face of growing darkness.\" It wasn't just pretty words. Venezuelans and the large diaspora in Latin America, the US, and Europe now use them as a rallying cry."
+        },
+        {
+          "type": "paragraph",
+          "text": "The story that Machado tells sounds like it could be in a thriller, but it's very true. She was ready to run against Nicolás Maduro in the presidential election in July 2024 after winning the opposition primary in 2023. Polls showed that she was ahead by a wide margin, so everyone knew she was gaining ground. But Maduro's government only stopped her from running. The opposition had to choose former diplomat Edmundo González after they disqualified her on a weak technicality. After that, terrible things happened, like arrests, the end of protests, harassment of candidates, and reliable reports of widespread human rights violations. Things went wrong when the government-run election council declared Maduro the winner, even though there was a lot of proof that he had cheated. For example, opposition-leaked vote totals showed that González won by a landslide. He had to run away to Spain because an arrest warrant was issued for him."
+        },
+        {
+          "type": "paragraph",
+          "text": "Then came January 9, 2025. In his last brave public appearance, Machado joined supporters at a protest in Caracas. Security guards held her for a short time before letting her go. The next day, she was gone. hiding for more than 11 months. Nothing—no videos, no posts on social media. Just silence. Venezuelan authorities have issued many arrest warrants for her and other members of the opposition. Human rights groups say that the persecution is systematic and includes arbitrary arrests, threats, and spying. The UN Human Rights Council says that there are now more than 300 political prisoners in jail."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can see why it seems hard to get to Oslo. She can't go anywhere. Someone is watching everything she does. There are a lot of risks involved in leaving the country without getting caught. Her spokeswoman has not answered questions about where she is and what possible travel routes she might take. People all over the world are worried about the whole thing."
+        },
+        {
+          "type": "paragraph",
+          "text": "There is still no word on whether Machado will go to the real Nobel ceremony, which is set to take place on Wednesday at Oslo's beautiful City Hall. It would be very symbolic for the woman who has come to represent resistance to step on stage with a medal around her neck and speak truth to power. But if she can't make it, it won't be the first time. These painful absences have happened a lot in the past. Liu Xiaobo, a Chinese dissident, was in jail in 2010 and couldn't come. His chair was empty. When Aung San Suu Kyi was under house arrest in Myanmar in 1991, her son accepted the award for her. The Norwegian Nobel Institute knows this strategy all too well, but that doesn't make it any easier."
+        },
+        {
+          "type": "paragraph",
+          "text": "The United States, the European Union, and a number of Latin American countries have told Venezuela to let Machado travel freely. The U.S. Secretary of State said, \"The world is watching,\" in plain language. Venezuela must let María Corina Machado travel freely so that she can accept this prestigious award, which honors her brave fight for democracy.\" But Maduro's government has mostly stayed quiet. State media hardly ever talk about her Nobel Prize. Instead, they like to brag about their own \"achievements\" and complain about outside interference."
+        },
+        {
+          "type": "paragraph",
+          "text": "Norwegian diplomats, who are known for being quiet but effective, are doing everything they can to make her trip possible. But time is running out because the ceremony is less than twenty-four hours away. People who fight for human rights and privacy are worried that this is exactly what authoritarian governments do: they make it so dangerous for people to speak out against them that even international awards are now in danger."
+        },
+        {
+          "type": "paragraph",
+          "text": "For most Venezuelans, especially the millions who have left because of Maduro's economic collapse, blackouts, and starvation, Machado is more than just a politician. She is a symbol. Her victory proves that their years of struggle were worth it. It would be amazing if she could stand in Oslo and give that Nobel speech about her vision for a peaceful and free Venezuela. The reward itself says that the world hasn't forgotten about you, even if she can't."
+        },
+        {
+          "type": "paragraph",
+          "text": "This isn't just a logistical cancellation. It serves as a reminder of how bad the repression is. She went into hiding because she really fears for her life. In her last public comments before she went missing, she talked about the \"extreme danger\" she faces every day. But she keeps fighting from the shadows."
+        },
+        {
+          "type": "paragraph",
+          "text": "We are waiting for news from Oslo, but one thing is certain: María Corina Machado has already won something bigger than a medal, no matter what. She has kept hope alive for a country that really needs it. The trip may make the flame she carries flicker, but it hasn't gone out. Not at all."
+        },
+        {
+          "type": "paragraph",
+          "text": "And that flicker is very important for Venezuelans who are glued to their phones tonight, whether they are in Miami living rooms or Caracas flats without power. It shows that the fight is still going on. It shows that some people still think their opinions matter. The ceremony on Wednesday might not go as planned, but María Corina Machado's journey is far from over."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "european-leaders-kyiv-ukraine-war-4th-anniversary-support",
+      "metaTitle": "European Leaders in Kyiv on Ukraine War 4th Anniversary",
+      "metaDescription": "On the 4th anniversary of Russia's invasion, European leaders visit Kyiv to show solidarity with Ukraine as the war enters its fifth year amid high casualties and stalled peace talks.",
+      "title": "European Leaders Arrive in Kyiv on Sad 4th Anniversary – Standing Firm with Ukraine as War Enters Fifth Year",
+      "excerpt": "On this sad fourth anniversary, leaders from Europe are coming to Kyiv to show their support for Ukraine as the war goes on into its fifth year, with Zelenskyy declaring independence defended and Putin’s goals unmet.",
+      "category": "world",
+      "newsType": "news",
+      "type": "normal",
+      "date": "24/02/2026",
+      "readTime": "10 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/european-leaders-kyiv-ukraine-war-first-image.webp",
+      "imageAlt": "Ukrainian President Volodymyr Zelenskyy greets European leaders in Kyiv during a solidarity visit marking the Ukraine war anniversary.",
+      "keywords": [
+        "Ukraine war 4th anniversary",
+        "European leaders Kyiv visit 2026",
+        "Russia invasion Ukraine February 2026",
+        "Zelenskyy Putin goals not achieved",
+        "Ukraine casualties 2 million",
+        "Donbas security guarantees",
+        "EU support Ukraine war",
+        "Russia North Korea Iran China aid",
+        "Ukraine reconstruction $588 billion",
+        "European solidarity Kyiv"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "On this sad fourth anniversary, leaders from Europe are coming to Kyiv to show their support for Ukraine as the war goes on into its fifth year."
+        },
+        {
+          "type": "paragraph",
+          "text": "It's the kind of day that hits you right in the chest, KYIV, Ukraine. More than a dozen high-ranking European leaders arrived in Kyiv on Tuesday, four years after Russian tanks crossed the border and rockets lit up the night sky over Ukraine. They didn't come with empty words; they came with a very clear message: we're still here, we're still watching, and we won't let this war fade into the past."
+        },
+        {
+          "type": "paragraph",
+          "text": "President Volodymyr Zelenskyy made it clear in a statement that was shown on TV and shared on social media across the country. \"We have every right to say: we have defended our independence, we have not lost our statehood,\" he said, thinking back to the beginning of the invasion and looking to the present. He told everyone that Putin hasn't reached his goals, even though Russia has sent a bigger army, better weapons, and wave after wave of attacks. \"He hasn't broken Ukrainians or won this war.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "The numbers back him up, at least when it comes to making progress on the battlefield. The Institute for the Study of War says that Russian troops were only able to take 0.79% of Ukrainian land over the past year. That's it. That's what they got after all the blood and bombs. It goes into great detail about how this conflict has turned into a brutal, drawn-out standoff where neither side is willing to give up any ground."
+        },
+        {
+          "type": "image",
+          "src": "/images/news/european-leaders-kyiv-ukraine-war-second-image.webp",
+          "alt": "European leaders arrive by train in Kyiv to show support for Ukraine on the fourth anniversary of Russia’s invasion."
+        },
+        {
+          "type": "paragraph",
+          "text": "But after four years, the cost to people is almost too much to understand. The Center for Strategic and International Studies just came out with a scary prediction last month: by this spring, the total number of dead on both sides could reach two million. Since World War II, more than any other major country, Russia has lost, been hurt, or gone missing in conflicts. Almost 1.2 million Russians have died, been hurt, or gone missing. That number isn't just a guess. That includes fathers, husbands, and sons who are not coming back home. Even if the number of Ukrainians who died is lower, between 500,000 and 600,000, it is still terrible. You have to wonder how any country can survive when you hear these numbers."
+        },
+        {
+          "type": "paragraph",
+          "text": "The US's diplomatic efforts to find a way out of the conflict seem to be at a standstill now that it is entering its fifth year. People keep asking the same painful questions: What happens to Donbas, the industrial heart of eastern Ukraine that Russia mostly controls but hasn't fully taken over? And what kinds of unbreakable security guarantees can Kyiv get to make sure this doesn't happen again? European leaders are asking for a seat at the table because they keep saying that Europe's future is at stake and this is not just Ukraine's fight."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many people shared a post on X by German Chancellor Friedrich Merz that accurately described the mood. He wrote, \"The Ukrainians have been living in a nightmare every day and night for the past four years—not just for them, but for all of us.\" \"Because war is back in Europe.\" The only way to end the war is for all of us to stand together, because what happens to Ukraine happens to us."
+        },
+        {
+          "type": "paragraph",
+          "text": "On Tuesday, you could feel that sense of shared destiny in the streets of Kyiv. Guests included well-known people like Finnish President Alexander Stubb, European Commission President Ursula von der Leyen, European Council President Antonio Costa, seven prime ministers, and three foreign ministers. Mette Frederiksen from Denmark was also there. She greeted Zelenskyy and his wife Olena, put flowers on the table, and smiled even though the mood was sad. These are more than just pictures. Countries that thought big battles on the continent were long overdue need to take this seriously."
+        },
+        {
+          "type": "paragraph",
+          "text": "The fight has brought people from all over the world together in ways that no one could have predicted in February 2022. Russia has made friends in bad places, and NATO countries keep sending money and weapons to Ukraine to help it stay alive. North Korea has sent thousands of troops and tons of artillery shells. Iran sends the deadly drones that terrorize Ukrainian cities at night. American officials and analysts also say that Beijing is secretly giving Russia the computer chips and machine tools it needs to keep its war machine running."
+        },
+        {
+          "type": "paragraph",
+          "text": "There has been a change on the support side in the last year. The Trump administration has changed its mind and stopped sending weapons directly to Kyiv. Now, European NATO countries are making a big move by buying American weapons and quickly sending them to the front. The European Union has kept the financial lifeline going with billions of dollars in aid, but Hungary and Slovakia keep complaining every time a new package is put to a vote."
+        },
+        {
+          "type": "paragraph",
+          "text": "British Armed Forces Minister Al Carns was clear about the situation when he talked to reporters. Russia's war on Ukraine has been the most important conflict in the last few decades. I don't think any of us could have predicted how big and wide-ranging the conflict would become when it started."
+        },
+        {
+          "type": "paragraph",
+          "text": "The money part also worries economists. The World Bank, the European Commission, the United Nations, and the Ukrainian government all think that it will take about $588 billion over the next ten years to fix the roads, hospitals, power plants, and homes in this broken country. That money won't go to schools, green energy, or helping regular people. Instead, it will be used to fix the damage done by drones and missiles."
+        },
+        {
+          "type": "paragraph",
+          "text": "As the sun set over Kyiv on this fourth anniversary, the mood was a strange mix of defiance and tiredness. People brought flowers, lit candles, and took part in memorial rituals at makeshift shrines. Kids who were toddlers when the invasion started are now in school and learning what \"war\" really means. Parents still check their phones every night for air-raid apps."
+        },
+        {
+          "type": "paragraph",
+          "text": "Everyone knows that words alone won't stop the violence, but the European visitors left with strong messages of support. Ukraine can't keep going without steady help, and Russia isn't showing any signs of backing down. But for now, Kyiv's message is clear: Europe is behind us, we're still fighting, and we're still standing."
+        },
+        {
+          "type": "paragraph",
+          "text": "The main question on everyone's mind tonight in every capital from Lisbon to Tallinn is whether or not that support will stay strong as the war enters its fifth year."
+        }
+      ]
     }
 
+  ],
+  "war-conflict": [
+    {
+      "id": 1,
+      "slug": "400-civilians-killed-eastern-congo-m23-rebels-advance",
+      "metaTitle": "400+ Civilians Killed in Eastern Congo M23 Advance",
+      "metaDescription": "Over 400 civilians massacred in eastern Congo as Rwanda-backed M23 rebels push deeper into South Kivu despite new U.S.-brokered peace deal between Congo and Rwanda.",
+      "title": "Over 400 Civilians Massacred in Eastern Congo as Rwanda-Backed M23 Rebels Storm Deeper Despite Fresh U.S. Peace Deal",
+      "excerpt": "It’s the kind of news that stops you cold and leaves a sick feeling in your stomach. In the chaos of eastern Congo, local officials in South Kivu are reporting that more than 400 civilians have been slaughtered in just the past week as the Rwanda-backed M23 rebels keep pushing forward with terrifying speed.",
+      "category": "war-conflict",
+      "newsType": "news",
+      "type": "normal",
+      "date": "15/03/2025",
+      "readTime": "9 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/eastern-congo-m23-rebels-advance-image.webp",
+      "imageAlt": "",
+      "keywords": [
+        "eastern Congo violence 2026",
+        "M23 rebels South Kivu",
+        "400 civilians killed Congo",
+        "Rwanda backed M23",
+        "US peace deal Congo Rwanda",
+        "Uvira Bukavu conflict",
+        "DRC humanitarian crisis",
+        "M23 ceasefire violation",
+        "eastern Congo displacement",
+        "Congo Rwanda tensions"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "It’s the kind of news that stops you cold and leaves a sick feeling in your stomach. In the chaos of eastern Congo, local officials in South Kivu are reporting that more than 400 civilians – ordinary men, women, kids, grandparents – have been slaughtered in just the past week as the Rwanda-backed M23 rebels keep pushing forward with terrifying speed. This is happening right now, even though the presidents of Congo and Rwanda sat down in Washington just days ago and signed a shiny new peace agreement that was supposed to calm everything down."
+        },
+        {
+          "type": "paragraph",
+          "text": "More than 400 dead. Think about that number for a second. That’s not soldiers on a battlefield. These are civilians caught in the crossfire – shot, blown apart by explosions, cut down by shelling in their own towns and villages stretching from Uvira right up to the edges of Bukavu, the provincial capital. Many of the victims were women and children who never picked up a gun in their lives. They were just trying to survive another day in a region that has known nothing but misery for decades."
+        },
+        {
+          "type": "paragraph",
+          "text": "The timing could not be more brutal. Last week, Congolese President Félix Tshisekedi and Rwandan President Paul Kagame stood side by side in Washington, shaking hands for the cameras after a deal brokered by the United States. The agreement was meant to ease the deadly tensions along their border and, most importantly, get Rwanda to stop backing armed groups inside Congo. Everyone breathed a small sigh of relief. Maybe, just maybe, the killing would slow down."
+        },
+        {
+          "type": "paragraph",
+          "text": "But nobody told the M23 rebels. The group wasn’t even part of that Washington deal. They’ve been holding their own separate talks with Congo about a ceasefire, and both sides are already pointing fingers, screaming that the other side keeps breaking it. While diplomats were still patting themselves on the back, M23 fighters – heavily armed, well-trained, and according to Congo, supported by Rwandan troops and foreign mercenaries – stormed into the strategic border city of Uvira and kept moving."
+        },
+        {
+          "type": "paragraph",
+          "text": "Late Wednesday, the South Kivu provincial government put out a furious statement that pulled no punches. “These forces are operating in clear violation of the ceasefire,” it said. “We have evidence of Rwandan special forces and foreign mercenaries fighting alongside M23 in Uvira, directly contradicting Kigali’s commitments in Washington.” They accused Rwanda of not just ignoring the deal but actually doubling down, bringing in sophisticated weapons and extra fighters instead of pulling back like they promised."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can almost hear the frustration and fear in those words. Because this isn’t the first time promises have been made and then shattered. The M23 rebellion first popped up in 2012, saying they were protecting the Tutsi community in eastern Congo from discrimination and attacks. They were beaten back in 2013, but like a bad nightmare they came roaring back in late 2021. Since then they’ve grabbed huge chunks of North Kivu and now they’re swallowing pieces of South Kivu too, getting dangerously close to Bukavu – a city of more than 1.2 million people that could fall into total panic if the rebels keep advancing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Congo, the United Nations, and pretty much every Western government have been pointing the finger at Rwanda for years, saying Kigali is feeding M23 with soldiers, guns, money, and logistics. Rwanda angrily denies it and fires back that Congo is sheltering the FDLR – the Hutu extremist militia that helped carry out the 1994 genocide in Rwanda. It’s the same poisonous cycle of blame and counter-blame that has kept this corner of Africa bleeding for years."
+        },
+        {
+          "type": "paragraph",
+          "text": "A senior analyst with the International Crisis Group didn’t hold back when he spoke to reporters: “This is not just another ceasefire violation. With over 400 civilians dead in just the past week and Rwandan forces allegedly operating inside Congo, we’re witnessing a dangerous escalation that could spiral into a full-scale regional war if not immediately addressed by the international community.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "And the human suffering? It’s off the charts. Tens of thousands of families have grabbed whatever they could carry and fled their homes. Displacement camps that were already overflowing are now bursting at the seams. Aid workers say they’re running out of everything – tents, food, medicine. The World Food Programme is warning that parts of the region are sliding toward famine. Medical clinics in the affected areas are working in the dark, without electricity or clean water. Doctors are treating gunshot wounds and shrapnel injuries with whatever scraps they have left."
+        },
+        {
+          "type": "paragraph",
+          "text": "One coordinator with Médecins Sans Frontières in Bukavu described the horror in a voice that cracked with exhaustion: “We’re seeing children dying from preventable diseases, families sleeping in the open without shelter, and pregnant women giving birth in unsafe conditions. The international community needs to act now before this becomes an even greater catastrophe.”"
+        },
+        {
+          "type": "paragraph",
+          "text": "The United Nations peacekeeping mission in Congo – MONUSCO – has been there for more than twenty years, but it’s packing up and leaving by the end of 2025. A lot of people on the ground are terrified about what happens when those blue helmets drive away. Who’s going to protect the villages then?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This isn’t just Congo’s problem anymore. The whole region is on edge. Uganda, Burundi, Tanzania, and Rwanda itself could suddenly see huge new waves of refugees pouring across their borders. Eastern Congo sits on some of the world’s richest deposits of gold, coltan, and cobalt – minerals that power our phones and electric cars – and those resources keep feeding the war machine. Militias sell them on the black market to buy more guns. It’s a vicious circle that nobody has been able to break."
+        },
+        {
+          "type": "paragraph",
+          "text": "Right now the African Union is scrambling to call an emergency meeting. The United States and the European Union are talking about slapping more sanctions on people and companies feeding the conflict. But with trust between Kinshasa and Kigali basically at zero, and M23 still charging ahead, nobody is holding their breath for a quick fix."
+        },
+        {
+          "type": "paragraph",
+          "text": "As night falls over the hills of South Kivu tonight, families are hiding in the bush or crowding into makeshift camps, listening for the sound of gunfire. More than 400 lives already gone in a single week. How many more before the world finally pays attention and forces these leaders to stop playing games with people’s lives?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This conflict has been simmering and exploding for decades, but the latest M23 offensive feels different – faster, bolder, and more dangerous. If the guns don’t fall silent soon, the entire heart of Africa could be dragged into something far bigger and bloodier than anyone wants to imagine."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "us-iran-tensions-gulf-states-israel-tightrope",
+      "metaTitle": "US-Iran Tensions Put Gulf States & Israel on Edge",
+      "metaDescription": "As US-Iran tensions escalate with military buildup in the Gulf, Saudi Arabia, UAE, and Israel balance alliances while fearing wider conflict amid stalled nuclear talks.",
+      "title": "US-Iran Crisis: Middle East Teeters on Brink of Major Conflict",
+      "excerpt": "The Middle East is holding its breath again, and you can almost feel the worry spreading from Riyadh to Cairo to Tel Aviv. As the US and Iran get closer to the edge, Saudi Arabia, the UAE, and even Israel are trying to protect their own interests while the major powers circle each other.",
+      "category": "war-conflict",
+      "newsType": "news",
+      "type": "normal",
+      "date": "24/02/2026",
+      "readTime": "10 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/us-iran-tensions-gulf-states-israel-tightrope-first-image.webp",
+      "imageAlt": "U.S. President Donald Trump and Iran's Supreme Leader Ayatollah Ali Khamenei shown against national flags, symbolizing rising US-Iran tensions.",
+      "keywords": [
+        "US Iran tensions 2026",
+        "Gulf states Israel Iran",
+        "Strait of Hormuz drills",
+        "Trump Iran nuclear deal",
+        "Saudi UAE airspace ban",
+        "Iran Revolutionary Guard",
+        "Israel Iran conflict",
+        "Middle East escalation",
+        "Iran protests crackdown",
+        "USS Abraham Lincoln Gulf"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The current date is February 24, 2026. As the drums of war get louder, tensions between the US and Iran put Israel and the Gulf States on the edge of a knife."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Middle East is holding its breath again, and you can almost feel the worry spreading from Riyadh to Cairo to Tel Aviv. As the US and Iran get closer to the edge, Saudi Arabia, the UAE, and even Israel are trying to protect their own interests while the major powers circle each other. No one wants things to blow up and destroy the whole area, but what everyone is doing shows how dangerous and unstable the delicate balance has become."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the past week, every capital has been talking about what Washington is really planning against Iran. Because of the uncertainty, leaders have to set limits. Longtime American allies Saudi Arabia and the United Arab Emirates have made it clear that they will not allow any strike, no matter who does it, to take place in their airspace. They still do business with Tehran in secret. This polite but strong \"not through our backyard\" statement is aimed directly at the White House."
+        },
+        {
+          "type": "paragraph",
+          "text": "Badr Abdelatty, Egypt's foreign minister, has been on the phone all the time. In talks with US Mideast envoy Steve Witkoff and Iran's Abbas Araghchi, he told both sides to \"work toward achieving calm\" before the whole area goes crazy. These calls are especially important because Egypt has recently gotten closer to Iran but hasn't started formal diplomatic relations yet."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the meantime, the US is sending a very different message with its guns and steel. The USS Abraham Lincoln, a nuclear-powered aircraft carrier, has sped into the area with about ten guided-missile destroyers on each side. The movement, which is a floating fortress parked just where it could hit hard if things go wrong, has been setting off shipping trackers on MarineTraffic."
+        },
+        {
+          "type": "image",
+          "src": "/images/news/us-iran-tensions-gulf-states-israel-tightrope-second-image.webp",
+          "alt": "People walk past Iranian ballistic missiles displayed during a public event, highlighting Iran’s military capabilities amid regional tensions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Iran is doing the same thing. Press TV, a state-run news outlet, says that the Revolutionary Guard Navy will begin live-fire drills in the Strait of Hormuz next week. That little chokepoint moves about a fifth of the world's oil every day. Even closing it for a few hours would send a message that everyone would have to pay attention to and would make prices go through the roof around the world.Iran is ready to talk based on respect and common interests, but if it has to, it will defend itself and respond like never before! This is what Tehran's envoy to the UN said very clearly. Ali Shamkhani, one of Supreme Leader Ali Khamenei's closest advisors, went even further. He said that the idea of a \"limited strike\" is a myth. He said the response would be \"immediate, all out, and unprecedented,\" hitting \"the heart of Tel Aviv and all those who support the aggressor.\" He said, \"Any military action by the United States, no matter where it comes from or what level it is, would be seen as an act of war.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "Sanam Vakil, head of the Middle East program at London's Chatham House, says, \"The latest signals from President Trump show that Washington is still open to a deal that brings Iran back into the fold economically.\" There is, however, a big \"if\": Iran would have to agree to long-term, verifiable limits on its nuclear program and ballistic missiles, as well as a real change in how it acts in the region. She says that \"only then do reintegration and economic relief become possible.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "Israel is in a very bad place right now. After the Hamas attacks on October 7, 2023, the long war in Gaza, and the intense 12-day direct conflict with Iran in June 2025, its defenses are still not fully restored. Pauline Raabe, a political scientist at the Middle East Minds think tank in Berlin, says that missile interceptors haven't been replaced quickly enough. The Israeli government is quietly warning people to be careful before the elections. She says that \"a possible US strike puts Israeli territory at risk of an Iranian counterstrike.\"\" Mairav Zonszein of the International Crisis Group agrees, saying, \"Such a strike would not be good for Israel right now.\" For years, though, Israeli officials have been warning the world about Iran's nuclear ambitions. Many people in Jerusalem would quietly welcome an agreement that looks like the old Libyan model, which calls for the complete dismantling of the nuclear program. Some even hope for a change of government in Tehran. But for now, all they are doing is making sure they are ready for whatever choice Trump makes in the end."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Gulf states have their own careful plan in place. Eckart Woertz of the German Institute of International and Security Affairs says that they want stability more than anything else, even if it means sticking with authoritarian structures that have worked in the past instead of trying something new and risky. They are afraid that any major attack could turn their own countries into war zones. Iran would want to attack US bases in Bahrain, Saudi Arabia, and Qatar. Raabe warns, \"They would have war in their own backyard,\" and no one in the Gulf wants that to happen to them."
+        },
+        {
+          "type": "paragraph",
+          "text": "This all makes people even more worried because talks about a new nuclear deal have basically stopped. On Wednesday, Trump wrote on Truth Social, \"I hope that Iran will quickly 'Come to the Table' to negotiate a fair and equitable deal—NO NUCLEAR WEAPONS—that is good for all parties.\" It's very important because there isn't much time left!"
+        },
+        {
+          "type": "paragraph",
+          "text": "Iran's right to enrich uranium on its own land and make long-range missiles that give power to groups that the West calls terrorists in Iraq, Lebanon, Yemen, and Gaza are the same problems that stopped earlier attempts."
+        },
+        {
+          "type": "paragraph",
+          "text": "The human cost is already very high back home in Iran. Since the violent crackdown on protesters began in December 2025, human rights groups say that 6,479 people have been confirmed dead, including 118 minors and 6,092 protesters. More than 42,450 other people are in jail. Khamenei says that Israel and the United States, the usual suspects, are to blame for the uprising."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Gulf royals are quietly closing off their airspace, the Revolutionary Guards are loading live ammunition, aircraft carriers are moving, and Israeli generals are checking the stock of interceptors that haven't been fully replaced. Everyone is watching and talking, but no one seems ready to blink first."
+        },
+        {
+          "type": "paragraph",
+          "text": "People in the area have seen this movie before, and it usually doesn't end well. These countries are on a tightrope, and if they make one mistake—like firing a missile that goes off course, blocking a strait, or hitting a target that goes farther than planned—it could break, bringing down the whole Middle East. People in Israel and the Gulf are currently praying that the adults in the room will remember what is really at stake before it is too late. Meanwhile, diplomats are still on the phone and carriers are still patrolling."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "israeli-strikes-kill-7-gaza-ceasefire-violations",
+      "metaTitle": "Israeli Strikes Kill 7 in Gaza Amid Ceasefire",
+      "metaDescription": "Israeli attacks kill 7 Palestinians including 2 children in Gaza despite US-brokered ceasefire, with 591 violations reported, Rafah crossing delays, and worsening humanitarian crisis.",
+      "title": "Israeli Strikes Kill 7 Palestinians in Gaza Despite Fragile Ceasefire – Children Among Dead as Violations Mount",
+      "excerpt": "The fragile U.S.-brokered ceasefire in Gaza is cracking under the weight of fresh bloodshed. On Wednesday, Israeli attacks across the territory killed seven Palestinians, including two young children, while wounding dozens more and setting tents ablaze in a displacement camp.",
+      "category": "war-conflict",
+      "newsType": "news",
+      "type": "normal",
+      "date": "05/12/2025",
+      "readTime": "9 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/israeli-strikes-gaza-ceasefire-violations-image.webp",
+      "imageAlt": "Masked militants stand near a vehicle carrying a covered body amid rubble in Gaza following Israeli airstrikes during ceasefire tensions.",
+      "keywords": [
+        "Gaza ceasefire violations 2026",
+        "Israeli strikes Gaza children",
+        "al-Mawasi camp attack",
+        "Rafah crossing closure",
+        "Hamas Israel exchange captives",
+        "Gaza humanitarian crisis",
+        "US Trump Gaza plan",
+        "Zeitoun neighborhood shooting",
+        "Palestinian casualties ceasefire",
+        "Gaza medical facilities shortage"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The fragile U.S.-brokered ceasefire in Gaza is cracking under the weight of fresh bloodshed. On Wednesday, Israeli attacks across the territory killed seven Palestinians, including two young children, while wounding dozens more and setting tents ablaze in a displacement camp. Palestinian officials say these incidents are part of a disturbing pattern of repeated Israeli violations that have turned what was supposed to be a period of calm into something far more dangerous."
+        },
+        {
+          "type": "paragraph",
+          "text": "The first deaths came in the Zeitoun neighborhood of northern Gaza City, where health officials reported two Palestinians shot dead by Israeli gunfire. Hours later, the situation turned even grimmer in southern Gaza’s al-Mawasi area – a zone Israel had previously designated as “humanitarian” – when missiles slammed into the makeshift camp. Five people, including an eight-year-old boy and a ten-year-old girl, lost their lives. Dozens were injured, many with severe burns from the fires that erupted among the tents where families had been trying to survive."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mahmoud Basal, spokesperson for Gaza’s civil defense teams, didn’t mince words when he described the horror: five citizens, including two children, were killed and others injured, some of them seriously, after an Israeli missile strike targeted the al-Mawasi camp. Medical workers at the Kuwaiti Hospital confirmed the ages of the two children killed and described treating patients with horrific burns and shrapnel wounds. The Palestinian news agency Wafa put the total wounded at least at 32."
+        },
+        {
+          "type": "paragraph",
+          "text": "Hamas quickly condemned the al-Mawasi strike as a war crime, accusing Israel of showing complete disregard for the ceasefire terms. They called on Egypt, Qatar, and the United States – the main mediators – to step in and force Israel to stop what they describe as systematic breaches. Palestinian authorities say Israeli forces have violated the truce at least 591 times since it took effect on October 10. Those violations, they claim, have killed at least 360 Palestinians and injured more than 900 others. The numbers are grim: 78 children among the casualties, 24 medical personnel killed while on duty, and 42% of the violations happening in just the past month."
+        },
+        {
+          "type": "paragraph",
+          "text": "Israel’s military gave a different version of events leading up to Wednesday’s strikes. They said four soldiers were wounded during an operation in southern Rafah near the Egyptian border when Hamas fighters opened fire. The army insists its actions are defensive and aimed at preventing attacks, but the civilian toll tells a different story to people on the ground."
+        },
+        {
+          "type": "paragraph",
+          "text": "In a small but symbolic move amid the violence, Israel’s military announced it had received the remains of what may be one of the last two Israeli captives still held by Palestinian armed groups. The transfer was handled through the International Committee of the Red Cross. Since the temporary truce began, Hamas has handed over all 20 living captives and 26 bodies as part of the exchange deal. In return, Israel has released around 2,000 Palestinian detainees and prisoners."
+        },
+        {
+          "type": "paragraph",
+          "text": "The bigger sticking point right now is the Rafah crossing – a lifeline for Gaza that remains mostly closed. U.S. President Donald Trump’s 20-point plan to end the war lists reopening Rafah in both directions and dramatically increasing humanitarian aid as a core first-phase requirement. Yet on Wednesday, Israel’s Coordination of Government Activities in the Territories announced that the crossing would open in the coming days exclusively for the exit of residents from the Gaza Strip to Egypt. There was no mention of when – or if – aid trucks, food, medicine, or reconstruction materials would be allowed in."
+        },
+        {
+          "type": "paragraph",
+          "text": "That uncertainty is crushing for people already living on the edge. Fuel is almost nonexistent, families are crammed into overcrowded shelters, and the repeated flare-ups make any sense of safety impossible. Hospitals are running at barely 40% capacity because of destroyed buildings and empty supply shelves. Eighty-five percent of the population faces food insecurity – many families eat one meal a day, if that. Only 15% of residents have access to clean water. More than 1.5 million displaced people are still without proper shelter. Six hundred and twenty-five thousand children remain out of school. Unemployment has climbed above 75%, leaving entire communities without income."
+        },
+        {
+          "type": "paragraph",
+          "text": "International aid groups are sounding the alarm louder every day. They’re calling for unrestricted access through all crossings, protection for medical staff and facilities under international law, real reconstruction of bombed infrastructure, psychological support for thousands of traumatized people, independent monitors to track ceasefire compliance, and safe evacuation routes for civilians caught in the crossfire."
+        },
+        {
+          "type": "paragraph",
+          "text": "The United Nations has called the situation in Gaza catastrophic and is begging for immediate international action to stop the slide. Every new violation chips away at whatever trust was left in the ceasefire. For ordinary Palestinians – parents trying to keep their kids alive, doctors working without electricity, families sleeping under plastic sheets – the promises of peace feel more distant than ever."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wednesday’s deaths are just the latest reminder that the truce exists on paper but not always on the ground. Seven lives gone, two of them children who should have been playing, not lying in hospital beds with burns covering their bodies. The mediators keep talking, the exchanges keep happening in small ways, but the big questions remain: how many more violations before the whole deal collapses? And how many more families will pay the price when it does?"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "russia-massive-strikes-ukraine-us-peace-talks",
+      "metaTitle": "Russia Launches Massive Strikes on Ukraine Amid US Peace Talks",
+      "metaDescription": "Russia fires 653 drones and 51 missiles at Ukraine, hitting key rail hub Fastiv and power grid, as US-Ukraine talks continue in Florida and Macron plans London meeting with Zelenskyy.",
+      "title": "Russia Launches Massive Strikes on Ukraine Amid US Peace Talks",
+      "excerpt": "The current date is February 24, 2026. While U.S. and Ukrainian officials were having their third day of important talks in Florida, Russia launched one of its biggest aerial attacks in months, sending 51 missiles and 653 drones into Ukraine.",
+      "category": "war-conflict",
+      "newsType": "news",
+      "type": "normal",
+      "date": "05/12/2025",
+      "readTime": "10 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/russia-massive-strikes-ukraine-us-peace-talks-first-image.webp",
+      "imageAlt": "Firefighters battle a large blaze at a damaged residential building in Ukraine following Russian missile and drone strikes.",
+      "keywords": [
+        "Russia Ukraine aerial attack 2026",
+        "653 drones 51 missiles Ukraine",
+        "Fastiv railway hub strike",
+        "US Ukraine peace talks Florida",
+        "Zaporizhzhia nuclear plant outage",
+        "Macron Zelenskyy London meeting",
+        "Trump Witkoff Ukraine negotiations",
+        "Ukraine energy grid blackouts",
+        "Russia Donbas demands",
+        "Zelenskyy ceasefire violations"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The current date is February 24, 2026."
+        },
+        {
+          "type": "paragraph",
+          "text": "While U.S. and Ukrainian officials were having their third day of important talks in Florida, Russia launched one of its biggest aerial attacks in months, sending 51 missiles and 653 drones into Ukraine. Most of the incoming fire was stopped by Ukrainian air defenses, but some of it still did a lot of damage. Missiles hit the main station building and important rail equipment at Fastiv, a major railway hub southwest of Kyiv, making it one of the hardest targets. The strike messed up military supply lines and civilian transportation by destroying platforms and twisting rails at a time when every train counts."
+        },
+        {
+          "type": "paragraph",
+          "text": "Russian officials say that the attacks were aimed at logistics hubs, industrial sites, and energy infrastructure. Ukrainian President Volodymyr Zelensky was angry and said that the attack on Fastiv was \"meaningless from a military point of view.\" He accused Moscow of deliberately targeting civilian infrastructure to make life as hard as possible for ordinary Ukrainians during the harsh winter months. The energy ministry said that new attacks on power plants in eight different districts caused widespread blackouts that left homes without power and hospitals scrambling to find backup power."
+        },
+        {
+          "type": "paragraph",
+          "text": "The attack has also made things worse around the nuclear power plant in Zaporizhzhia, which is controlled by Russia. The UN's nuclear watchdog says that the facility lost all of its outside power overnight. This is the eleventh time this has happened since the full-scale invasion began. The plant still needs reliable outside power to keep its cooling systems running and avoid a possible meltdown, even though it isn't making electricity right now. Even though emergency diesel generators took over, nuclear experts are still on edge because the power goes out so often."
+        },
+        {
+          "type": "paragraph",
+          "text": "The president of France, Emmanuel Macron, didn't wait to respond. He said he would go to London on Monday for an urgent meeting with German Chancellor Friedrich Merz, UK Prime Minister Sir Keir Starmer, and Ukrainian President Volodymyr Zelensky. He strongly condemned the bombing. \"We need to keep putting pressure on Russia to get it to agree to peace,\" Macron wrote on X. The leaders want to come up with a unified European response to the rising violence and check on the progress of the US-mediated talks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Before the most recent round of attacks, negotiators from the US and Ukraine had already been putting pressure on Moscow to show \"a serious commitment to long-term peace.\" The new strikes made people even more angry after a round of talks in Moscow that didn't lead to any real progress. Steve Witkoff, the US special envoy, said that two days of talks with Rustem Umerov, Ukraine's national security chief, in Florida were \"constructive.\" The two sides talked about what kinds of deterrence Ukraine would need to keep any peace deal in place and agreed on the basic terms for future security arrangements, according to a joint statement. Even though not many details were made public, the presence of Jared Kushner and other high-ranking members of President Donald Trump's envoy team showed how seriously Washington is taking these talks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Earlier this week, Witkoff told the Ukrainians what happened during his five-hour meeting with Russian President Vladimir Putin in Moscow. The Kremlin's readout was more cautious: both sides were still willing to talk more, but they hadn't reached an agreement on the US's most recent draft peace plan. The different messages from Moscow and Florida show how complicated and sensitive the whole thing is, especially since missiles are still in the air."
+        },
+        {
+          "type": "paragraph",
+          "text": "Zelensky says he is waiting for the full context of the talks in Moscow and any new requests from Russia. A lot of people in Kyiv and Europe thought that an earlier leaked version of the US peace plan gave too much to Moscow, so Ukrainian officials have asked for changes in a subtle way. There isn't a new draft out yet. What kind of unbreakable security guarantees Ukraine will get after the war, what will happen to the areas that Russia now controls, whether Ukraine will ever be able to join NATO or something like it, who will be held responsible for war crimes and reparations, the withdrawal of Russian troops, and worries about demilitarization and buffer zones are still the main problems that have been holding up progress for months."
+        },
+        {
+          "type": "paragraph",
+          "text": "About one-fifth of Ukraine, including most of the Donbas, is still controlled by Russia. Putin has said many times that he will \"liberate these territories by force\" if Ukrainian soldiers don't leave the area completely. Kyiv and its European allies say that the only real long-term way to protect against another invasion is to join NATO or get security guarantees that are the same as NATO's. President Trump has said that he doesn't want to push for full NATO membership, and Russia has always said no to any NATO path for Ukraine."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Kremlin called questions about NATO a \"key issue\" in the talks in Moscow. Trump said the talks were \"reasonably good,\" but he also said that \"it takes two to tango,\" meaning that both sides have to want a deal for it to happen."
+        },
+        {
+          "type": "paragraph",
+          "text": "While the diplomatic dance goes on in Florida and London, the military situation on the ground is still bad. Ukrainian air defenses stopped about 80% of the most recent attack, but the huge number of drones and missiles still got through and hit important targets. Military experts are worried about a number of things that have happened in Russia's recent escalation. These include the frequent targeting of the power grid as winter sets in, the heavy use of mass drone swarms to break through defenses, strikes on transportation hubs that make life very difficult for civilians and military logistics, and the ongoing strain on the Zaporizhzhia nuclear plant. They also say that Russia seems to be trying to get more out of the negotiations by putting military pressure on the table at the same time as diplomatic talks."
+        },
+        {
+          "type": "paragraph",
+          "text": "European leaders are expected to give more military aid and add more sanctions packages at their meeting in London on Monday. Congress is currently debating whether or not to give Ukraine more money, even though there are serious political problems at home. As winter approaches and a lot of Ukraine's energy infrastructure is destroyed, the needs of people are becoming more and more urgent."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the millions of Ukrainians who wake up to cold homes, delayed trains, and the sound of air-raid sirens, the difference between the optimistic talk coming from Florida and the reality of Russian missiles seems bigger than ever. The talks seem to be making progress, but the fighting on the ground is still going strong. With each new hit, the small chance that this round of talks could really end the conflict gets smaller."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "bomb-blast-kills-30-sange-eastern-congo-peace-deal",
+      "metaTitle": "Bomb Blast Kills 30+ in Eastern Congo Despite Peace Deal",
+      "metaDescription": "Explosion in Sange, South Kivu kills over 30 and wounds 20 after FARDC-Wazalendo clash, just days after U.S.-brokered peace deal, raising fears of fragile stability in eastern Congo.",
+      "title": "Bomb Blast Kills 30+ in Eastern Congo Despite Peace Deal",
+      "excerpt": "A powerful explosion ripped through the town of Sange in South Kivu province late Sunday evening, killing more than 30 people and wounding at least 20 others in what locals are calling one of the deadliest single incidents in the region this year.",
+      "category": "war-conflict",
+      "newsType": "news",
+      "type": "normal",
+      "date": "05/12/2025",
+      "readTime": "9 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/bomb-blast-kills-30-sange-eastern-congo-peace-deal-image.webp",
+      "imageAlt": "Displaced civilians carry belongings along a crowded road in eastern Congo amid ongoing conflict and humanitarian crisis in South Kivu.",
+      "keywords": [
+        "Sange explosion Congo 2026",
+        "South Kivu bomb blast",
+        "FARDC Wazalendo clash",
+        "Eastern Congo peace deal violation",
+        "US brokered Congo peace",
+        "M23 rebels South Kivu",
+        "Eastern Congo violence",
+        "DRC humanitarian crisis",
+        "Zaporizhzhia nuclear concerns",
+        "Congo militia conflict"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The current date is February 24, 2026."
+        },
+        {
+          "type": "paragraph",
+          "text": "A huge explosion ripped through the village of Sange in South Kivu province late Sunday night, killing more than 30 people and hurting at least 20 more. Locals say this was one of the bloodiest single events in the area this year. A big peace deal mediated by the United States was signed in Washington just days before the explosion. This made things even more chaotic in an area that was supposed to be calming down after a bloody battle between Congolese army soldiers and members of the pro-government Wazalendo militia."
+        },
+        {
+          "type": "paragraph",
+          "text": "Witnesses and civil society representatives told reporters that they heard loud gunfire start. Soldiers from the FARDC, the official Congolese military, were on their way through Sange to Uvira after leaving the front lines. Some sources say they were told to stop or change their course, but they didn't listen. The device went off as tensions rose and gunfire broke out between Wazalendo fighters and soldiers, who are supposedly fighting with the M23 rebels. When the explosion was so strong that it threw people and debris across the road, it turned an already tense situation into one of pure terror."
+        },
+        {
+          "type": "paragraph",
+          "text": "Faraja Mahano Robert, a well-known civil society activist in Sange, gave a heartbreaking account of the FARDC soldiers coming back from battle, tired and on edge. When they were stopped or disagreed with, arguments turned into gunfire, and in the middle of all that, a bomb went off. No one has yet confirmed what kind of explosive it was or who set it off, but the result was terrible, whether it was on purpose, an accident during the fighting, or something that was planted ahead of time."
+        },
+        {
+          "type": "paragraph",
+          "text": "For decades, more than 100 armed groups have been fighting in the Eastern Congo over land, resources, and power. According to the Congo, the UN, and Western countries, the M23 rebels are still the biggest threat. They are said to have strong support from Rwanda. The situation on the ground, though, is a mess. Alliances change all the time, pro-government militias like Wazalendo sometimes act on their own or settle old scores, and the regular army is often accused of breaking human rights and being undisciplined. More than 7 million people have had to leave their homes in the east. They are either living in crowded camps or hiding in the jungle, always on the verge of the next conflict."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Washington peace agreement was supposed to change that. It was signed only a week ago. The African Union and the White House both called it a big step forward. But rumors of ongoing conflicts spread almost right away, and this explosion in Sange shows how little has changed for the people who live there.A regional security analyst who keeps a close eye on the Great Lakes said, \"This kind of event shows how fragile the peace agreement is.\" Even when the main players sign papers in fancy rooms, long-standing grudges, militias, and local leaders don't just go away. If government troops and their supposed allies are already shooting at each other and blowing things up, the whole effort to stabilize the east may fail before it even starts."
+        },
+        {
+          "type": "paragraph",
+          "text": "More than 30 people have already died because of what happened on Sunday night, and the number will only go up as more bodies are found and people who were hurt die. At least 20 people who survived, many of whom had life-threatening burns, shrapnel wounds, and broken bones, were taken to nearby clinics and hospitals. Humanitarian workers are rushing emergency medical supplies along dangerous roads, but access is still limited because of ongoing insecurity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Relief groups are helping families who had to leave the town because of the fighting, and the UN peacekeeping group MONUSCO has sent investigators to the area. On the ground, aid workers say that food shortages could get worse, that South Kivu's schools and health facilities are even more likely to close, and that if fighting continues, more people could be forced to leave their homes."
+        },
+        {
+          "type": "paragraph",
+          "text": "The explosion took away any hope the people of Sange had left. A local humanitarian worker said, \"We heard about the peace deal in Washington and thought maybe, just maybe, things would finally quiet down.\" Her voice was full of tiredness. But the explosion today shows how little has changed. People here still have to pay for wars that are out of control and started without warning."
+        },
+        {
+          "type": "paragraph",
+          "text": "The US, which helped broker the deal in Washington, said in a statement that it was \"deeply concerned\" about the explosion and called for a full investigation. The State Department asked everyone to stop fighting right away and fully carry out the ceasefire. Both the African Union and the International Conference on the Great Lakes Region said that new and peaceful talks were needed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Security experts point out a number of long-term problems that make it hard to keep the peace in eastern Congo. Coordinating dozens of armed groups is very hard. The regular army and the militias that are supposed to help it often don't trust each other. Regional powers keep getting involved because they have their own interests. Also, the government doesn't have the power to enforce agreements or punish people who break them in remote areas."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Congolese government is still committed to the Washington agreement and has promised to look into what happened in Sange. Most people in South Kivu, on the other hand, are skeptical because there have been so many failed peace proposals over the years. They've heard big promises before, like big announcements, handshakes, and signed papers, but the violence always comes back."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sange's streets are calm again, but the fear is still there. Clinics are full of hurt people, families are burying their dead, and everyone knows that the next spark could start a fire at any moment. The peace agreement may still be in place on paper, but it seems to be falling apart in eastern Congo."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "us-strike-drug-boat-caribbean-kills-3",
+      "metaTitle": "US Strike Kills 3 on Suspected Drug Boat in Caribbean",
+      "metaDescription": "US military strike sinks alleged drug boat in Caribbean, killing 3, pushing Trump campaign death toll past 150 amid criticism over legality, evidence, and effectiveness.",
+      "title": "US Military Strike on Suspected Drug Boat in Caribbean Kills 3, Pushing Death Toll Past 150 in Trump’s Escalating Campaign",
+      "excerpt": "The current date is February 24, 2026. For the third time this month, the U.S. military has carried out a lethal strike on a small boat in the Caribbean Sea, killing three people the Pentagon describes as “narco-terrorists.”",
+      "category": "war-conflict",
+      "newsType": "news",
+      "type": "normal",
+      "date": "24/02/2026",
+      "readTime": "9 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/us-drug-boat-strike-caribbean-first-image.webp",
+      "imageAlt": "U.S. Navy guided-missile destroyer docked at a Caribbean port during maritime anti-drug operations.",
+      "keywords": [
+        "US military drug boat strike 2026",
+        "Caribbean narco-terrorist strike",
+        "Trump drug cartel campaign",
+        "Southern Command boat attack",
+        "Fentanyl trafficking Caribbean",
+        "US extrajudicial killings sea",
+        "Trump narcoterrorists policy",
+        "Caribbean smuggling routes",
+        "US lethal force traffickers",
+        "Drug war boat strikes deaths"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The current date is February 24, 2026."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the third time this month, the U.S. military has carried out a lethal strike on a small boat in the Caribbean Sea, killing three people the Pentagon describes as “narco-terrorists.” The attack happened Monday and brings the official death count to at least 151 since the Trump administration launched its aggressive boat-interdiction campaign back in early September. Once again, Southern Command released a short video on X showing a fast-moving vessel with outboard engines exploding in a fireball after being hit, but offered no photographs of seized drugs or other hard proof that narcotics were actually on board."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to the military’s statement, intelligence had tracked the boat moving along one of the well-known smuggling corridors that run through the Caribbean toward the United States. “The vessel was engaged in narco-trafficking operations,” the post read. “Three male narco-terrorists were killed during this action.” That’s the standard language used in almost every one of the more than 40 publicly acknowledged strikes so far: short, confident, and light on specifics. No names of the dead, no recovered cargo photos, no toxicology reports—just the assertion that these were dangerous traffickers and the strike was justified."
+        },
+        {
+          "type": "image",
+          "src": "/images/news/us-drug-boat-strike-caribbean-second-image.webp",
+          "alt": "Aerial view of the Pentagon in Washington, D.C., headquarters of the U.S. Department of Defense overseeing military operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "President Donald Trump has framed the entire operation as an “armed conflict” with Latin American drug cartels, repeatedly calling them “narcoterrorists” who are poisoning American communities. He has defended the boat strikes as a necessary escalation to choke off the flow of fentanyl and other drugs crossing into the United States. Yet the administration has provided remarkably little concrete evidence to back up the claim that every targeted vessel was actively carrying narcotics at the moment it was destroyed. Critics, including several Democratic lawmakers and human-rights organizations, argue the lack of transparency raises serious questions about whether these are lawful engagements or something closer to extrajudicial killings on the high seas."
+        },
+        {
+          "type": "paragraph",
+          "text": "The controversy exploded even louder after earlier revelations about the very first boat strike in the campaign. In that incident, initial gunfire killed some occupants, but a follow-up missile attack finished off survivors who were in the water. The Trump administration and many Republican supporters insisted the action was legal under rules of engagement and necessary to prevent the suspects from escaping or posing further danger. Democratic lawmakers and several legal scholars called it murder, or at minimum a potential war crime, pointing out that international humanitarian law generally prohibits targeting people who are no longer combatants—such as those who have abandoned their vessel and are simply trying to stay alive."
+        },
+        {
+          "type": "paragraph",
+          "text": "So far the administration has not backed down. Officials continue to insist every strike follows strict intelligence protocols and is carried out only when there is clear evidence of trafficking activity. But the pattern has become familiar: a boat is spotted on a known route, drones or patrol aircraft monitor it, a decision is made to engage, and within minutes the vessel is at the bottom of the sea with its occupants dead. The military rarely releases follow-up information about whether drugs were later recovered from the wreckage or whether the dead were later identified as confirmed cartel operatives."
+        },
+        {
+          "type": "paragraph",
+          "text": "The bigger strategic question hanging over the whole campaign is effectiveness. The vast majority of fentanyl that fuels America’s overdose crisis arrives over land from Mexico, synthesized in clandestine labs using precursor chemicals shipped from China and India. Maritime routes through the Caribbean do carry cocaine and some other drugs, but experts say the boat strikes are unlikely to make a meaningful dent in the overall flow of narcotics reaching U.S. streets. Several drug-policy analysts have described the operation as “symbolic violence”—high-profile, dramatic action that looks tough on television but does little to address the root supply chains."
+        },
+        {
+          "type": "paragraph",
+          "text": "Still, the strikes keep coming, and the death toll keeps climbing. Monday’s incident is just the latest in a string of similar operations that have turned stretches of the Caribbean into a deadly gauntlet for anyone traveling in small, fast boats along certain routes. Families in coastal communities across Colombia, Venezuela, Honduras, and other countries now live with the constant fear that loved ones who head out to sea—whether for fishing, smuggling, or legitimate business—might never return."
+        },
+        {
+          "type": "paragraph",
+          "text": "Human-rights groups have called for an independent international investigation into the boat strikes, arguing that the lack of transparency and the high civilian-risk profile of these operations demand outside scrutiny. So far the administration has rejected those calls, insisting the actions fall squarely within U.S. national security authorities and rules of engagement."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the three men killed Monday, there will be no public trial, no chance to contest the intelligence that marked them as targets, no body recovered for families to bury. Their boat is gone, their story reduced to a few seconds of grainy video and a single paragraph in a Southern Command tweet. For the Trump administration, it’s another data point in a campaign they say is saving American lives. For critics, it’s another example of lethal force being used with too little accountability in a part of the world where the United States has long wielded overwhelming power."
+        },
+        {
+          "type": "paragraph",
+          "text": "As the death toll passes 150 and the strikes show no sign of slowing, the Caribbean boat campaign has become one of the most controversial—and least scrutinized—aspects of the current administration’s drug-war strategy. Whether it is genuinely disrupting trafficking networks or simply adding more bodies to an already violent sea remains fiercely debated. What is clear is that the operation will continue until the White House decides otherwise, and for now that decision appears nowhere in sight."
+        }
+      ]
+    }
+
+  ],
+
+  "geo-politics" : [
+    
   ],
    "politics": [
     {

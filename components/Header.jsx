@@ -19,9 +19,9 @@ const navLinks = ["CONTACT US", "ABOUT US", "WIDGETS", "TYPOGRAPHY"];
 
 const categories = [
   "Home",
-  "Culture",
-  "Opinion",
-  "Stories",
+  "World",
+  "war-conflict",
+  "geo-politics",
   "Features",
   "Categories",
   "Theme Functionality",
