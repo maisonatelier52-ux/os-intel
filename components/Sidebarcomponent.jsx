@@ -129,16 +129,28 @@ export default function SidebarComponent({ latestNews, tabData, mostPopular }) {
           </h2>
         </div>
         <div className="border border-gray-300">
-          <div className="w-full h-[170px] overflow-hidden relative">
+          {/* <div className="w-full h-[170px] overflow-hidden relative">
             <Image
-              src="https://images.unsplash.com/photo-1503792501406-2c40da09e1e2?w=400&q=80"
+              src={mostPopular[0].img}
               alt="Most Popular"
               fill
               className="object-cover grayscale"
             />
-          </div>
+          </div> */}
           {mostPopular.map((item, i) => (
             <div key={i}>
+              {
+                i === 0 && (
+                   <div className="w-full h-[170px] overflow-hidden relative">
+                    <Image
+                      src={item.img}
+                      alt="Most Popular"
+                      fill
+                      className="object-cover grayscale"
+                    />
+                  </div>
+                )
+              }
               <Link
                 href="#"
                 title={item.title}

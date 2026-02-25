@@ -24,7 +24,7 @@ const categories = [
   "Geo-politics",
   "Cybersecurity",
   "Dark-Web",
-  "Theme Functionality",
+  "Investigation",
 ];
 
 export default function Header() {
