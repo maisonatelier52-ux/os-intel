@@ -19,7 +19,7 @@
             }
         },
         {
-            "category": "politics",
+            "category": "dark-web",
             "author": {
                 "id": 2,
                 "name": "Marcus Johnson",
@@ -109,7 +109,7 @@
             }
         },
         {
-            "category": "crime",
+            "category": "cybersecurity",
             "author": {
                 "id": 7,
                 "name": "Rachel Harper",

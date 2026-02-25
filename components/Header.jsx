@@ -20,10 +20,10 @@ const navLinks = ["CONTACT US", "ABOUT US", "WIDGETS", "TYPOGRAPHY"];
 const categories = [
   "Home",
   "World",
-  "war-conflict",
-  "geo-politics",
-  "Features",
-  "Categories",
+  "War-conflict",
+  "Geo-politics",
+  "Cybersecurity",
+  "Dark-Web",
   "Theme Functionality",
 ];
 
