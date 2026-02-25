@@ -21,7 +21,7 @@ export default function SidebarComponent({ latestNews, tabData, mostPopular }) {
         <div className="bg-gray-50 border border-gray-100">
           {latestNews.map((item, i) => (
             <div key={i}>
-              <Link href="#" title={item.title} className="block px-4 py-3 group hover:bg-gray-100 transition-colors">
+              <Link href={item.href} title={item.title} className="block px-4 py-3 group hover:bg-gray-100 transition-colors">
                 <p className="text-gray-400 text-[11px] font-sans tracking-wide mb-1">{item.date}</p>
                 <h4 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
                   {item.title}
@@ -152,7 +152,7 @@ export default function SidebarComponent({ latestNews, tabData, mostPopular }) {
                 )
               }
               <Link
-                href="#"
+                href={item.href}
                 title={item.title}
                 className="flex items-start gap-3 px-4 py-7 group hover:bg-gray-50 transition-colors"
               >

@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function SmallCard({ img, date, title }) {
+ 
+  
   return (
     <Link href="#" title={title} className="flex gap-3 group items-start">
       <div className="w-[90px] h-[70px] shrink-0 overflow-hidden bg-gray-200 relative">
