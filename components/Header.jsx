@@ -451,7 +451,7 @@ export default function Header() {
           <div className="w-full md:w-[30%] flex items-center justify-center md:justify-start">
             <Link href="/" className="flex items-baseline" title="OL-Intel — Home">
               <span className="text-5xl md:text-4xl font-black text-black tracking-tight font-playfair">
-                OL
+                OS
               </span>
               <span className="text-5xl md:text-4xl font-black text-black tracking-tight italic font-playfair">
                 -

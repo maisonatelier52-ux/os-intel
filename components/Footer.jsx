@@ -88,13 +88,13 @@ export default function Footer() {
       <div className="border-t border-gray-200">
         <div className="flex flex-col mt-10 md:flex-row gap-10 md:gap-8">
 
-          {/* ── Column 1 — OL-Intel Logo + Ad + About (25%) ── */}
+          {/* ── Column 1 — OS-Intel Logo + Ad + About (25%) ── */}
           <div className="w-full md:w-[25%]">
 
             {/* Logo — matches Header style exactly */}
             <Link href="/" className="inline-flex items-baseline mb-5">
               <span className="text-3xl font-black text-black tracking-tight font-playfair">
-                OL
+                OS
               </span>
               <span className="text-3xl font-black text-black tracking-tight italic font-playfair">
                 -
@@ -109,9 +109,9 @@ export default function Footer() {
 
             
 
-            {/* About OL-Intel */}
+            {/* About OS-Intel */}
             <p className="text-gray-600 text-sm font-serif leading-relaxed">
-              OL-Intel delivers sharp, independent coverage across world affairs, conflict zones, geo-politics, cybersecurity, dark web investigations, and more. We cut through the noise to bring you news that matters — accurate, in-depth, and always timely.
+              OS-Intel delivers sharp, independent coverage across world affairs, conflict zones, geo-politics, cybersecurity, dark web investigations, and more. We cut through the noise to bring you news that matters — accurate, in-depth, and always timely.
             </p>
           </div>
 
@@ -165,7 +165,7 @@ export default function Footer() {
       {/* ── Bottom bar ── */}
       <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
         <p className="text-xs text-gray-400 font-sans">
-          © {new Date().getFullYear()} OL-Intel. All rights reserved.
+          © {new Date().getFullYear()} OS-Intel. All rights reserved.
         </p>
         <div className="flex items-center gap-5">
           {["Privacy Policy", "Terms of Use", "Contact Us"].map((link) => (
