@@ -1,15 +1,16 @@
+
 "use client";
 
 import { useState } from "react";
 import SmallCard from "./Smallcard";
 
 export default function TabbedSidebar({ tabData }) {
-  const [activeTab, setActiveTab] = useState("Popular");
+  const [activeTab, setActiveTab] = useState("Latest");
 
   return (
     <>
       <div className="flex items-center gap-6 border-b border-gray-200 mb-4">
-        {["Latest", "Popular", "Comments"].map((tab) => (
+        {["Latest", "Popular"].map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
@@ -25,7 +26,7 @@ export default function TabbedSidebar({ tabData }) {
         ))}
       </div>
       <div className="flex flex-col gap-4">
-        {tabData[activeTab].map((item, i) => (
+        {(tabData[activeTab] || []).map((item, i) => (
           <div key={i}>
             <SmallCard {...item} />
             {i < tabData[activeTab].length - 1 && (

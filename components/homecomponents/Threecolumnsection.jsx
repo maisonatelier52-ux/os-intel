@@ -1,8 +1,8 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaClock, FaPlayCircle } from "react-icons/fa";
 import NewsletterForm from "./Newsletterform";
-
 
 export default function ThreeColumnSection({
   featuredNewsCard,
@@ -26,8 +26,12 @@ export default function ThreeColumnSection({
             </h2>
           </div>
 
-          {/* Featured card with overlay */}
-          <Link href="#" title={featuredNewsCard.title} className="block relative group overflow-hidden">
+          {/* Featured card */}
+          <Link
+            href={featuredNewsCard.href}
+            title={featuredNewsCard.title}
+            className="block relative group overflow-hidden"
+          >
             <div className="relative w-full h-[180px] overflow-hidden bg-gray-200">
               <Image
                 src={featuredNewsCard.img}
@@ -46,14 +50,18 @@ export default function ThreeColumnSection({
                   <FaClock size={8} /> {featuredNewsCard.date}
                 </p>
                 <h3 className="text-white text-sm font-black font-serif leading-snug group-hover:text-gray-200 transition-colors">
-                  {featuredNewsCard.title}
+                 {featuredNewsCard.title.length > 60 ? `${featuredNewsCard.title.slice(0, 60)}...` : featuredNewsCard.title}
                 </h3>
               </div>
             </div>
           </Link>
 
           {/* Video card */}
-          <Link href="#" title={videoCard.title} className="block relative group overflow-hidden">
+          <Link
+            href={videoCard.href}
+            title={videoCard.title}
+            className="block relative group overflow-hidden"
+          >
             <div className="relative w-full h-[370px] overflow-hidden bg-gray-200">
               <Image
                 src={videoCard.img}
@@ -67,11 +75,11 @@ export default function ThreeColumnSection({
                   {videoCard.category}
                 </span>
               </div>
-              <div className="absolute inset-0 flex items-center justify-center">
+              {/* <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-12 h-12 rounded-full border-2 border-white/70 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
                   <FaPlayCircle size={28} className="text-white/90" />
                 </div>
-              </div>
+              </div> */}
               <div className="absolute bottom-0 left-0 right-0 p-3">
                 <p className="text-gray-300 text-[13px] font-sans mb-1 flex items-center gap-1">
                   <FaClock size={8} /> {videoCard.date}
@@ -92,7 +100,7 @@ export default function ThreeColumnSection({
               {moreFromNewsMag.map((item, i) => (
                 <Link
                   key={i}
-                  href="#"
+                  href={item.href}
                   title={item.title}
                   className="flex gap-3 items-start py-3 border-b border-gray-100 group last:border-b-0"
                 >
@@ -109,7 +117,7 @@ export default function ThreeColumnSection({
                       {item.date}
                     </p>
                     <h4 className="text-gray-900 text-xs font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
-                      {item.title}
+                      {item.title.length > 50 ? `${item.title.slice(0, 50)}...` : item.title}
                     </h4>
                   </div>
                 </Link>
@@ -124,7 +132,11 @@ export default function ThreeColumnSection({
             <div key={index} className={index > 0 ? "border-t border-gray-200 pt-6" : ""}>
 
               {/* Large image */}
-              <Link href="#" title={article.title} className="block relative group overflow-hidden mb-4">
+              <Link
+                href={article.href}
+                title={article.title}
+                className="block relative group overflow-hidden mb-4"
+              >
                 <div className="relative w-full h-[240px] md:h-[300px] overflow-hidden bg-gray-200">
                   <Image
                     src={article.img}
@@ -147,7 +159,7 @@ export default function ThreeColumnSection({
               </div>
 
               {/* Title */}
-              <Link href="#" title={article.title}>
+              <Link href={article.href} title={article.title}>
                 <h2 className="text-gray-900 text-2xl font-black font-serif leading-tight hover:text-red-600 transition-colors mb-3">
                   {article.title}
                 </h2>
@@ -160,14 +172,16 @@ export default function ThreeColumnSection({
 
               {/* Author */}
               <div className="flex items-center gap-2 mb-4">
-                <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 relative">
-                  <Image
-                    src={article.author.img}
-                    alt={article.author.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                {article.author.img && (
+                  <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 relative">
+                    <Image
+                      src={article.author.img}
+                      alt={article.author.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                )}
                 <span className="text-gray-400 text-sm font-sans">
                   by{" "}
                   <span className="text-gray-700 font-semibold hover:text-red-600 transition-colors cursor-pointer">
@@ -177,7 +191,7 @@ export default function ThreeColumnSection({
               </div>
 
               <Link
-                href="#"
+                href={article.href}
                 title={`Read more about ${article.title}`}
                 className="inline-block bg-red-600 hover:bg-red-700 text-white text-[11px] font-bold tracking-widest px-5 py-2 font-sans uppercase transition-colors mb-6"
               >
@@ -193,7 +207,7 @@ export default function ThreeColumnSection({
           {/* Two stacked article cards */}
           <div className="flex flex-col gap-5">
             {rightTopArticles.map((article, i) => (
-              <Link key={i} href="#" title={article.title} className="block group">
+              <Link key={i} href={article.href} title={article.title} className="block group">
                 <div className="relative w-full h-[170px] overflow-hidden bg-gray-200 mb-2">
                   <Image
                     src={article.img}
@@ -206,7 +220,7 @@ export default function ThreeColumnSection({
                   <FaClock size={8} /> {article.date}
                 </p>
                 <h4 className="text-gray-900 text-lg font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
-                  {article.title}
+                   {article.title.length > 70 ? `${article.title.slice(0, 70)}...` : article.title}
                 </h4>
               </Link>
             ))}
@@ -216,7 +230,11 @@ export default function ThreeColumnSection({
           <NewsletterForm />
 
           {/* Right Video card */}
-          <Link href="#" title={rightVideoCard.title} className="block relative group overflow-hidden">
+          <Link
+            href={rightVideoCard.href}
+            title={rightVideoCard.title}
+            className="block relative group overflow-hidden"
+          >
             <div className="relative w-full h-[370px] overflow-hidden bg-gray-200">
               <Image
                 src={rightVideoCard.img}
@@ -229,11 +247,6 @@ export default function ThreeColumnSection({
                 <span className="bg-red-600 text-white text-[12px] font-bold tracking-widest px-2 py-0.5 uppercase font-sans">
                   {rightVideoCard.category}
                 </span>
-              </div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full border-2 border-white/70 flex items-center justify-center bg-black/30 group-hover:bg-black/50 transition-colors">
-                  <FaPlayCircle size={28} className="text-white/90" />
-                </div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-3">
                 <p className="text-gray-300 text-[13px] font-sans mb-1 flex items-center gap-1">

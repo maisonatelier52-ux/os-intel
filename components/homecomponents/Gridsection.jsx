@@ -1,13 +1,18 @@
+
+
 import Image from "next/image";
 import Link from "next/link";
 import SmallCard from "./Smallcard";
 import TabbedSidebar from "./Tabbedsidebar";
 
-
 function GridColumn({ col, className = "" }) {
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
-      <Link href="#" title={col.featured.title} className="block relative group overflow-hidden">
+      <Link
+        href={col.featured.href || "#"}
+        title={col.featured.title}
+        className="block relative group overflow-hidden"
+      >
         <div className="relative w-full h-[270px] md:h-[200px] overflow-hidden bg-gray-300">
           <Image
             src={col.featured.img}
@@ -49,7 +54,7 @@ export default function GridSection({ col1, col2, col3, tabData }) {
           <GridColumn col={col3} className="mt-8 md:mt-0" />
         </div>
 
-        {/* 25% right: Tabbed sidebar (client component) */}
+        {/* 25% right: Tabbed sidebar */}
         <div className="w-full md:w-[25%] mt-8 md:mt-0">
           <TabbedSidebar tabData={tabData} />
         </div>

@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ export default function HeroSection({ featured, sidebarArticles }) {
 
         {/* Left Column: 75% — Featured Article */}
         <div className="w-full md:w-[75%]">
-          <Link href="#" title={featured.title} className="block relative group overflow-hidden">
+          <Link href={featured.href} title={featured.title} className="block relative group overflow-hidden">
             <div className="relative w-full h-[480px] md:h-[520px] overflow-hidden bg-gray-200">
               <Image
                 src={featured.img}
@@ -27,16 +28,21 @@ export default function HeroSection({ featured, sidebarArticles }) {
                   {featured.title}
                 </h1>
                 <div className="flex items-center gap-2">
-                  <div className="w-6 h-6 md:w-7 md:h-7 rounded-full shrink-0 overflow-hidden ring-1 ring-white/30 relative">
-                    <Image
-                      src={featured.author.img}
-                      alt={featured.author.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                  {featured.author.img && (
+                    <div className="w-6 h-6 md:w-7 md:h-7 rounded-full shrink-0 overflow-hidden ring-1 ring-white/30 relative">
+                      <Image
+                        src={featured.author.img}
+                        alt={featured.author.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
                   <span className="text-gray-300 text-xs md:text-sm font-playfair">
-                    by <span className="text-white font-semibold hover:text-red-400 transition-colors">{featured.author.name}</span>
+                    by{" "}
+                    <span className="text-white font-semibold hover:text-red-400 transition-colors">
+                      {featured.author.name}
+                    </span>
                   </span>
                 </div>
               </div>
@@ -50,16 +56,21 @@ export default function HeroSection({ featured, sidebarArticles }) {
             {sidebarArticles.map((article, index) => (
               <Link
                 key={index}
-                href="#"
+                href={article.href}
                 title={article.title}
                 className="block px-4 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors group last:border-b-0"
               >
-                <p className="text-gray-400 text-[11px] font-sans mb-1.5 tracking-wide">{article.date}</p>
-                <h3 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">{article.title}</h3>
+                <p className="text-gray-400 text-[11px] font-sans mb-1.5 tracking-wide">
+                  {article.date}
+                </p>
+                <h3 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
+                  {article.title.length > 65 ? `${article.title.slice(0, 65)}...` : article.title}
+                </h3>
               </Link>
             ))}
           </div>
         </div>
+
       </div>
     </main>
   );

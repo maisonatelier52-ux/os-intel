@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -35,7 +37,7 @@ export default function CarouselSection({ carouselItems }) {
   useEffect(() => {
     startAuto();
     return () => clearInterval(autoRef.current);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [maxIndex]);
 
   const goLeft = () => {
@@ -84,7 +86,7 @@ export default function CarouselSection({ carouselItems }) {
           {carouselItems.map((item, i) => (
             <Link
               key={i}
-              href="#"
+              href={item.href}
               title={item.title}
               className="group relative shrink-0 overflow-hidden w-full sm:w-1/2 lg:w-1/3"
             >
@@ -107,7 +109,7 @@ export default function CarouselSection({ carouselItems }) {
                     <span className="uppercase tracking-wide">{item.date}</span>
                   </div>
                   <h3 className="text-white text-xl font-black font-serif leading-tight group-hover:text-gray-200 transition-colors">
-                    {item.title}
+                    {item.title.length > 80 ? `${item.title.slice(0, 80)}...` : item.title}
                   </h3>
                 </div>
               </div>

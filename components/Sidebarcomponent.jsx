@@ -94,7 +94,7 @@ export default function SidebarComponent({ latestNews, tabData, mostPopular }) {
       {/* ── Tabbed Latest / Popular / Comments ── */}
       <div>
         <div className="flex items-center gap-6 border-b border-gray-200 mb-4">
-          {["Latest", "Popular", "Comments"].map((tab) => (
+          {["Latest", "Popular"].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}

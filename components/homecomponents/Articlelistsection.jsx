@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaClock } from "react-icons/fa";
@@ -12,7 +14,13 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
           {listArticles.map((article, index) => (
             <div key={index}>
               <div className="flex flex-col sm:flex-row py-6">
-                <div className="relative w-full sm:w-1/2 h-[270px] shrink-0 overflow-hidden group">
+
+                {/* Thumbnail */}
+                <Link
+                  href={article.href}
+                  title={article.title}
+                  className="relative w-full sm:w-1/2 h-[270px] shrink-0 overflow-hidden group"
+                >
                   <Image
                     src={article.img}
                     alt={article.title}
@@ -24,16 +32,18 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                       {article.category}
                     </span>
                   </div>
-                </div>
+                </Link>
+
+                {/* Content */}
                 <div className="w-full sm:w-1/2 flex flex-col justify-between pl-0 sm:pl-5 pt-4 sm:pt-0">
                   <div>
                     <div className="flex items-center gap-1.5 text-gray-400 text-[11px] font-sans mb-2">
                       <FaClock size={10} />
                       <span className="uppercase tracking-wide">{article.date}</span>
                     </div>
-                    <Link href="#" title={article.title}>
+                    <Link href={article.href} title={article.title}>
                       <h2 className="text-gray-900 text-3xl font-black font-serif leading-tight hover:text-red-600 transition-colors mb-2">
-                        {article.title}
+                       {article.title.length > 40 ? `${article.title.slice(0, 40)}...` : article.title}
                       </h2>
                     </Link>
                     <p className="text-gray-500 text-sm font-serif leading-relaxed mb-4 line-clamp-3">
@@ -42,14 +52,16 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                   </div>
                   <div className="flex flex-col gap-3">
                     <div className="flex items-center gap-2">
-                      <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 relative">
-                        <Image
-                          src={article.author.img}
-                          alt={article.author.name}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
+                      {article.author.img && (
+                        <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 relative">
+                          <Image
+                            src={article.author.img}
+                            alt={article.author.name}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                      )}
                       <span className="text-gray-500 text-sm font-sans">
                         by{" "}
                         <span className="text-gray-800 font-semibold hover:text-red-600 transition-colors cursor-pointer">
@@ -58,7 +70,7 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                       </span>
                     </div>
                     <Link
-                      href="#"
+                      href={article.href}
                       title={`Read more about ${article.title}`}
                       className="self-start bg-red-600 hover:bg-red-700 text-white text-[11px] font-bold tracking-widest px-4 py-2 font-sans uppercase transition-colors"
                     >
@@ -66,7 +78,11 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                     </Link>
                   </div>
                 </div>
+
               </div>
+              {index < listArticles.length - 1 && (
+                <div className="border-b border-gray-200" />
+              )}
             </div>
           ))}
 
@@ -75,7 +91,7 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
             <Link href="https://www.read-more-about.com" title="Advertisement" target="_blank">
               <div className="relative w-full h-[110px] overflow-hidden">
                 <Image
-                  src="/images/read-more-about-ad-banner.webp" // place your banner in /public/ads/
+                  src="/images/read-more-about-ad-banner.webp"
                   alt="Advertisement"
                   fill
                   className="object-cover"
@@ -99,7 +115,10 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
             <div className="border border-gray-300">
               <div className="w-full h-[170px] overflow-hidden relative">
                 <Image
-                  src="https://images.unsplash.com/photo-1503792501406-2c40da09e1e2?w=400&q=80"
+                  src={mostPopular[0]
+                    ? (mostPopular[0]?.img || "https://images.unsplash.com/photo-1503792501406-2c40da09e1e2?w=400&q=80")
+                    : "https://images.unsplash.com/photo-1503792501406-2c40da09e1e2?w=400&q=80"
+                  }
                   alt="Most Popular"
                   fill
                   className="object-cover grayscale"
@@ -108,7 +127,7 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
               {mostPopular.map((item, i) => (
                 <div key={i}>
                   <Link
-                    href="#"
+                    href={item.href}
                     title={item.title}
                     className="flex items-start gap-3 px-4 py-7 group hover:bg-gray-50 transition-colors"
                   >
@@ -117,7 +136,7 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                     </span>
                     <div className="flex-1 min-w-0">
                       <h4 className="text-gray-800 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors mb-1">
-                        {item.title}
+                        {item.title.length > 50 ? `${item.title.slice(0, 50)}...` : item.title}
                       </h4>
                     </div>
                   </Link>
@@ -135,7 +154,11 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
               </h2>
             </div>
             <div>
-              <Link href="#" title={latestNews.title} className="block relative group overflow-hidden">
+              <Link
+                href={latestNews.href}
+                title={latestNews.title}
+                className="block relative group overflow-hidden"
+              >
                 <div className="relative w-full h-[160px] overflow-hidden">
                   <Image
                     src={latestNews.img}
@@ -156,9 +179,9 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                   <FaClock size={10} />
                   <span className="uppercase tracking-wide">{latestNews.date}</span>
                 </div>
-                <Link href="#" title={latestNews.title}>
+                <Link href={latestNews.href} title={latestNews.title}>
                   <h3 className="text-gray-900 text-sm font-black font-serif leading-snug hover:text-red-600 transition-colors">
-                    {latestNews.title}
+                    {latestNews.title.length > 100 ? `${latestNews.title.slice(0, 100)}...` : latestNews.title}
                   </h3>
                 </Link>
               </div>

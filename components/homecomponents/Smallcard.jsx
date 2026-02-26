@@ -1,11 +1,10 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SmallCard({ img, date, title }) {
- 
-  
+export default function SmallCard({ img, date, title, href }) {
   return (
-    <Link href="#" title={title} className="flex gap-3 group items-start">
+    <Link href={href || "#"} title={title} className="flex gap-3 group items-start">
       <div className="w-[90px] h-[70px] shrink-0 overflow-hidden bg-gray-200 relative">
         <Image
           src={img}
@@ -17,7 +16,7 @@ export default function SmallCard({ img, date, title }) {
       <div className="flex-1 min-w-0">
         <p className="text-gray-400 text-[10px] font-sans tracking-wide uppercase mb-1">{date}</p>
         <h4 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
-          {title}
+        {title.length > 50 ? `${title.slice(0, 50)}...` : title}
         </h4>
       </div>
     </Link>
