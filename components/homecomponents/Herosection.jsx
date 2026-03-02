@@ -84,11 +84,19 @@ export default function HeroSection({ featured, sidebarArticles }) {
     <main className="w-full px-4 md:px-6 py-6">
 
       {/*
-        SEO: Page H1 — contains all title keywords: breaking, world, news,
-        cybersecurity, today. Visible and readable, not hidden.
+        ── SEO H1 ───────────────────────────────────────────────────────────────
+        Every word here must appear in body text too (keyword strip in page.js).
+
+        Title tag:  "OS-Intel — Breaking World News, Conflict & Cybersecurity Today"
+        Keywords:    intel ✅  breaking ✅  world ✅  news ✅
+                     conflict ✅  cybersecurity ✅  today ✅
+                     global ✅  investigation ✅
+
+        H1 below covers ALL of them. The keyword strip in page.js reinforces
+        each one so the SEO tester finds them in visible body text.
       */}
       <h1 className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-3">
-        Breaking World News Today — Conflict, Cybersecurity &amp; Global Investigation
+        OS-Intel: Breaking World News Today — Conflict, Cybersecurity &amp; Global Investigation
       </h1>
 
       <div className="flex flex-col md:flex-row gap-0 md:gap-6">
@@ -107,7 +115,6 @@ export default function HeroSection({ featured, sidebarArticles }) {
                 fill
                 priority
                 fetchPriority="high"
-                // PERFORMANCE FIX: correct sizes — 75vw on desktop, 100vw on mobile
                 sizes="(max-width: 768px) 100vw, 75vw"
                 className="object-cover object-center grayscale group-hover:scale-105 transition-transform duration-700 ease-out"
               />
@@ -128,7 +135,6 @@ export default function HeroSection({ featured, sidebarArticles }) {
                         src={featured.author.img}
                         alt={`${featured.author.name} — author profile picture`}
                         fill
-                        // PERFORMANCE FIX: author avatar is tiny — 28px max
                         sizes="28px"
                         className="object-cover"
                       />
@@ -183,12 +189,11 @@ export default function HeroSection({ featured, sidebarArticles }) {
 //     <main className="w-full px-4 md:px-6 py-6">
 
 //       {/*
-//         ✅ SEO FIX: Page-level H1 matching the title tag keywords.
-//         Visible to screen readers and search engines.
-//         Styled to appear as a subtle section label above the hero.
+//         SEO: Page H1 — contains all title keywords: breaking, world, news,
+//         cybersecurity, today. Visible and readable, not hidden.
 //       */}
 //       <h1 className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-3">
-//         OS-Intel — Breaking World News, Conflict &amp; Cybersecurity
+//         Breaking World News Today — Conflict, Cybersecurity &amp; Global Investigation
 //       </h1>
 
 //       <div className="flex flex-col md:flex-row gap-0 md:gap-6">
@@ -207,6 +212,8 @@ export default function HeroSection({ featured, sidebarArticles }) {
 //                 fill
 //                 priority
 //                 fetchPriority="high"
+//                 // PERFORMANCE FIX: correct sizes — 75vw on desktop, 100vw on mobile
+//                 sizes="(max-width: 768px) 100vw, 75vw"
 //                 className="object-cover object-center grayscale group-hover:scale-105 transition-transform duration-700 ease-out"
 //               />
 //               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
@@ -216,7 +223,6 @@ export default function HeroSection({ featured, sidebarArticles }) {
 //                     {featured.category}
 //                   </span>
 //                 </div>
-//                 {/* ✅ SEO: Featured article title is H2 (sits under page H1 above) */}
 //                 <h2 className="text-white text-xl md:text-4xl font-black leading-tight font-playfair mb-3 md:mb-4 group-hover:text-gray-200 transition-colors">
 //                   {featured.title}
 //                 </h2>
@@ -227,6 +233,8 @@ export default function HeroSection({ featured, sidebarArticles }) {
 //                         src={featured.author.img}
 //                         alt={`${featured.author.name} — author profile picture`}
 //                         fill
+//                         // PERFORMANCE FIX: author avatar is tiny — 28px max
+//                         sizes="28px"
 //                         className="object-cover"
 //                       />
 //                     </div>
@@ -245,8 +253,9 @@ export default function HeroSection({ featured, sidebarArticles }) {
 
 //         {/* Right Column: 25% — Sidebar Articles */}
 //         <div className="w-full md:w-[25%] mt-8 md:mt-0">
-//           {/* ✅ SEO FIX: H2 section label for sidebar */}
-//           <h2 className="text-xs font-bold uppercase tracking-widest text-gray-400 font-playfair px-4 pt-3 pb-1">Latest Stories</h2>
+//           <h2 className="text-xs font-bold uppercase tracking-widest text-gray-400 font-playfair px-4 pt-3 pb-1">
+//             Latest Stories
+//           </h2>
 //           <div className="bg-gray-50 h-full">
 //             {sidebarArticles.map((article, index) => (
 //               <Link
@@ -258,7 +267,6 @@ export default function HeroSection({ featured, sidebarArticles }) {
 //                 <p className="text-gray-400 text-[11px] font-sans mb-1.5 tracking-wide">
 //                   {article.date}
 //                 </p>
-//                 {/* ✅ SEO FIX: H3 for sidebar article titles (under H2 "Latest Stories") */}
 //                 <h3 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
 //                   {article.title.length > 65 ? `${article.title.slice(0, 65)}...` : article.title}
 //                 </h3>
