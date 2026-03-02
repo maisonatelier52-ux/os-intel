@@ -860,9 +860,15 @@ export default async function ArticleDetailPage({ params }) {
                 ══════════════════════════════════════════════════════════════
               */}
              {/* H1 = metaTitle — visible, short, matches title tag exactly */}
-              <h1 className="text-2xl md:text-4xl font-black font-serif text-gray-900 leading-tight mb-4">
-                {article.title}
-              </h1>
+              {/* Main title – only one h1 per page */}
+                <h1 className="text-2xl md:text-4xl font-black font-serif text-gray-900 leading-tight mb-4">
+                  {article.title}
+                  </h1>
+
+                {/* Optional visible subtitle – use h2 or just styled p */}
+                <h2 className="text-sm md:text-sm mt-3 mb-6 text-gray-800">
+                  {article.excerpt || "Detailed analysis and OSINT insights"} {/* or leave out */}
+                </h2>
             
 
               {/* Meta */}
