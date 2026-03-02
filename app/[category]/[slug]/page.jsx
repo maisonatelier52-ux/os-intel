@@ -859,14 +859,11 @@ export default async function ArticleDetailPage({ params }) {
                 Keywords in H1: ✅ geneva ✅ amid ✅ warships ✅ intel (OS-Intel)
                 ══════════════════════════════════════════════════════════════
               */}
-              <h1 className="text-2xl md:text-3xl font-black font-serif text-gray-900 leading-tight mb-2">
-                {seoH1}
-              </h1>
-
-              {/* H2 subtitle — full article title for readers */}
-              <h2 className="text-lg md:text-2xl font-bold font-serif text-gray-600 leading-snug mb-4">
+             {/* H1 = metaTitle — visible, short, matches title tag exactly */}
+              <h1 className="text-2xl md:text-4xl font-black font-serif text-gray-900 leading-tight mb-4">
                 {article.title}
-              </h2>
+              </h1>
+            
 
               {/* Meta */}
               <div className="flex items-center flex-wrap gap-3 text-gray-400 text-xs font-sans mb-5">
