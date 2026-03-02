@@ -76,13 +76,22 @@
 //   );
 // }
 
-
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HeroSection({ featured, sidebarArticles }) {
   return (
     <main className="w-full px-4 md:px-6 py-6">
+
+      {/*
+        ✅ SEO FIX: Page-level H1 matching the title tag keywords.
+        Visible to screen readers and search engines.
+        Styled to appear as a subtle section label above the hero.
+      */}
+      <h1 className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-3">
+        OS-Intel — Breaking World News, Conflict &amp; Cybersecurity
+      </h1>
+
       <div className="flex flex-col md:flex-row gap-0 md:gap-6">
 
         {/* Left Column: 75% — Featured Article */}
@@ -108,10 +117,10 @@ export default function HeroSection({ featured, sidebarArticles }) {
                     {featured.category}
                   </span>
                 </div>
-                {/* ✅ SEO FIX: H1 — only one per page, contains the featured article title */}
-                <h1 className="text-white text-xl md:text-4xl font-black leading-tight font-playfair mb-3 md:mb-4 group-hover:text-gray-200 transition-colors">
+                {/* ✅ SEO: Featured article title is H2 (sits under page H1 above) */}
+                <h2 className="text-white text-xl md:text-4xl font-black leading-tight font-playfair mb-3 md:mb-4 group-hover:text-gray-200 transition-colors">
                   {featured.title}
-                </h1>
+                </h2>
                 <div className="flex items-center gap-2">
                   {featured.author.img && (
                     <div className="w-6 h-6 md:w-7 md:h-7 rounded-full shrink-0 overflow-hidden ring-1 ring-white/30 relative">
@@ -138,7 +147,7 @@ export default function HeroSection({ featured, sidebarArticles }) {
         {/* Right Column: 25% — Sidebar Articles */}
         <div className="w-full md:w-[25%] mt-8 md:mt-0">
           {/* ✅ SEO FIX: H2 section label for sidebar */}
-          <h2 className="sr-only">Latest Stories</h2>
+          <h2 className="text-xs font-bold uppercase tracking-widest text-gray-400 font-playfair px-4 pt-3 pb-1">Latest Stories</h2>
           <div className="bg-gray-50 h-full">
             {sidebarArticles.map((article, index) => (
               <Link

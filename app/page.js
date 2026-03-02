@@ -361,7 +361,6 @@
 //   );
 // }
 
-
 import HeroSection from "@/components/homecomponents/Herosection";
 import GridSection from "@/components/homecomponents/Gridsection";
 import ArticleListSection from "@/components/homecomponents/Articlelistsection";
@@ -455,6 +454,7 @@ export async function generateMetadata() {
       title: "OS-Intel — Breaking World News, Conflict & Cybersecurity Today",
       description: `Stay ahead with OS-Intel: today's top stories in ${categories}, dark web investigations, geo-politics, and more.`,
       url: SITE_URL,
+      siteName: "OS-Intel",
       type: "website",
       images: [
         {

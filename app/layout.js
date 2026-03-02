@@ -31,7 +31,6 @@
 //     </html>
 //   );
 // }
-
 import { Playfair_Display, Macondo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
