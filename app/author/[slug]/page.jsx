@@ -865,6 +865,7 @@ export default async function AuthorPage({ params }) {
                     <Link
                       key={article.slug}
                       href={`/${categoryKey}/${article.slug}`}
+                      title={`${article.title}`}
                       className="block group"
                       aria-label={`Read article: ${article.title} — ${formattedCategory} news by ${author.name}`}
                     >
@@ -917,6 +918,7 @@ export default async function AuthorPage({ params }) {
                   <Link
                     href={`/${categoryKey}`}
                     className="inline-flex items-center gap-2 text-red-600 font-bold hover:text-red-800"
+                    title={`view ${categoryKey} page`}
                   >
                     View all {totalArticleCount} {formattedCategory} articles →
                   </Link>
