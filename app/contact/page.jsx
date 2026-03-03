@@ -1,705 +1,244 @@
-// "use client";
+// ✅ SERVER COMPONENT — no "use client" directive
+// Interactive parts (form, FAQ accordion) are extracted to separate client components:
+//   → ContactForm.jsx
+//   → FaqAccordion.jsx
 
-// import { useState } from "react";
-// import Link from "next/link";
-
-// const contactInfo = [
-//   {
-//     icon: (
-//       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-//         <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-//         <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-//       </svg>
-//     ),
-//     label: "Our Address",
-//     value: "350 Fifth Avenue, Floor 18\nNew York, NY 10118",
-//   },
-//   {
-//     icon: (
-//       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-//         <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-//       </svg>
-//     ),
-//     label: "Email Us",
-//     value: "editorial@paperzilla.com\npress@paperzilla.com",
-//   },
-//   {
-//     icon: (
-//       <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-//         <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-//       </svg>
-//     ),
-//     label: "Call Us",
-//     value: "+1 (212) 555-0192\nMon–Fri, 9am–6pm EST",
-//   },
-// ];
-
-// const departments = [
-//   { value: "editorial", label: "Editorial Team" },
-//   { value: "press", label: "Press & Media Inquiries" },
-//   { value: "advertising", label: "Advertising" },
-//   { value: "corrections", label: "Corrections & Feedback" },
-//   { value: "tips", label: "News Tips" },
-//   { value: "other", label: "General Inquiry" },
-// ];
-
-// const faqs = [
-//   {
-//     q: "How do I submit a news tip?",
-//     a: "You can submit tips via our contact form by selecting 'News Tips' as the department, or email us directly at tips@paperzilla.com. For sensitive tips, we recommend using a secure channel.",
-//   },
-//   {
-//     q: "How do I request a correction?",
-//     a: "We take accuracy seriously. If you believe something we published is incorrect, please contact us via the form and select 'Corrections & Feedback'. We aim to respond within 24 hours.",
-//   },
-//   {
-//     q: "How can I advertise on PaperZilla?",
-//     a: "For advertising inquiries, select 'Advertising' in the contact form or email advertising@paperzilla.com. Our team will get back to you with our media kit and rates.",
-//   },
-//   {
-//     q: "Can I republish or license PaperZilla content?",
-//     a: "All content on PaperZilla is copyright protected. Syndication and licensing requests should be directed to our editorial team via the contact form.",
-//   },
-// ];
-
-// export default function ContactPage() {
-//   const [formState, setFormState] = useState({
-//     name: "",
-//     email: "",
-//     department: "",
-//     subject: "",
-//     message: "",
-//   });
-//   const [submitted, setSubmitted] = useState(false);
-//   const [openFaq, setOpenFaq] = useState(null);
-
-//   const handleChange = (e) => {
-//     setFormState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setSubmitted(true);
-//   };
-
-//   return (
-//     <div className="min-h-screen bg-white">
-//       <div className="w-full px-4 md:px-6 py-8">
-
-//         {/* Breadcrumb */}
-//         <div className="flex items-center gap-1.5 text-xs font-sans text-gray-400 mb-3">
-//           <Link href="/" className="hover:text-red-600 transition-colors">Home</Link>
-//           <span>›</span>
-//           <span className="text-gray-600">Contact Us</span>
-//         </div>
-
-//         {/* Title */}
-//         <h1 className="text-3xl font-black font-serif text-gray-900 mb-8 pb-4 border-b border-gray-200">
-//           Contact Us
-//         </h1>
-
-//         {/* Top contact cards */}
-//         <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 mb-14 border border-gray-200">
-//           {contactInfo.map((item, i) => (
-//             <div
-//               key={i}
-//               className={`p-8 flex gap-5 items-start ${i < contactInfo.length - 1 ? "border-b sm:border-b-0 sm:border-r border-gray-200" : ""}`}
-//             >
-//               <div className="w-10 h-10 bg-red-600 text-white flex items-center justify-center shrink-0">
-//                 {item.icon}
-//               </div>
-//               <div>
-//                 <p className="text-gray-900 font-black font-serif text-sm mb-1">{item.label}</p>
-//                 {item.value.split("\n").map((line, j) => (
-//                   <p key={j} className="text-gray-500 text-sm font-sans">{line}</p>
-//                 ))}
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Main content: Form + Sidebar */}
-//         <div className="flex flex-col md:flex-row gap-10 items-start mb-14">
-
-//           {/* Contact Form */}
-//           <div className="w-full md:w-[65%]">
-//             <h2 className="text-2xl font-black font-serif text-gray-900 mb-2">Send Us a Message</h2>
-//             <div className="w-12 h-0.5 bg-red-600 mb-8" />
-
-//             {submitted ? (
-//               <div className="border border-gray-200 p-10 text-center">
-//                 <div className="w-14 h-14 bg-red-600 text-white flex items-center justify-center mx-auto mb-5">
-//                   <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-//                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-//                   </svg>
-//                 </div>
-//                 <h3 className="text-gray-900 text-xl font-black font-serif mb-2">Message Sent</h3>
-//                 <p className="text-gray-500 text-sm font-sans leading-relaxed max-w-sm mx-auto">
-//                   Thank you for reaching out. Our team will review your message and get back to you within 1–2 business days.
-//                 </p>
-//                 <button
-//                   onClick={() => { setSubmitted(false); setFormState({ name: "", email: "", department: "", subject: "", message: "" }); }}
-//                   className="mt-6 text-xs font-bold font-sans uppercase tracking-widest text-red-600 hover:text-red-700 transition-colors"
-//                 >
-//                   Send Another Message
-//                 </button>
-//               </div>
-//             ) : (
-//               <form onSubmit={handleSubmit} className="flex flex-col gap-5">
-//                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-//                   <div>
-//                     <label className="block text-xs font-bold font-sans uppercase tracking-widest text-gray-700 mb-2">
-//                       Full Name <span className="text-red-600">*</span>
-//                     </label>
-//                     <input
-//                       type="text"
-//                       name="name"
-//                       value={formState.name}
-//                       onChange={handleChange}
-//                       required
-//                       placeholder="John Smith"
-//                       className="w-full border border-gray-300 focus:border-gray-800 text-sm px-4 py-3 font-sans text-gray-700 placeholder-gray-400 focus:outline-none transition-colors"
-//                     />
-//                   </div>
-//                   <div>
-//                     <label className="block text-xs font-bold font-sans uppercase tracking-widest text-gray-700 mb-2">
-//                       Email Address <span className="text-red-600">*</span>
-//                     </label>
-//                     <input
-//                       type="email"
-//                       name="email"
-//                       value={formState.email}
-//                       onChange={handleChange}
-//                       required
-//                       placeholder="john@example.com"
-//                       className="w-full border border-gray-300 focus:border-gray-800 text-sm px-4 py-3 font-sans text-gray-700 placeholder-gray-400 focus:outline-none transition-colors"
-//                     />
-//                   </div>
-//                 </div>
-
-//                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-//                   <div>
-//                     <label className="block text-xs font-bold font-sans uppercase tracking-widest text-gray-700 mb-2">
-//                       Department <span className="text-red-600">*</span>
-//                     </label>
-//                     <select
-//                       name="department"
-//                       value={formState.department}
-//                       onChange={handleChange}
-//                       required
-//                       className="w-full border border-gray-300 focus:border-gray-800 text-sm px-4 py-3 font-sans text-gray-700 focus:outline-none transition-colors bg-white appearance-none"
-//                     >
-//                       <option value="">Select a department...</option>
-//                       {departments.map((d) => (
-//                         <option key={d.value} value={d.value}>{d.label}</option>
-//                       ))}
-//                     </select>
-//                   </div>
-//                   <div>
-//                     <label className="block text-xs font-bold font-sans uppercase tracking-widest text-gray-700 mb-2">
-//                       Subject <span className="text-red-600">*</span>
-//                     </label>
-//                     <input
-//                       type="text"
-//                       name="subject"
-//                       value={formState.subject}
-//                       onChange={handleChange}
-//                       required
-//                       placeholder="Brief subject line..."
-//                       className="w-full border border-gray-300 focus:border-gray-800 text-sm px-4 py-3 font-sans text-gray-700 placeholder-gray-400 focus:outline-none transition-colors"
-//                     />
-//                   </div>
-//                 </div>
-
-//                 <div>
-//                   <label className="block text-xs font-bold font-sans uppercase tracking-widest text-gray-700 mb-2">
-//                     Message <span className="text-red-600">*</span>
-//                   </label>
-//                   <textarea
-//                     name="message"
-//                     value={formState.message}
-//                     onChange={handleChange}
-//                     required
-//                     rows={6}
-//                     placeholder="Write your message here..."
-//                     className="w-full border border-gray-300 focus:border-gray-800 text-sm px-4 py-3 font-sans text-gray-700 placeholder-gray-400 focus:outline-none transition-colors resize-none"
-//                   />
-//                 </div>
-
-//                 <div className="flex items-start gap-3">
-//                   <input type="checkbox" required id="consent" className="mt-0.5 shrink-0 accent-red-600" />
-//                   <label htmlFor="consent" className="text-xs font-sans text-gray-500 leading-relaxed cursor-pointer">
-//                     I agree to the <Link href="/privacy-policy" className="text-red-600 hover:underline">Privacy Policy</Link> and consent to PaperZilla storing my submitted information.
-//                   </label>
-//                 </div>
-
-//                 <div>
-//                   <button
-//                     type="submit"
-//                     className="bg-red-600 hover:bg-red-700 text-white text-xs font-bold tracking-widest px-8 py-3.5 font-sans uppercase transition-colors"
-//                   >
-//                     Send Message
-//                   </button>
-//                 </div>
-//               </form>
-//             )}
-//           </div>
-
-//           {/* Sidebar */}
-//           <div className="w-full md:w-[35%] flex flex-col gap-8">
-
-//             {/* Office Hours */}
-//             <div className="border border-gray-200 p-6">
-//               <h3 className="text-gray-900 font-black font-serif text-lg mb-2">Office Hours</h3>
-//               <div className="w-8 h-0.5 bg-red-600 mb-5" />
-//               <div className="flex flex-col gap-3">
-//                 {[
-//                   { day: "Monday – Friday", hours: "9:00 AM – 6:00 PM EST" },
-//                   { day: "Saturday", hours: "10:00 AM – 2:00 PM EST" },
-//                   { day: "Sunday", hours: "Closed" },
-//                 ].map((row, i) => (
-//                   <div key={i} className="flex items-center justify-between text-sm border-b border-gray-100 pb-3 last:border-b-0 last:pb-0">
-//                     <span className="text-gray-700 font-sans font-semibold">{row.day}</span>
-//                     <span className="text-gray-500 font-sans">{row.hours}</span>
-//                   </div>
-//                 ))}
-//               </div>
-//             </div>
-
-//             {/* Social Links */}
-//             <div className="border border-gray-200 p-6">
-//               <h3 className="text-gray-900 font-black font-serif text-lg mb-2">Follow Us</h3>
-//               <div className="w-8 h-0.5 bg-red-600 mb-5" />
-//               <div className="flex flex-col gap-3">
-//                 {[
-//                   { name: "Twitter / X", handle: "@PaperZillaNews", color: "bg-[#1da1f2]" },
-//                   { name: "Facebook", handle: "facebook.com/PaperZilla", color: "bg-[#3b5998]" },
-//                   { name: "Instagram", handle: "@paperzilla", color: "bg-[#e1306c]" },
-//                 ].map((s, i) => (
-//                   <a key={i} href="#" className="flex items-center gap-3 group">
-//                     <div className={`w-7 h-7 ${s.color} text-white text-xs flex items-center justify-center font-bold font-sans shrink-0`}>
-//                       {s.name[0]}
-//                     </div>
-//                     <div>
-//                       <p className="text-gray-900 text-xs font-bold font-sans">{s.name}</p>
-//                       <p className="text-gray-400 text-xs font-sans group-hover:text-red-600 transition-colors">{s.handle}</p>
-//                     </div>
-//                   </a>
-//                 ))}
-//               </div>
-//             </div>
-
-//             {/* Tip Box */}
-//             <div className="bg-gray-900 p-6 relative overflow-hidden">
-//               <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "repeating-linear-gradient(45deg, #fff 0, #fff 1px, transparent 0, transparent 50%)", backgroundSize: "10px 10px" }} />
-//               <h3 className="text-white font-black font-serif text-base mb-2 relative z-10">Submit a News Tip</h3>
-//               <p className="text-gray-400 text-xs font-sans leading-relaxed mb-4 relative z-10">
-//                 Have a story we should know about? We protect our sources and take every tip seriously.
-//               </p>
-//               <a href="mailto:tips@paperzilla.com" className="inline-block bg-red-600 hover:bg-red-700 text-white text-[10px] font-bold tracking-widest px-4 py-2 font-sans uppercase transition-colors relative z-10">
-//                 Send a Tip
-//               </a>
-//             </div>
-//           </div>
-//         </div>
-
-//         {/* FAQ Section */}
-//         <div className="mb-4">
-//           <h2 className="text-2xl font-black font-serif text-gray-900 mb-2">Frequently Asked Questions</h2>
-//           <div className="w-12 h-0.5 bg-red-600 mb-8" />
-//           <div className="flex flex-col gap-0 border border-gray-200">
-//             {faqs.map((faq, i) => (
-//               <div key={i} className={i < faqs.length - 1 ? "border-b border-gray-200" : ""}>
-//                 <button
-//                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
-//                   className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition-colors"
-//                 >
-//                   <span className="text-gray-900 font-black font-serif text-base pr-4">{faq.q}</span>
-//                   <span className={`text-red-600 text-xl font-bold shrink-0 transition-transform duration-200 ${openFaq === i ? "rotate-45" : ""}`}>+</span>
-//                 </button>
-//                 <div className={`overflow-hidden transition-all duration-300 ease-in-out ${openFaq === i ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
-//                   <p className="px-6 pb-5 text-gray-500 text-sm font-sans leading-relaxed">{faq.a}</p>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// }
-
-
-"use client";
-
-import { useState } from "react";
+import ContactForm from "@/components/Contactform";
+import FaqAccordion from "@/components/Faqaccordion";
 import Link from "next/link";
 
-const CONTACT_REASONS = [
-  "News Tip or Lead",
-  "Press Enquiry",
-  "Corrections & Editorial",
-  "Advertising",
-  "Legal & Copyright",
-  "General Enquiry",
-];
 
-const FAQS = [
-  {
-    q: "How do I submit a news tip?",
-    a: "Select 'News Tip or Lead' from the subject dropdown and describe your tip in as much detail as you are comfortable sharing. For sensitive tips, we recommend using an encrypted channel such as Signal or SecureDrop. Contact details for secure submissions are available on request.",
+const SITE_URL = "https://os-intel-bice.vercel.app";
+const SITE_NAME = "OS-Intel";
+const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
+
+// ✅ metadata export now works because this is a server component
+export const metadata = {
+  title: `Contact Us — OS-Intel News & Investigation`,
+  // ✅ FIXED: under 160 chars, keyword-rich (world, conflict, cybersecurity, investigation, intel, contact)
+  description:
+    "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections & press enquiries. Independent intel, updated daily.",
+  alternates: { canonical: `${SITE_URL}/contact` },
+  openGraph: {
+    title: `Contact Us — OS-Intel News & Investigation`,
+    description:
+      "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections & press enquiries. Independent intel, updated daily.",
+    url: `${SITE_URL}/contact`,
+    siteName: SITE_NAME,
+    type: "website",
+    locale: "en_US",
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "Contact OS-Intel" }],
   },
-  {
-    q: "How does OS-Intel protect source confidentiality?",
-    a: "Source protection is a cornerstone of our journalism. We use industry-standard operational security practices and will never reveal a source's identity without their explicit consent. For highly sensitive tips, please request our secure submission details.",
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact Us — OS-Intel News & Investigation`,
+    description:
+      "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections & press enquiries. Independent intel, updated daily.",
+    images: [OG_IMAGE],
+    site: "@osintel",
+    creator: "@osintel",
   },
-  {
-    q: "How do I report an error in an article?",
-    a: "Select 'Corrections & Editorial' from the subject dropdown and provide the article URL, the specific error, and the correct information if known. We investigate all correction requests and respond within 2 business days.",
-  },
-  {
-    q: "Can I republish OS-Intel content?",
-    a: "OS-Intel content is protected by copyright. Brief quotations with proper attribution are permitted. For republication enquiries, please contact us via the form selecting 'Legal & Copyright' as your subject.",
-  },
-];
+  robots: { index: true, follow: true },
+};
 
 export default function ContactPage() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [status, setStatus] = useState(null); // null | "sending" | "success" | "error"
-  const [errors, setErrors] = useState({});
-  const [openFaq, setOpenFaq] = useState(null);
 
-  const validate = () => {
-    const e = {};
-    if (!form.name.trim()) e.name = "Name is required.";
-    if (!form.email.trim()) e.email = "Email is required.";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      e.email = "Please enter a valid email address.";
-    if (!form.subject) e.subject = "Please select a subject.";
-    if (!form.message.trim()) e.message = "Message is required.";
-    else if (form.message.trim().length < 20)
-      e.message = "Message must be at least 20 characters.";
-    return e;
+  // ✅ JSON-LD: ContactPage + BreadcrumbList
+  const contactPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": `${SITE_URL}/contact#webpage`,
+    name: "Contact OS-Intel — Independent News & Investigation",
+    description:
+      "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections, and press enquiries.",
+    url: `${SITE_URL}/contact`,
+    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    publisher: {
+      "@type": "NewsMediaOrganization",
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: OG_IMAGE },
+    },
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: undefined }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const validationErrors = validate();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-    setStatus("sending");
-    // Simulate submission — replace with your actual API call
-    await new Promise((res) => setTimeout(res, 1500));
-    setStatus("success");
-    setForm({ name: "", email: "", subject: "", message: "" });
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${SITE_URL}/contact#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Contact Us", item: `${SITE_URL}/contact` },
+    ],
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
-      {/* ── Hero ── */}
-      <section className="w-full border-b border-gray-200">
-        <div className="px-4 md:px-6 py-12 md:py-16 max-w-5xl">
+      <div className="min-h-screen bg-white">
 
-          {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-1.5 text-xs font-sans text-gray-400">
-              <li>
-                <Link href="/" title="Home" className="hover:text-red-600 transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li><span>›</span></li>
-              <li><span className="text-gray-600">Contact Us</span></li>
-            </ol>
-          </nav>
+        {/* ── Hero ── */}
+        <section className="w-full border-b border-gray-200">
+          <div className="px-4 md:px-6 py-12 md:py-16 max-w-5xl">
 
-          <p className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-4">
-            Get in Touch
-          </p>
-          <h1 className="text-4xl md:text-5xl font-black font-playfair text-gray-900 leading-tight mb-4">
-            Contact OS-Intel
-          </h1>
-          <p className="text-gray-600 text-base font-serif leading-relaxed max-w-xl">
-            Whether you have a news tip, a correction, a press enquiry, or just a question —
-            we want to hear from you. We read every message and respond to all legitimate enquiries.
-          </p>
-        </div>
-      </section>
+            {/* Breadcrumb */}
+            <nav aria-label="Breadcrumb" className="mb-8">
+              <ol className="flex items-center gap-1.5 text-xs font-sans text-gray-400">
+                <li>
+                  <Link href="/" title="Home — OS-Intel" className="hover:text-red-600 transition-colors">
+                    Home
+                  </Link>
+                </li>
+                <li><span>›</span></li>
+                <li><span className="text-gray-600">Contact Us</span></li>
+              </ol>
+            </nav>
 
-      {/* ── Two-column: form + info ── */}
-      <section className="w-full">
-        <div className="px-4 md:px-6 py-12 max-w-5xl">
-          <div className="flex flex-col md:flex-row gap-12 md:gap-16">
+            <p className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-4">
+              Get in Touch
+            </p>
 
-            {/* ── LEFT: Contact Form ── */}
-            <div className="w-full md:w-[60%]">
-              <h2 className="text-xl font-black font-playfair text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
-                Send a Message
-              </h2>
+            {/*
+              ✅ H1 COHERENCE FIX:
+              Title: "Contact Us — OS-Intel News & Investigation"
+              H1 keywords needed in body: contact, intel, world, conflict, cybersecurity, investigation
+              H1 itself contains: "Contact", "OS-Intel"
+              The two paragraphs below reinforce: world, conflict, cybersecurity, investigation, intel, contact
+            */}
+            <h1 className="text-4xl md:text-5xl font-black font-playfair text-gray-900 leading-tight mb-4">
+              Contact OS-Intel
+            </h1>
 
-              {status === "success" ? (
-                <div className="bg-gray-900 text-white p-8">
-                  <p className="text-xs font-bold uppercase tracking-widest text-red-500 font-playfair mb-3">
-                    Message Received
-                  </p>
-                  <h3 className="text-2xl font-black font-playfair mb-3">
-                    Thank you for reaching out.
-                  </h3>
-                  <p className="text-gray-300 text-sm font-serif leading-relaxed mb-6">
-                    We have received your message and will respond within 2–3 business days.
-                    If your enquiry is time-sensitive, please indicate that in a follow-up.
-                  </p>
-                  <button
-                    onClick={() => setStatus(null)}
-                    className="text-xs font-bold uppercase tracking-widest text-red-500 hover:text-red-400 transition-colors font-sans border-b border-red-500 hover:border-red-400 pb-0.5"
-                  >
-                    Send another message
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
+            {/* ✅ KEYWORD REINFORCEMENT — all title keywords appear visibly in body text */}
+            <p className="text-gray-600 text-base font-serif leading-relaxed max-w-xl mb-3">
+              Whether you have a world news tip, a conflict investigation lead, a cybersecurity
+              alert, a correction, or a press enquiry — contact us and we will respond.
+              We read every message sent to OS-Intel.
+            </p>
+            <p className="text-gray-500 text-sm font-serif leading-relaxed max-w-xl">
+              OS-Intel covers world affairs, conflict zones, cybersecurity threats, and
+              independent investigation. Your tips and intel directly support our reporting.
+            </p>
+          </div>
+        </section>
 
-                  {/* Name */}
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-xs font-bold uppercase tracking-widest text-gray-600 font-sans mb-1.5"
-                    >
-                      Full Name <span className="text-red-600">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      placeholder="Your full name"
-                      className={`w-full border ${errors.name ? "border-red-500" : "border-gray-300"} px-4 py-3 text-sm font-sans text-gray-900 placeholder-gray-400 outline-none focus:border-gray-900 transition-colors bg-white`}
-                    />
-                    {errors.name && (
-                      <p className="text-red-600 text-xs font-sans mt-1">{errors.name}</p>
-                    )}
-                  </div>
+        {/* ── Two-column: form + info ── */}
+        <section className="w-full">
+          <div className="px-4 md:px-6 py-12 max-w-5xl">
+            <div className="flex flex-col md:flex-row gap-12 md:gap-16">
 
-                  {/* Email */}
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-xs font-bold uppercase tracking-widest text-gray-600 font-sans mb-1.5"
-                    >
-                      Email Address <span className="text-red-600">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      placeholder="your@email.com"
-                      className={`w-full border ${errors.email ? "border-red-500" : "border-gray-300"} px-4 py-3 text-sm font-sans text-gray-900 placeholder-gray-400 outline-none focus:border-gray-900 transition-colors bg-white`}
-                    />
-                    {errors.email && (
-                      <p className="text-red-600 text-xs font-sans mt-1">{errors.email}</p>
-                    )}
-                  </div>
-
-                  {/* Subject */}
-                  <div>
-                    <label
-                      htmlFor="subject"
-                      className="block text-xs font-bold uppercase tracking-widest text-gray-600 font-sans mb-1.5"
-                    >
-                      Subject <span className="text-red-600">*</span>
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={form.subject}
-                      onChange={handleChange}
-                      className={`w-full border ${errors.subject ? "border-red-500" : "border-gray-300"} px-4 py-3 text-sm font-sans text-gray-900 outline-none focus:border-gray-900 transition-colors bg-white appearance-none cursor-pointer`}
-                    >
-                      <option value="">Select a subject…</option>
-                      {CONTACT_REASONS.map((r) => (
-                        <option key={r} value={r}>{r}</option>
-                      ))}
-                    </select>
-                    {errors.subject && (
-                      <p className="text-red-600 text-xs font-sans mt-1">{errors.subject}</p>
-                    )}
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="block text-xs font-bold uppercase tracking-widest text-gray-600 font-sans mb-1.5"
-                    >
-                      Message <span className="text-red-600">*</span>
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={form.message}
-                      onChange={handleChange}
-                      rows={6}
-                      placeholder="Write your message here…"
-                      className={`w-full border ${errors.message ? "border-red-500" : "border-gray-300"} px-4 py-3 text-sm font-sans text-gray-900 placeholder-gray-400 outline-none focus:border-gray-900 transition-colors bg-white resize-none`}
-                    />
-                    <div className="flex items-center justify-between mt-1">
-                      {errors.message ? (
-                        <p className="text-red-600 text-xs font-sans">{errors.message}</p>
-                      ) : (
-                        <span />
-                      )}
-                      <p className="text-xs text-gray-400 font-sans ml-auto">
-                        {form.message.length} chars
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Submit */}
-                  <div>
-                    <button
-                      type="submit"
-                      disabled={status === "sending"}
-                      className="bg-red-600 hover:bg-red-700 disabled:bg-gray-400 text-white text-xs font-bold tracking-widest px-8 py-3.5 font-sans uppercase transition-colors cursor-pointer disabled:cursor-not-allowed"
-                    >
-                      {status === "sending" ? "Sending…" : "Send Message"}
-                    </button>
-                  </div>
-
-                  {status === "error" && (
-                    <p className="text-red-600 text-sm font-sans">
-                      Something went wrong. Please try again or email us directly.
-                    </p>
-                  )}
-                </form>
-              )}
-            </div>
-
-            {/* ── RIGHT: Info ── */}
-            <div className="w-full md:w-[40%] flex flex-col gap-8">
-
-              {/* Response times */}
-              <div>
+              {/* ── LEFT: Contact Form (client component) ── */}
+              <div className="w-full md:w-[60%]">
                 <h2 className="text-xl font-black font-playfair text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
-                  Response Times
+                  Send a Message
                 </h2>
-                <div className="flex flex-col gap-0 border border-gray-200">
-                  {[
-                    { type: "News Tips", time: "24 hours" },
-                    { type: "Corrections", time: "2 business days" },
-                    { type: "Press Enquiries", time: "1 business day" },
-                    { type: "Legal", time: "3 business days" },
-                    { type: "General", time: "3–5 business days" },
-                  ].map((item, i, arr) => (
-                    <div
-                      key={item.type}
-                      className={`flex items-center justify-between px-4 py-3 ${i < arr.length - 1 ? "border-b border-gray-200" : ""}`}
-                    >
-                      <span className="text-sm font-serif text-gray-700">{item.type}</span>
-                      <span className="text-xs font-bold font-sans text-red-600 uppercase tracking-wide">
-                        {item.time}
-                      </span>
-                    </div>
-                  ))}
+                {/* ✅ Interactive form extracted to client component */}
+                <ContactForm />
+              </div>
+
+              {/* ── RIGHT: Info (static, server-rendered) ── */}
+              <div className="w-full md:w-[40%] flex flex-col gap-8">
+
+                {/* Response times */}
+                <div>
+                  <h2 className="text-xl font-black font-playfair text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
+                    Response Times
+                  </h2>
+                  <div className="flex flex-col gap-0 border border-gray-200">
+                    {[
+                      { type: "News Tips", time: "24 hours" },
+                      { type: "Corrections", time: "2 business days" },
+                      { type: "Press Enquiries", time: "1 business day" },
+                      { type: "Legal", time: "3 business days" },
+                      { type: "General", time: "3–5 business days" },
+                    ].map((item, i, arr) => (
+                      <div
+                        key={item.type}
+                        className={`flex items-center justify-between px-4 py-3 ${i < arr.length - 1 ? "border-b border-gray-200" : ""}`}
+                      >
+                        <span className="text-sm font-serif text-gray-700">{item.type}</span>
+                        <span className="text-xs font-bold font-sans text-red-600 uppercase tracking-wide">
+                          {item.time}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
 
-              {/* Secure tips */}
-              <div className="bg-gray-900 p-6">
-                <p className="text-xs font-bold uppercase tracking-widest text-red-500 font-playfair mb-2">
-                  Sensitive Tips
-                </p>
-                <h3 className="text-white font-black font-playfair text-lg mb-3">
-                  Need to contact us securely?
-                </h3>
-                <p className="text-gray-400 text-xs font-sans leading-relaxed">
-                  For sensitive tips, whistleblower disclosures, or documents requiring
-                  confidentiality, please indicate this in your message subject and we
-                  will provide secure transmission details. We support Signal and
-                  end-to-end encrypted channels.
-                </p>
-              </div>
+                {/* Secure tips */}
+                <div className="bg-gray-900 p-6">
+                  <p className="text-xs font-bold uppercase tracking-widest text-red-500 font-playfair mb-2">
+                    Sensitive Tips
+                  </p>
+                  <h3 className="text-white font-black font-playfair text-lg mb-3">
+                    Need to contact us securely?
+                  </h3>
+                  <p className="text-gray-400 text-xs font-sans leading-relaxed">
+                    For sensitive tips, whistleblower disclosures, cybersecurity intel, or
+                    documents requiring confidentiality — contact us and indicate the sensitivity
+                    and we will provide secure transmission details. We support Signal and
+                    end-to-end encrypted channels.
+                  </p>
+                </div>
 
-              {/* Social */}
-              <div>
-                <h2 className="text-base font-black font-playfair text-gray-900 mb-4 pb-2 border-b border-gray-200">
-                  Follow OS-Intel
-                </h2>
-                <div className="flex gap-3">
-                  {[
-                    { label: "Twitter / X", href: "#", bg: "bg-[#1da1f2]" },
-                    { label: "Facebook", href: "#", bg: "bg-[#3b5998]" },
-                    { label: "Instagram", href: "#", bg: "bg-[#00aadb]" },
-                  ].map((s) => (
-                    <a
-                      key={s.label}
-                      href={s.href}
-                      title={`Follow OS-Intel on ${s.label}`}
-                      className={`${s.bg} text-white text-[10px] font-bold uppercase tracking-widest px-3 py-2 font-sans hover:opacity-90 transition-opacity`}
-                    >
-                      {s.label}
-                    </a>
-                  ))}
+                {/* Social */}
+                <div>
+                  <h2 className="text-base font-black font-playfair text-gray-900 mb-4 pb-2 border-b border-gray-200">
+                    Follow OS-Intel
+                  </h2>
+                  <div className="flex gap-3">
+                    {[
+                      { label: "Twitter / X", href: "#", bg: "bg-[#1da1f2]" },
+                      { label: "Facebook", href: "#", bg: "bg-[#3b5998]" },
+                      { label: "Instagram", href: "#", bg: "bg-[#00aadb]" },
+                    ].map((s) => (
+                      <a
+                        key={s.label}
+                        href={s.href}
+                        title={`Follow OS-Intel on ${s.label}`}
+                        className={`${s.bg} text-white text-[10px] font-bold uppercase tracking-widest px-3 py-2 font-sans hover:opacity-90 transition-opacity`}
+                      >
+                        {s.label}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ── FAQ ── */}
-      <section className="w-full border-t border-gray-200 bg-gray-50">
-        <div className="px-4 md:px-6 py-12 max-w-5xl">
-          <p className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-3">
-            FAQ
-          </p>
-          <h2 className="text-2xl font-black font-playfair text-gray-900 mb-8">
-            Frequently Asked Questions
-          </h2>
-          <div className="flex flex-col gap-0 max-w-3xl">
-            {FAQS.map((faq, i) => (
-              <div key={i} className="border-b border-gray-200 last:border-b-0">
-                <button
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full text-left flex items-center justify-between py-4 gap-4 group"
-                  aria-expanded={openFaq === i}
-                >
-                  <h3 className="text-sm font-bold font-serif text-gray-900 group-hover:text-red-600 transition-colors">
-                    {faq.q}
-                  </h3>
-                  <span className="text-gray-400 text-lg font-sans shrink-0">
-                    {openFaq === i ? "−" : "+"}
-                  </span>
-                </button>
-                {openFaq === i && (
-                  <p className="text-sm text-gray-600 font-serif leading-relaxed pb-4 pr-8">
-                    {faq.a}
-                  </p>
-                )}
-              </div>
-            ))}
+        {/* ── What we cover — keyword reinforcement strip ── */}
+        <section className="w-full border-t border-gray-200">
+          <div className="px-4 md:px-6 py-8 max-w-5xl">
+            <p className="text-xs text-gray-500 font-sans leading-relaxed max-w-3xl">
+              <strong className="text-gray-700">OS-Intel</strong> is an independent news and{" "}
+              <strong className="text-gray-700">investigation</strong> platform. We cover{" "}
+              <strong className="text-gray-700">world</strong> affairs,{" "}
+              <strong className="text-gray-700">conflict</strong> zones, and{" "}
+              <strong className="text-gray-700">cybersecurity</strong> — bringing you
+              independent <strong className="text-gray-700">intel</strong> and breaking news
+              daily. Contact us to contribute or collaborate.
+            </p>
           </div>
-        </div>
-      </section>
-   
+        </section>
 
-    </div>
+        {/* ── FAQ (client component for accordion) ── */}
+        <section className="w-full border-t border-gray-200 bg-gray-50">
+          <div className="px-4 md:px-6 py-12 max-w-5xl">
+            <p className="text-xs font-bold uppercase tracking-widest text-red-600 font-playfair mb-3">
+              FAQ
+            </p>
+            <h2 className="text-2xl font-black font-playfair text-gray-900 mb-8">
+              Frequently Asked Questions
+            </h2>
+            {/* ✅ Interactive accordion extracted to client component */}
+            <FaqAccordion />
+          </div>
+        </section>
+
+      </div>
+    </>
   );
 }
