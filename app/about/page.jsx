@@ -617,31 +617,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── Bottom nav links ── */}
-      <section className="w-full">
-        <div className="px-4 md:px-6 py-10 max-w-5xl">
-          <p className="text-xs text-gray-400 font-sans mb-4 uppercase tracking-widest">
-            More from OS-Intel
-          </p>
-          <div className="flex flex-wrap gap-4">
-            {[
-              { label: "Privacy Policy", href: "/privacy-policy" },
-              { label: "Terms & Conditions", href: "/terms-and-condition" },
-              { label: "Contact Us", href: "/contact" },
-              { label: "Home", href: "/" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                title={l.label}
-                className="text-sm font-bold font-playfair text-gray-700 hover:text-red-600 transition-colors border-b border-gray-300 hover:border-red-600 pb-0.5"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+    
 
     </div>
   );

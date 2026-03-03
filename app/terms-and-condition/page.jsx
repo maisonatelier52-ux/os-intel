@@ -353,31 +353,7 @@ export default function TermsPage() {
           </p>
         </div>
       </section>
-
-      {/* ── Footer links ── */}
-      <section className="w-full border-t border-gray-800">
-        <div className="px-4 md:px-6 py-8 max-w-4xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-gray-900">
-          <p className="text-xs text-gray-500 font-sans">
-            © {new Date().getFullYear()} OS-Intel. All rights reserved.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            {[
-              { label: "Privacy Policy", href: "/privacy-policy" },
-              { label: "Contact Us", href: "/contact" },
-              { label: "About Us", href: "/about" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                title={l.label}
-                className="text-xs font-bold font-sans text-gray-400 hover:text-red-500 transition-colors uppercase tracking-widest"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+  
 
     </div>
   );

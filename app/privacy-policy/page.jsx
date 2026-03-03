@@ -443,32 +443,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
       </section>
-
-      {/* ── Footer links ── */}
-      <section className="w-full border-t border-gray-200 bg-gray-50">
-        <div className="px-4 md:px-6 py-8 max-w-4xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <p className="text-xs text-gray-400 font-sans">
-            © {new Date().getFullYear()} OS-Intel. All rights reserved.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            {[
-              { label: "Terms & Conditions", href: "/terms-and-condition" },
-              { label: "Contact Us", href: "/contact" },
-              { label: "About Us", href: "/about" },
-            ].map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                title={l.label}
-                className="text-xs font-bold font-sans text-gray-500 hover:text-red-600 transition-colors uppercase tracking-widest"
-              >
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     
     </div>
   );
 }
