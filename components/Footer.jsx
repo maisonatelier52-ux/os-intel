@@ -354,6 +354,14 @@ export default function Footer() {
           © {new Date().getFullYear()} OS-Intel. All rights reserved.
         </p>
         <div className="flex items-center gap-5">
+
+           <Link
+            href="/about"
+            title="OS-Intel About Us"
+            className="text-xs text-gray-400 hover:text-red-600 transition-colors font-sans"
+          >
+            About Us
+          </Link>
           <Link
             href="/privacy-policy"
             title="OS-Intel Privacy Policy"
@@ -369,7 +377,7 @@ export default function Footer() {
             Terms of Use
           </Link>
           <a
-            href="#"
+            href="/contact"
             title="Contact OS-Intel"
             className="text-xs text-gray-400 hover:text-red-600 transition-colors font-sans"
           >
