@@ -1,27 +1,4 @@
 
-// import Image from "next/image";
-// import Link from "next/link";
-
-// export default function SmallCard({ img, date, title, href }) {
-//   return (
-//     <Link href={href || "#"} title={title} className="flex gap-3 group items-start">
-//       <div className="w-[90px] h-[70px] shrink-0 overflow-hidden bg-gray-200 relative">
-//         <Image
-//           src={img}
-//           alt={title}
-//           fill
-//           className="object-cover grayscale group-hover:scale-105 transition-transform duration-500 ease-out"
-//         />
-//       </div>
-//       <div className="flex-1 min-w-0">
-//         <p className="text-gray-400 text-[10px] font-sans tracking-wide uppercase mb-1">{date}</p>
-//         <h4 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
-//         {title.length > 50 ? `${title.slice(0, 50)}...` : title}
-//         </h4>
-//       </div>
-//     </Link>
-//   );
-// }
 
 import Image from "next/image";
 import Link from "next/link";
@@ -49,28 +26,3 @@ export default function SmallCard({ img, date, title, href }) {
   );
 }
 
-
-// import Image from "next/image";
-// import Link from "next/link";
-
-// // ✅ SEO FIX: Changed h4 → h3 to fix heading order (h2 → h3, not h2 → h4)
-// export default function SmallCard({ img, date, title, href }) {
-//   return (
-//     <Link href={href || "#"} title={`Read: ${title}`} className="flex gap-3 group items-start">
-//       <div className="w-[90px] h-[70px] shrink-0 overflow-hidden bg-gray-200 relative">
-//         <Image
-//           src={img}
-//           alt={title}
-//           fill
-//           className="object-cover grayscale group-hover:scale-105 transition-transform duration-500 ease-out"
-//         />
-//       </div>
-//       <div className="flex-1 min-w-0">
-//         <p className="text-gray-400 text-[10px] font-sans tracking-wide uppercase mb-1">{date}</p>
-//         <h3 className="text-gray-900 text-sm font-bold font-serif leading-snug group-hover:text-red-600 transition-colors">
-//           {title.length > 50 ? `${title.slice(0, 50)}...` : title}
-//         </h3>
-//       </div>
-//     </Link>
-//   );
-// }

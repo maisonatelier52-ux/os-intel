@@ -1,7 +1,4 @@
-// ✅ SERVER COMPONENT — no "use client" directive
-// Interactive parts (form, FAQ accordion) are extracted to separate client components:
-//   → ContactForm.jsx
-//   → FaqAccordion.jsx
+
 
 import ContactForm from "@/components/Contactform";
 import FaqAccordion from "@/components/Faqaccordion";
