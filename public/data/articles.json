@@ -2337,7 +2337,7 @@
       "metaTitle": "GitLab Urgent Patches Fix Critical Security Flaws | OS-Intel",
       "metaDescription": "GitLab urgent patches fix critical security flaws including XSS and DoS vulnerabilities. Self-managed admins must update immediately.",
       "title": "GitLab Issues Critical Security Patches for XSS and DoS Flaws",
-      "excerpt": "GitLab urgent security patches fix critical vulnerabilities and flaws affecting self-managed servers, including XSS attacks and GraphQL DoS issues. OS-Intel analysis explains why admins must update immediately.",
+      "excerpt": "GitLab urgent security patches fix critical vulnerabilities and security flaws affecting self-managed servers. This OS-Intel report explains the critical GitLab issues, including XSS and GraphQL DoS attacks, and why administrators must update immediately.",
       "category": "cybersecurity",
       "newsType": "news",
       "type": "normal",
