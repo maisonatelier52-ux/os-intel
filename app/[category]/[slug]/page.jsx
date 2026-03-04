@@ -501,7 +501,7 @@ export default async function ArticleDetailPage({ params }) {
                         aria-label={`Share on ${label}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`w-9 h-9 flex items-center justify-center ${bg} ${hover} transition-all duration-200 hover:scale-110`}
+                        className={`w-9 h-9 flex items-center justify-center ${bg} ${hover} transition-all rounded duration-200 hover:scale-110`}
                       >
                         <Icon size={14} className="text-white" />
                       </a>

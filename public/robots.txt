@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow admin/system paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+Sitemap: https://os-intel-bice.vercel.app/sitemap.xml
