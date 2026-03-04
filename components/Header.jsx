@@ -258,7 +258,22 @@ const CATEGORIES = [
   ),
 ];
 
-const navLinks = ["CONTACT US", "ABOUT US", "WIDGETS", "TYPOGRAPHY"];
+// const navLinks = ["CONTACT US", "ABOUT US", "WIDGETS", "TYPOGRAPHY"];
+const navLinks = [
+  {
+    name : "ABOUT US",
+    href : "/about"
+  },
+  {
+    name : "PRIVACY-POLICY",
+    href : "/privacy-policy"
+  },
+  {
+    name : "TREMS-AND-CONDITIONS",
+    href : "/terms-and-condition"
+  }
+
+];
 
 const getCategoryHref = (cat) =>
   cat === "Home" ? "/" : `/${cat.toLowerCase()}`;
@@ -400,11 +415,11 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-6 shrink-0 ml-6">
             {navLinks.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.name}
+                href={link.href}
                 className="font-semibold text-xs tracking-widest hover:text-gray-500 transition-colors whitespace-nowrap font-playfair"
               >
-                {link}
+                {link.name}
               </a>
             ))}
           </div>
@@ -431,12 +446,12 @@ export default function Header() {
           <div className="flex flex-col items-center py-4 gap-5 border-b border-gray-200 bg-white">
             {navLinks.map((link) => (
               <a
-                key={link}
-                href="#"
+                key={link.name}
+                href={link.href}
                 className="text-gray-800 font-semibold text-sm tracking-widest hover:text-red-600 transition-colors font-playfair"
                 onClick={() => setTopMenuOpen(false)}
               >
-                {link}
+                {link.name}
               </a>
             ))}
           </div>
