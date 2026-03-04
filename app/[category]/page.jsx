@@ -594,12 +594,7 @@ export async function generateMetadata({ params }) {
     categoryDescriptions[categoryKey] ||
     `Breaking ${formattedCategory.toLowerCase()} news & expert analysis on ${SITE_NAME}. Independent intel reporting. ${totalCount} articles updated daily.`;
 
-  const ogImage =
-    articles[0]?.image
-      ? articles[0].image.startsWith("http")
-        ? articles[0].image
-        : `${SITE_URL}${articles[0].image}`
-      : SITE_LOGO;
+ const ogImage = SITE_LOGO;
 
   return {
     title: `${formattedCategory} — Breaking News & Expert Analysis | ${SITE_NAME}`,
@@ -762,12 +757,7 @@ export default async function CategoryPage({ params }) {
 
   // ── JSON-LD ───────────────────────────────────────────────────────────────
 
-  const ogImage =
-    sortedArticles[0]?.image
-      ? sortedArticles[0].image.startsWith("http")
-        ? sortedArticles[0].image
-        : `${SITE_URL}${sortedArticles[0].image}`
-      : SITE_LOGO;
+  const ogImage = SITE_LOGO;
 
   const copy = getCategoryCopy(categoryKey, categoryName);
 
