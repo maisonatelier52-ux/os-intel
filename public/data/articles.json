@@ -2574,7 +2574,7 @@
       "metaTitle": "IDEsaster: AI IDE Flaws Risk RCE & Data Theft",
       "metaDescription": "Researchers uncover 30+ security flaws in AI IDEs like Cursor and Copilot, exposing developers to prompt injection, RCE attacks, and data theft risks.",
       "title": "Researchers Discover 30+ Security Flaws in AI Coding Tools",
-      "excerpt": "Researchers report that the IDEsaster vulnerabilities expose major AI IDE security flaws that risk remote code execution (RCE) and data theft in tools like Cursor, GitHub Copilot, and Windsurf.",
+      "excerpt": "The IDEsaster report warns researchers discovered major AI IDE security flaws that create serious risk of remote code execution (RCE), sensitive data exposure, and data theft in tools like Cursor, GitHub Copilot, and Windsurf.",
       "category": "cybersecurity",
       "newsType": "news",
       "type": "normal",
