@@ -3033,10 +3033,10 @@
     {
       "id": 6,
       "slug": "fortinet-ivanti-sap-critical-patches-december-2025",
-      "metaTitle": "Fortinet Ivanti SAP Urgent Patches: Auth Bypass & RCE Risks",
-      "metaDescription": "Fortinet, Ivanti & SAP release emergency patches for CVSS 9.8+ flaws enabling auth bypass, session hijacking & remote code execution. Apply now to avoid exploitation.",
+      "metaTitle": "Fortinet, Ivanti, SAP Urgent Patches for Auth Bypass & RCE",
+      "metaDescription": "Fortinet, Ivanti and SAP release urgent patches for critical vulnerabilities including auth bypass and remote code execution risks.",
       "title": "Fortinet, Ivanti, and SAP Release Emergency Security Patches for Critical Vulnerabilities",
-      "excerpt": "Fortinet, Ivanti, and SAP issued critical December 2025 patches for high-severity vulnerabilities allowing authentication bypass, session hijacking, and remote code execution.",
+      "excerpt": "Security teams warn that Fortinet, Ivanti, and SAP release urgent patches for critical vulnerabilities including auth bypass and RCE risks, prompting emergency patching across enterprise systems.",
       "category": "cybersecurity",
       "newsType": "news",
       "type": "normal",
