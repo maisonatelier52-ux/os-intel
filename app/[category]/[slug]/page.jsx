@@ -21,7 +21,7 @@ import { SiMedium } from "react-icons/si";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const SITE_URL = "https://os-intel-bice.vercel.app";
+const SITE_URL = "https://os-intel.com";
 const SITE_NAME = "OS-Intel";
 const SITE_LOGO = `${SITE_URL}/images/os-intel-og-image.webp`;
 const TWITTER_HANDLE = "@osintel";

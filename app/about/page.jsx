@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SITE_URL = "https://os-intel-bice.vercel.app";
+const SITE_URL = "https://os-intel.com";
 const SITE_NAME = "OS-Intel";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 

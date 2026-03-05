@@ -17,7 +17,7 @@ const macondo = Macondo({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://os-intel-bice.vercel.app"),
+  metadataBase: new URL("https://os-intel.com/"),
   title: {
     default: "OS-Intel — World News, Conflict, Cybersecurity & Investigation",
     template: "%s | OS-Intel",

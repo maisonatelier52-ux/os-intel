@@ -222,30 +222,33 @@ export default function Header() {
             {/* Social icons */}
             <div className="flex items-center gap-3">
               <a
-                href="https://www.instagram.com/osintel"
+                href="https://www.instagram.com/os_intel26/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="OS-Intel on Instagram"
+                title="OS-Intel on Instagram"
                 className="text-gray-500 hover:text-red-600 transition-colors duration-200"
               >
                 <FaInstagram size={16} />
               </a>
+
               <a
-              
-                href="https://twitter.com/osintel"
+                href="https://x.com/intel_os51282"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="OS-Intel on Twitter / X"
+                title="OS-Intel on Twitter / X"
                 className="text-gray-500 hover:text-red-600 transition-colors duration-200"
               >
                 <FaXTwitter size={16} />
               </a>
+
               <a
-              
-                href="https://www.reddit.com/r/osintel"
+                href="https://www.reddit.com/user/os-intel26/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="OS-Intel on Reddit"
+                title="OS-Intel on Reddit"
                 className="text-gray-500 hover:text-red-600 transition-colors duration-200"
               >
                 <FaRedditAlien size={16} />
@@ -310,10 +313,11 @@ export default function Header() {
               {/* Social icons */}
               <div className="flex items-center gap-5">
                 <a
-                  href="https://www.instagram.com/osintel"
+                  href="https://www.instagram.com/os_intel26/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="OS-Intel on Instagram"
+                  title="OS-Intel on Instagram"
                   className="text-gray-500 hover:text-red-600 transition-colors duration-200"
                   onClick={() => setTopMenuOpen(false)}
                 >
@@ -321,10 +325,11 @@ export default function Header() {
                 </a>
                 <a
                 
-                  href="https://twitter.com/osintel"
+                  href="https://x.com/intel_os51282"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="OS-Intel on Twitter / X"
+                  title="OS-Intel on Twitter / X"
                   className="text-gray-500 hover:text-red-600 transition-colors duration-200"
                   onClick={() => setTopMenuOpen(false)}
                 >
@@ -332,10 +337,11 @@ export default function Header() {
                 </a>
                 <a
                 
-                  href="https://www.reddit.com/r/osintel"
+                  href="https://www.reddit.com/user/os-intel26/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="OS-Intel on Reddit"
+                  title="OS-Intel on Reddit"
                   className="text-gray-500 hover:text-red-600 transition-colors duration-200"
                   onClick={() => setTopMenuOpen(false)}
                 >

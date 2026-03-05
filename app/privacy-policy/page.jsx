@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const SITE_URL = "https://os-intel-bice.vercel.app";
+const SITE_URL = "https://os-intel.com";
 const SITE_NAME = "OS-Intel";
 const LAST_UPDATED = "March 1, 2026";
 const CONTACT_EMAIL = "privacy@os-intel.com";
