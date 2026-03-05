@@ -61,7 +61,7 @@ export default function HeroSection({ featured, sidebarArticles }) {
                   )}
                   <span className="text-gray-300 text-xs md:text-sm font-playfair">
                     by{" "}
-                    <span className="text-white font-semibold hover:text-red-400 transition-colors">
+                    <span className="text-white font-semibold transition-colors">
                       {featured.author.name}
                     </span>
                   </span>
