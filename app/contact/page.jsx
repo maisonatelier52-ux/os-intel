@@ -5,7 +5,7 @@ import FaqAccordion from "@/components/Faqaccordion";
 import Link from "next/link";
 
 
-const SITE_URL = "https://os-intel.com";
+const SITE_URL = "https://www.os-intel.com";
 const SITE_NAME = "OS-Intel";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 

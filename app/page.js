@@ -8,7 +8,7 @@ import CarouselSection from "@/components/homecomponents/Carouselsection";
 import articlesData from "../public/data/articles.json";
 import authorsData from "../public/data/authors.json";
 
-const SITE_URL = "https://os-intel.com";
+const SITE_URL = "https://www.os-intel.com/";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 

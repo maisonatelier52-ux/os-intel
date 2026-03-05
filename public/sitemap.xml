@@ -2,393 +2,393 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <!--  Homepage  -->
     <url>
-        <loc>https://os-intel.com/</loc>
+        <loc>https://www.os-intel.com/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
     <!--  Static Pages  -->
     <url>
-        <loc>https://os-intel.com/about/</loc>
+        <loc>https://www.os-intel.com/about/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/privacy-policy/</loc>
+        <loc>https://www.os-intel.com/privacy-policy/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/terms-and-condition/</loc>
+        <loc>https://www.os-intel.com/terms-and-condition/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
      <url>
-        <loc>https://os-intel.com/contact/</loc>
+        <loc>https://www.os-intel.com/contact/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <!-- Category Pages -->
     <url>
-        <loc>https://os-intel.com/world/</loc>
+        <loc>https://www.os-intel.com/world/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/</loc>
+        <loc>https://www.os-intel.com/war-conflict/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/</loc>
+        <loc>https://www.os-intel.com/geo-politics/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/</loc>
+        <loc>https://www.os-intel.com/dark-web/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/</loc>
+        <loc>https://www.os-intel.com/investigation/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <!-- world Articles  -->
     <url>
-        <loc>https://os-intel.com/world/indigenous-deaths-custody-australia-40-year-high-reform-calls/</loc>
+        <loc>https://www.os-intel.com/world/indigenous-deaths-custody-australia-40-year-high-reform-calls/</loc>
         <lastmod>2025-03-12T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/putin-us-ukraine-peace-plan-negotiations-deadlock/</loc>
+        <loc>https://www.os-intel.com/world/putin-us-ukraine-peace-plan-negotiations-deadlock/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/trump-tariffs-prices-going-up-trading-partners-angry/</loc>
+        <loc>https://www.os-intel.com/world/trump-tariffs-prices-going-up-trading-partners-angry/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/us-85000-visa-revocations-2025-community-safety/</loc>
+        <loc>https://www.os-intel.com/world/us-85000-visa-revocations-2025-community-safety/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/maria-corina-machado-nobel-oslo-canceled-safety/</loc>
+        <loc>https://www.os-intel.com/world/maria-corina-machado-nobel-oslo-canceled-safety/</loc>
         <lastmod>2025-12-10T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/european-leaders-arrived-kyiv-ukraine-war-anniversary/</loc>
+        <loc>https://www.os-intel.com/world/european-leaders-arrived-kyiv-ukraine-war-anniversary/</loc>
         <lastmod>2026-02-24T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/us-iran-nuclear-talks-geneva-amid-warships/</loc>
+        <loc>https://www.os-intel.com/world/us-iran-nuclear-talks-geneva-amid-warships/</loc>
         <lastmod>2026-02-26T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/cuba-speedboat-armed-exiles-infiltration/</loc>
+        <loc>https://www.os-intel.com/world/cuba-speedboat-armed-exiles-infiltration/</loc>
         <lastmod>2026-02-26T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/world/hong-kong-activist-father-jailed-article-23-security-law/</loc>
+        <loc>https://www.os-intel.com/world/hong-kong-activist-father-jailed-article-23-security-law/</loc>
         <lastmod>2026-02-26T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <!-- war-conflict Articles  -->
     <url>
-        <loc>https://os-intel.com/war-conflict/400-dead-eastern-congo-m23-push-south-kivu/</loc>
+        <loc>https://www.os-intel.com/war-conflict/400-dead-eastern-congo-m23-push-south-kivu/</loc>
         <lastmod>2025-03-15T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/us-iran-war-risk-middle-east-on-edge/</loc>
+        <loc>https://www.os-intel.com/war-conflict/us-iran-war-risk-middle-east-on-edge/</loc>
         <lastmod>2026-02-24T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/israeli-attacks-killed-7-gaza-ceasefire/</loc>
+        <loc>https://www.os-intel.com/war-conflict/israeli-attacks-killed-7-gaza-ceasefire/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/russia-launched-653-drones-51-missiles-ukraine/</loc>
+        <loc>https://www.os-intel.com/war-conflict/russia-launched-653-drones-51-missiles-ukraine/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/explosion-kills-30-sange-eastern-congo/</loc>
+        <loc>https://www.os-intel.com/war-conflict/explosion-kills-30-sange-eastern-congo/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/us-military-strike-drug-boat-caribbean/</loc>
+        <loc>https://www.os-intel.com/war-conflict/us-military-strike-drug-boat-caribbean/</loc>
         <lastmod>2026-02-24T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/us-south-korea-freedom-shield-drills-march/</loc>
+        <loc>https://www.os-intel.com/war-conflict/us-south-korea-freedom-shield-drills-march/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/un-general-assembly-ukraine-sovereignty-resolution/</loc>
+        <loc>https://www.os-intel.com/war-conflict/un-general-assembly-ukraine-sovereignty-resolution/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/war-conflict/us-concerns-ukraine-strikes-novorossiysk-oil-interests/</loc>
+        <loc>https://www.os-intel.com/war-conflict/us-concerns-ukraine-strikes-novorossiysk-oil-interests/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
       <!-- geo-politics Articles   -->
     <url>
-        <loc>https://os-intel.com/geo-politics/uk-pushes-aukus-delivery-after-us-review/</loc>
+        <loc>https://www.os-intel.com/geo-politics/uk-pushes-aukus-delivery-after-us-review/</loc>
         <lastmod>2025-03-18T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/jamie-dimon-us-stock-market-correction-risk/</loc>
+        <loc>https://www.os-intel.com/geo-politics/jamie-dimon-us-stock-market-correction-risk/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/china-wont-fill-africa-funding-gap-western-aid-shrinks/</loc>
+        <loc>https://www.os-intel.com/geo-politics/china-wont-fill-africa-funding-gap-western-aid-shrinks/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/trump-national-security-strategy-culture-war-over-geopolitics/</loc>
+        <loc>https://www.os-intel.com/geo-politics/trump-national-security-strategy-culture-war-over-geopolitics/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/iran-surprise-overtures-us-post-2025-strikes/</loc>
+        <loc>https://www.os-intel.com/geo-politics/iran-surprise-overtures-us-post-2025-strikes/</loc>
         <lastmod>2025-12-10T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/indonesia-brics-entry-dollarization-strategy/</loc>
+        <loc>https://www.os-intel.com/geo-politics/indonesia-brics-entry-dollarization-strategy/</loc>
         <lastmod>2025-12-12T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/us-accuses-china-nuclear-buildup-arms-race-fears/</loc>
+        <loc>https://www.os-intel.com/geo-politics/us-accuses-china-nuclear-buildup-arms-race-fears/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/trump-warns-putin-economic-measures-russia-ends-war/</loc>
+        <loc>https://www.os-intel.com/geo-politics/trump-warns-putin-economic-measures-russia-ends-war/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/geo-politics/exclusive-trump-orders-diplomats-oppose-data-initiatives/</loc>
+        <loc>https://www.os-intel.com/geo-politics/exclusive-trump-orders-diplomats-oppose-data-initiatives/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
       <!-- cybersecurity Articles   -->
     <url>
-        <loc>https://os-intel.com/cybersecurity/gitlab-critical-security-flaws-patches-xss-dos/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/gitlab-critical-security-flaws-patches-xss-dos/</loc>
         <lastmod>2025-12-10T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/china-linked-hackers-brickstorm-malware-govt-networks/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/china-linked-hackers-brickstorm-malware-govt-networks/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/idesaster-ai-ide-security-flaws-researchers/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/idesaster-ai-ide-security-flaws-researchers/</loc>
         <lastmod>2025-12-15T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/js-smuggler-net-support-rat-compromised-websites-securonix/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/js-smuggler-net-support-rat-compromised-websites-securonix/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/stac6565-gold-blade-ransomware-canada-sophos/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/stac6565-gold-blade-ransomware-canada-sophos/</loc>
         <lastmod>2025-12-20T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/fortinet-ivanti-sap-critical-patches-december-2025/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/fortinet-ivanti-sap-critical-patches-december-2025/</loc>
         <lastmod>2025-12-20T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/us-imposes-cyber-sanctions-russian-uae-entities-tools/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/us-imposes-cyber-sanctions-russian-uae-entities-tools/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/google-disrupts-chinese-gallium-unc2814-hacking-group-surveillance/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/google-disrupts-chinese-gallium-unc2814-hacking-group-surveillance/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/cybersecurity/hackers-claim-wynn-resorts-employee-records-ransom/</loc>
+        <loc>https://www.os-intel.com/cybersecurity/hackers-claim-wynn-resorts-employee-records-ransom/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
       <!-- dark-web Articles  -->
     <url>
-        <loc>https://os-intel.com/dark-web/pajemploi-breach-1-2-million-french-childcare-workers-data-stolen/</loc>
+        <loc>https://www.os-intel.com/dark-web/pajemploi-breach-1-2-million-french-childcare-workers-data-stolen/</loc>
         <lastmod>2025-12-17T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/florida-man-usps-calls-dark-web-xanax-arrest/</loc>
+        <loc>https://www.os-intel.com/dark-web/florida-man-usps-calls-dark-web-xanax-arrest/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/operation-raptor-270-arrested-dark-web-global-takedown/</loc>
+        <loc>https://www.os-intel.com/dark-web/operation-raptor-270-arrested-dark-web-global-takedown/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/almaviva-2-3tb-dark-web-leak-italian-rail-breach/</loc>
+        <loc>https://www.os-intel.com/dark-web/almaviva-2-3tb-dark-web-leak-italian-rail-breach/</loc>
         <lastmod>2025-12-05T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/kidflix-dark-web-child-abuse-platform-northern-ireland-arrests/</loc>
+        <loc>https://www.os-intel.com/dark-web/kidflix-dark-web-child-abuse-platform-northern-ireland-arrests/</loc>
         <lastmod>2025-12-15T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/scattered-spider-insider-access-targets-tech-giants/</loc>
+        <loc>https://www.os-intel.com/dark-web/scattered-spider-insider-access-targets-tech-giants/</loc>
         <lastmod>2025-12-18T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/breachforums-leak-james-doxxes-324k-hackers/</loc>
+        <loc>https://www.os-intel.com/dark-web/breachforums-leak-james-doxxes-324k-hackers/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/dark-web/conduent-breach-25m-safepay-ransomware/</loc>
+        <loc>https://www.os-intel.com/dark-web/conduent-breach-25m-safepay-ransomware/</loc>
         <lastmod>2026-02-26T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
       <!-- investigation Articles  -->
     <url>
-        <loc>https://os-intel.com/investigation/benghazi-suspect-zubayar-al-bakoush-arrested-14-years/</loc>
+        <loc>https://www.os-intel.com/investigation/benghazi-suspect-zubayar-al-bakoush-arrested-14-years/</loc>
         <lastmod>2026-02-25T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/lawmakers-say-ice-focus-undermines-key-investigations/</loc>
+        <loc>https://www.os-intel.com/investigation/lawmakers-say-ice-focus-undermines-key-investigations/</loc>
         <lastmod>2025-12-18T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/doj-minnesota-pandemic-fraud-feeding-our-future-250m/</loc>
+        <loc>https://www.os-intel.com/investigation/doj-minnesota-pandemic-fraud-feeding-our-future-250m/</loc>
         <lastmod>2025-12-19T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/doj-epstein-files-delay-less-than-1-percent-released/</loc>
+        <loc>https://www.os-intel.com/investigation/doj-epstein-files-delay-less-than-1-percent-released/</loc>
         <lastmod>2025-12-19T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/democrats-raise-alarm-ice-shift-child-drug-probes/</loc>
+        <loc>https://www.os-intel.com/investigation/democrats-raise-alarm-ice-shift-child-drug-probes/</loc>
         <lastmod>2025-12-20T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/ban-wrap-bill-targets-ice-restraint/</loc>
+        <loc>https://www.os-intel.com/investigation/ban-wrap-bill-targets-ice-restraint/</loc>
         <lastmod>2026-02-26T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/violent-felon-freed-doj-chaos-minnesota/</loc>
+        <loc>https://www.os-intel.com/investigation/violent-felon-freed-doj-chaos-minnesota/</loc>
         <lastmod>2026-02-20T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/ice-criminal-cases-agents-contractors-ap-review-2026/</loc>
+        <loc>https://www.os-intel.com/investigation/ice-criminal-cases-agents-contractors-ap-review-2026/</loc>
         <lastmod>2026-02-11T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/investigation/illegal-mansions-sierra-leone-protected-park/</loc>
+        <loc>https://www.os-intel.com/investigation/illegal-mansions-sierra-leone-protected-park/</loc>
         <lastmod>2026-02-18T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
@@ -396,49 +396,37 @@
 
      <!--  Author Pages  -->
     <url>
-        <loc>https://os-intel.com/author/sarah-mitchell/</loc>
+        <loc>https://www.os-intel.com/author/claire-donovan/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/author/marcus-johnson/</loc>
+        <loc>https://www.os-intel.com/author/james-calloway/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/author/jennifer-chen/</loc>
+        <loc>https://www.os-intel.com/author/diana-reeves/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/author/david-rodriguez/</loc>
+        <loc>https://www.os-intel.com/author/nathan-cole/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/author/emily-patterson/</loc>
+        <loc>https://www.os-intel.com/author/monica-voss/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://os-intel.com/author/brandon-williams/</loc>
-        <lastmod>2026-03-04T11:00:28.447Z</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://os-intel.com/author/rachel-harper/</loc>
-        <lastmod>2026-03-04T11:00:28.447Z</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://os-intel.com/author/thomas-anderson/</loc>
+        <loc>https://www.os-intel.com/author/derek-holloway/</loc>
         <lastmod>2026-03-04T11:00:28.447Z</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>

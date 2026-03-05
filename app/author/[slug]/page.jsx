@@ -11,7 +11,7 @@ import { FaXTwitter, FaReddit, FaQuora } from "react-icons/fa6";
 import { SiMedium } from "react-icons/si";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
-const SITE_URL = "https://os-intel.com";
+const SITE_URL = "https://www.os-intel.com";
 const SITE_NAME = "OL-Intel";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────

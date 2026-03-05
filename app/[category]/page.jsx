@@ -9,7 +9,7 @@ import authorData from "../../public/data/authors.json";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const SITE_URL = "https://os-intel.com";
+const SITE_URL = "https://www.os-intel.com";
 const SITE_NAME = "OS-Intel";
 const SITE_LOGO = `${SITE_URL}/images/os-intel-og-image.webp`;
 const TWITTER_HANDLE = "@osintel";
