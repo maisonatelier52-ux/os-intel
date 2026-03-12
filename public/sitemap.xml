@@ -296,6 +296,12 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+     <url>
+        <loc>https://www.os-intel.com/cybersecurity/stryker-cyberattack-medical-device-company/</loc>
+        <lastmod>2026-03-12T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
       <!-- dark-web Articles  -->
     <url>
         <loc>https://www.os-intel.com/dark-web/pajemploi-breach-1-2-million-french-childcare-workers-data-stolen/</loc>
