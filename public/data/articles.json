@@ -3512,6 +3512,98 @@
           "text": "In the meantime, the huge, luxurious casino keeps running perfectly at its best locations. The investigation is still going on behind the scenes, though, and the larger cybersecurity community will be watching to see if any new information comes to light about how this happened or what other businesses can do to avoid making the news."
         }
       ]
+    },
+    {
+      "id": 10,
+      "slug": "stryker-cyberattack-medical-device-company",
+      "metaTitle": "Stryker Hit by Cyberattack as Iranian-Linked Hackers Claim Responsibility",
+      "metaDescription": "Medical device giant Stryker said a cyberattack disrupted its global networks, with reports linking the incident to an Iranian hacking group.",
+      "title": "Stryker Hit by Cyberattack as Iranian-Linked Hackers Claim Responsibility",
+      "excerpt": "Stryker, a major US medical equipment company, revealed a cyberattack compromised its worldwide networks, with suspected Iranian-linked group Handala claiming responsibility amid escalating tensions.",
+      "category": "cybersecurity",
+      "newsType": "news",
+      "type": "normal",
+      "date": "12/03/2026",
+      "readTime": "8 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/stryker-cyberattack-medical-device-image.webp",
+      "imageAlt": "Stryker confirmed a cyberattack disrupted its global networks and Microsoft systems across multiple facilities.",
+      "keywords": [
+        "Stryker cyberattack",
+        "healthcare cybersecurity",
+        "Iranian hacker group Handala",
+        "medical device company hack",
+        "cyber warfare news",
+        "global cybersecurity threat",
+        "hospital supply chain disruption",
+        "corporate cyberattack"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Stryker, a major player in the US medical equipment industry, revealed on Wednesday that a cyberattack had compromised its worldwide networks, disrupting operations across multiple nations. The Michigan-based company confirmed the hack targeted its Microsoft systems, leading to the temporary shutdown of certain digital infrastructure components."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stryker claimed in a statement that there was no evidence of ransomware or malware, and that the problem looked to be under control, albeit the entire extent of the disruption is unknown. The company also stated in a filing with the United States Securities and Exchange Commission that it does not yet know when all systems would be fully restored."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stryker, based in Portage, Michigan, produces a diverse array of medical products. These include prosthetic joints, surgical instruments, and hospital beds. In 2025, the company generated more than $25 billion in revenue. The company's global workforce numbered approximately 56,000 individuals."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Stryker cyberattack underscores how closely global political frictions and the digital world are now linked. A significant healthcare equipment manufacturer being targeted isn't just a problem for the company itself; it can also throw a wrench into the supply chains of hospitals and medical providers that depend on its offerings."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to reports, the attack may have been carried out by Handala, an Iranian hacking outfit. Multiple media sites reported that the group's logo appeared on internal corporate login pages during the event."
+        },
+        {
+          "type": "paragraph",
+          "text": "Handala also reportedly claimed responsibility for the attack online, characterizing it as reprisal for a deadly strike on a school in Minab, Iran, as well as cyber operations against Tehran-aligned groups. The group has previously claimed cyber attacks against Israeli organizations and regional infrastructure."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to security experts, targeting a healthcare technology company in the United States signals a significant escalation. Alexander Leslie, a senior adviser at threat intelligence firm Recorded Future, stated that targeting a large medical manufacturing has \"outsized strategic and political ripple effects.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "According to sources familiar with the situation, the attack was a \"wiper\" cyberattack, which is a destructive type of cyber incursion in which attackers delete data from targeted systems rather than demanding a ransom. In this example, thousands of employee accounts were apparently compromised, and data on business equipment was erased."
+        },
+        {
+          "type": "paragraph",
+          "text": "Employees at many sites, including key operations in Cork, Ireland, lost access to internal systems and communication tools. The Handala logo was also apparently used to deface company login pages. As a result of the attack, Stryker temporarily turned off systems at some facilities while working to restore operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Employees have been warned not to connect devices to the network or utilize services like Microsoft Outlook or Microsoft Teams until the systems are stable. Employees have instead shared updates using messaging platforms such as WhatsApp while the corporation works to repair its systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "The breach threw a wrench into operations, effectively shutting down the technology vital to manufacturing Stryker's medical products. Some manufacturing machines in Ireland remain operational, but the long-term impact on production is unknown."
+        },
+        {
+          "type": "paragraph",
+          "text": "The company stated that it has undertaken business continuity plans to keep operations functioning and continue to serve hospitals and healthcare providers that rely on its equipment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stryker emphasized that the safety of its personnel and facilities remains intact. The company's teams are actively collaborating with cybersecurity specialists and law enforcement to probe the situation and get things back up and running. The National Cyber Security Centre in Ireland has also been informed and is assisting with the response efforts."
+        },
+        {
+          "type": "paragraph",
+          "text": "The event highlights just how significant cyber warfare has become in today's world. Over the last decade, Iran has substantially strengthened its cyber capabilities. They've built up units within the Islamic Revolutionary Guard Corps and intelligence agencies, and they've also teamed up with proxy hacker groups."
+        },
+        {
+          "type": "paragraph",
+          "text": "Iranian cyber operations have evolved, moving from simple espionage to more disruptive attacks. The 2012 Shamoon malware attack on Saudi Aramco and other actions targeting US banks are prime examples. The Stryker attack comes amid rising tensions following the United States and Israel's military strikes on Iran earlier this year."
+        },
+        {
+          "type": "paragraph",
+          "text": "Security experts observe a growing trend: cyber operations are now frequently employed as a form of retaliation in international conflicts. This method allows countries to target economic infrastructure and businesses, avoiding the need for traditional military action."
+        }
+      ]
     }
   ],
 
