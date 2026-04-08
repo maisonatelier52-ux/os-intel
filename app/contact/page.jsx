@@ -186,9 +186,9 @@ export default function ContactPage() {
                   </h2>
                   <div className="flex gap-3">
                     {[
-                      { label: "Twitter / X", href: "#", bg: "bg-[#1da1f2]" },
-                      { label: "Facebook", href: "#", bg: "bg-[#3b5998]" },
-                      { label: "Instagram", href: "#", bg: "bg-[#00aadb]" },
+                      { label: "Twitter / X", href: "https://x.com/intel_os51282", bg: "bg-[#1da1f2]" },
+                      { label: "Reddit", href: "https://www.reddit.com/user/os-intel26/", bg: "bg-[#3b5998]" },
+                      { label: "Instagram", href: "https://www.instagram.com/os_intel26/", bg: "bg-[#00aadb]" },
                     ].map((s) => (
                       <a
                         key={s.label}

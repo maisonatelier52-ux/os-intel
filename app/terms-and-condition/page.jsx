@@ -36,7 +36,7 @@ const SECTIONS = [
   {
     id: "acceptance",
     title: "1. Acceptance of Terms",
-    content: `By accessing or using the OS-Intel website at os-intel-bice.vercel.app (the "Site"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to all the terms and conditions of this agreement, you may not access or use the Site. OS-Intel reserves the right to update or modify these Terms at any time without prior notice. Your continued use of the Site following any changes constitutes your acceptance of those changes. These Terms were last updated on ${LAST_UPDATED}.`,
+    content: `By accessing or using the OS-Intel website at os-intel.com, you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to all the terms and conditions of this agreement, you may not access or use the Site. OS-Intel reserves the right to update or modify these Terms at any time without prior notice. Your continued use of the Site following any changes constitutes your acceptance of those changes. These Terms were last updated on ${LAST_UPDATED}.`,
   },
   {
     id: "use-of-site",
@@ -86,7 +86,18 @@ const SECTIONS = [
   {
     id: "contact",
     title: "11. Contact",
-    content: `If you have any questions regarding these Terms and Conditions, please contact us at: ${CONTACT_EMAIL}. We will endeavour to respond to all legal enquiries within 10 business days.`,
+    content: (
+      <>
+        If you have any questions regarding these Terms and Conditions, please contact us at:{" "}
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          className="text-red-600 underline hover:text-red-700"
+        >
+          {CONTACT_EMAIL}
+        </a>
+        . We will endeavour to respond to all legal enquiries within 10 business days.
+      </>
+    ),
   },
 ];
 

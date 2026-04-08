@@ -103,7 +103,21 @@ const SECTIONS = [
     id: "contact",
     title: "9. Contact Us",
     content: [
-      { subtitle: null, text: `If you have any questions about this Privacy Policy or our data practices, please contact us at: ${CONTACT_EMAIL}. We aim to respond to all privacy-related enquiries within 5 business days.` },
+     {
+      subtitle: null,
+      text: (
+        <>
+          If you have any questions about this Privacy Policy or our data practices, please contact us at:{" "}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="text-red-600 underline hover:text-red-700"
+          >
+            {CONTACT_EMAIL}
+          </a>
+          . We aim to respond to all privacy-related enquiries within 5 business days.
+        </>
+      ),
+    }
     ],
   },
 ];
@@ -168,7 +182,7 @@ export default function PrivacyPolicyPage() {
             <p className="text-gray-600 text-sm font-serif leading-relaxed mt-4 max-w-2xl">
               OS-Intel is committed to protecting your privacy. This Privacy Policy explains how we
               collect, use, disclose, and safeguard your information when you visit{" "}
-              <strong className="text-gray-800">os-intel-bice.vercel.app</strong>. Please read
+              <strong className="text-gray-800">os-intel.com</strong>. Please read
               this policy carefully. If you disagree with its terms, please discontinue use of the site.
             </p>
           </div>

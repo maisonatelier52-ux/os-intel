@@ -30,7 +30,7 @@ export default function FaqAccordion() {
         <div key={i} className="border-b border-gray-200 last:border-b-0">
           <button
             onClick={() => setOpenFaq(openFaq === i ? null : i)}
-            className="w-full text-left flex items-center justify-between py-4 gap-4 group"
+            className="w-full text-left flex items-center justify-between py-4 gap-4 group cursor-pointer"
             aria-expanded={openFaq === i}
           >
             <h3 className="text-sm font-bold font-serif text-gray-900 group-hover:text-red-600 transition-colors">
