@@ -8,6 +8,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiChevronUp } from "react-icons/fi";
 import articlesData from "../public/data/articles.json";
+import { FaInstagram, FaRedditAlien } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { SiMedium } from "react-icons/si";
+import { BsSubstack } from "react-icons/bs";
 
 function parseDate(str) {
   const [d, m, y] = str.split("/");
@@ -102,6 +106,60 @@ export default function Footer() {
               OS-Intel delivers sharp, independent coverage of breaking world news, conflict zones,
               cybersecurity, geo-politics, dark web investigations, and more — updated daily.
             </p>
+              {/* Social icons */}
+              <div className="flex items-center gap-5 mt-4">
+                <a
+                  href="https://www.instagram.com/os_intel26/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="OS-Intel on Instagram"
+                  title="OS-Intel on Instagram"
+                  className="text-gray-700 hover:text-red-600 transition-colors duration-200"
+                  >
+                  <FaInstagram size={18} />
+                  </a>
+                  <a
+                  href="https://x.com/intel_os51282"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="OS-Intel on Twitter / X"
+                  title="OS-Intel on Twitter / X"
+                  className="text-gray-700 hover:text-red-600 transition-colors duration-200"
+                  >
+                    <FaXTwitter size={18} />
+                    </a>
+                    <a
+                    href="https://www.reddit.com/user/os-intel_26/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="OS-Intel on Reddit"
+                    title="OS-Intel on Reddit"
+                    className="text-gray-700 hover:text-red-600 transition-colors duration-200"
+                    >
+                      <FaRedditAlien size={18} />
+                      </a>
+
+               <a
+                  href="https://medium.com/@osintel619"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="OS-Intel on Medium"
+                  title="OS-Intel on Medium"
+                  className="text-gray-700 hover:text-red-600 transition-colors duration-200"
+                  >
+                  <SiMedium size={18} />
+                  </a>     
+                   <a
+                  href="https://substack.com/@osintel619"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="OS-Intel on Substack"
+                  title="OS-Intel on Substack"
+                  className="text-gray-700 hover:text-red-600 transition-colors duration-200"
+                  >
+                  <BsSubstack size={18} />
+                  </a>   
+                      </div>
           </div>
 
           {/* Column 2 — Featured (25%) */}

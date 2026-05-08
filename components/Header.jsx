@@ -244,7 +244,7 @@ export default function Header() {
               </a>
 
               <a
-                href="https://www.reddit.com/user/os-intel26/"
+                href="https://www.reddit.com/user/os-intel_26/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="OS-Intel on Reddit"
