@@ -2469,11 +2469,11 @@
     },
     {
       "id": 13,
-      "slug": "trump-rejects-iran-counteroffer-war-fears",
-      "metaTitle": "Trump Rejects Iran’s Counteroffer, Raising War Fears",
+      "slug": "trump-dismisses-iran-counteroffer-full-scale-war-fears",
+      "metaTitle": "Trump Rejects Iran Counteroffer, Raising Full-Scale War Fears | OS-Intel",
       "title": "Trump Dismisses Iran’s Counteroffer as ‘Totally Unacceptable,’ Raising Fears of a Return to Full-Scale War",
       "metaDescription": "President Trump rejects Iran’s counteroffer as 'totally unacceptable,' ending truce hopes and raising fears of a return to full-scale war in the Persian Gulf.",
-      "excerpt": "President Donald Trump publicly rejected Tehran’s formal response to Washington’s latest ceasefire proposal, declaring the Iranian counteroffer “TOTALLY UNACCEPTABLE!” — a three-word verdict that has all but extinguished immediate hopes for a truce.",
+      "excerpt": "President Donald Trump publicly rejected Tehran’s formal response to Washington’s latest ceasefire proposal, dismissing the Iranian counteroffer as “TOTALLY UNACCEPTABLE!” — a three-word verdict raising fears of a return to full-scale war. OS-Intel analysis indicates diplomatic negotiations are rapidly collapsing.",
       "category": "war-conflict",
       "newsType": "news",
       "type": "normal",
@@ -2483,7 +2483,7 @@
       "image": "/images/news/trump-rejects-iran-counteroffer-war-fears-image.webp",
       "imageAlt": "President Trump posting on social media rejecting Iran's counteroffer as diplomatic efforts collapse in the Persian Gulf.",
       "keywords": [
-        "Trump",
+         "Trump",
         "Iran",
         "counteroffer",
         "ceasefire",
@@ -2492,7 +2492,10 @@
         "Mojtaba Khamenei",
         "drone attacks",
         "Persian Gulf",
-        "war"
+        "war",
+        "full-scale war",
+        "OS-Intel",
+        "Trump rejects Iran counteroffer"
       ],
       "content": [
         {
