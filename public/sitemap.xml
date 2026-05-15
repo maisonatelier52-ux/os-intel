@@ -301,6 +301,12 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://www.os-intel.com/geo-politics/trump-xi-beijing-summit-trade-iran/</loc>
+        <lastmod>2026-05-15T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
       <!-- cybersecurity Articles   -->
     <url>
         <loc>https://www.os-intel.com/cybersecurity/gitlab-critical-security-flaws-patches-xss-dos/</loc>
