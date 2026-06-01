@@ -97,10 +97,9 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
 
           {/* Ad Banner */}
           <div className="mt-6">
-            <Link href="https://www.read-more-about.com" title="Visit Read More About — News & Articles" target="_blank">
               <div className="relative w-full h-[110px] overflow-hidden">
                 <Image
-                  src="/images/read-more-about-ad-banner.webp"
+                  src="/images/os-intel-ads-image.webp"
                   alt="Read More About — News and Articles Advertisement"
                   fill
                   // PERFORMANCE FIX: ad banner is 75% width on desktop
@@ -109,7 +108,6 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                   priority
                 />
               </div>
-            </Link>
           </div>
         </div>
 

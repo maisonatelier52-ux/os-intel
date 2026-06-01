@@ -375,13 +375,13 @@ export default function Header() {
           {/* Ad Banner */}
           <div className="w-full md:w-[70%] flex items-center justify-center">
             <Link
-              href="https://www.read-more-about.com/"
-              title="Visit Read More About"
+              href="https://os-intel.com"
+              title="Visit os-intel"
               target="_blank"
               className="block w-full md:max-w-2xl h-[70px] md:h-[90px] overflow-hidden"
             >
               <Image
-                src="/images/read-more-about-ad-banner.webp"
+                src="/images/os-intel-ads-image.webp"
                 alt="Advertisement 728x90"
                 width={1200}
                 height={90}
