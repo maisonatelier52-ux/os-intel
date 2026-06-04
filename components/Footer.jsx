@@ -206,6 +206,7 @@ export default function Footer() {
                   <Link
                     href={item.href}
                     className="flex items-center justify-between py-2.5 text-gray-700 text-sm font-serif hover:text-red-600 transition-colors group"
+                    title={item.name}
                   >
                     <span>{item.name}</span>
                     <span className="text-gray-300 group-hover:text-red-400 transition-colors text-xs">
