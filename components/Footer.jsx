@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
 
           {/* Column 3 — Popular (25%) */}
-          <div className="w-full md:w-[25%]">
+          {/* <div className="w-full md:w-[25%]">
             <h2 className="text-xl font-black font-serif text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
               Popular
             </h2>
@@ -184,6 +184,37 @@ export default function Footer() {
                 <ArticleCard key={`${article.category}-${article.slug}`} article={article} />
               ))}
             </div>
+          </div> */}
+
+          {/* Column 3 — Quick Links (25%) */}
+          <div className="w-full md:w-[25%]">
+            <h2 className="text-xl font-black font-serif text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
+              Quick Links
+            </h2>
+
+            <ul className="flex flex-col divide-y divide-gray-100">
+              {[
+                { name: "Editorial Policy", href: "/editorial-policy" },
+                { name: "Corrections Policy", href: "/corrections-policy" },
+                { name: "Source Methodology", href: "/source-methodology" },
+                { name: "Ownership & Funding", href: "/ownership-funding" },
+                { name: "Advertising Policy", href: "/advertising-policy" },
+                { name: "Right of Reply", href: "/right-of-reply" },
+                { name: "Legal", href: "/legal" }
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="flex items-center justify-between py-2.5 text-gray-700 text-sm font-serif hover:text-red-600 transition-colors group"
+                  >
+                    <span>{item.name}</span>
+                    <span className="text-gray-300 group-hover:text-red-400 transition-colors text-xs">
+                      ›
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Column 4 — Categories (25%) */}
