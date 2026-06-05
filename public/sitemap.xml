@@ -32,6 +32,48 @@
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
+    <url>
+        <loc>https://www.os-intel.com/editorial-policy/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.os-intel.com/corrections-policy/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+     <url>
+        <loc>https://www.os-intel.com/source-methodology/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+     <url>
+        <loc>https://www.os-intel.com/ownership-funding/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.os-intel.com/advertising-policy/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.os-intel.com/right-of-reply/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://www.os-intel.com/legal/</loc>
+        <lastmod>2026-06-04T11:00:28.447Z</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
     <!-- Category Pages -->
     <url>
         <loc>https://www.os-intel.com/world/</loc>
