@@ -1,4 +1,3 @@
-
 import { Playfair_Display, Macondo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -28,6 +27,9 @@ export const metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
+  },
+  verification: {
+    google: "jBh2aM8ENYqS6CkgZ2qv7rV-L-lezhxUAJ7NzwlKPgg",
   },
 };
 
