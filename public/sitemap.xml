@@ -574,6 +574,12 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+     <url>
+        <loc>https://www.os-intel.com/war-conflict/russia-jet-powered-drones-ukraine-kyiv-attacks-2026/</loc>
+        <lastmod>2026-09-01T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
 
      <!--  Author Pages  -->
     <url>
