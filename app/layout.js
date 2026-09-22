@@ -29,9 +29,10 @@ export const metadata = {
     apple: "/favicon.ico",
   },
   verification: {
-    google: "jBh2aM8ENYqS6CkgZ2qv7rV-L-lezhxUAJ7NzwlKPgg",
+    google: "nMZIBMZN3tB4g-IHhaIA0giORifxUbQ0QWuxms3i1DQ",
   },
 };
+
 
 export default function RootLayout({ children }) {
   return (
