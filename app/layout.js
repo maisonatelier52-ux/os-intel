@@ -29,7 +29,7 @@ export const metadata = {
     apple: "/favicon.ico",
   },
   verification: {
-    google: "nMZIBMZN3tB4g-IHhaIA0giORifxUbQ0QWuxms3i1DQ",
+    google: "iyfI6ff9c-s4EodHxN1TMmh9wzp8wDJbVGUUS0yo3Zw",
   },
 };
 
