@@ -598,6 +598,19 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://www.os-intel.com/world/france-protests-violence-macron-government-crisis-october-2026/</loc>
+        <lastmod>2026-10-19T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://www.os-intel.com/geo-politics/us-officials-visit-taybeh-west-bank-settler-attacks/</loc>
+        <lastmod>2026-10-19T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
 
      <!--  Author Pages  -->
     <url>
