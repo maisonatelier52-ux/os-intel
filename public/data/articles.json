@@ -7265,6 +7265,114 @@
           "text": "The trial is a crucial test for Huawei's reputation and its global business strategy. A negative result could result in further restrictions on the company, as well as creating obstacles to international expansion. The case is an effort to enforce sanctions laws and protect intellectual property rights in the U.S. But critics say the lawsuits against the big foreign tech companies could only ratchet up the geopolitical rivalry. Ultimately it will be a question of what evidence the court sees and whether a jury buys the government claim. Whatever the outcome, the case is set to be a landmark moment in the US-China tussle over technology, security and economic influence."
         }
       ]
+    },
+    {
+      "id": 14,
+      "slug": "us-agencies-warn-cyberattacks-industrial-refrigeration-systems-2026",
+      "metaTitle": "US Agencies Warn of Refrigeration System Cyberattacks",
+      "metaDescription": "The FBI, CISA and other agencies warn hackers are targeting internet-connected refrigeration controllers, risking spoiled stock, damage and fire hazards.",
+      "title": "US Agencies Warn of Refrigeration System Cyberattacks",
+      "excerpt": "The FBI, CISA and other agencies warn hackers are targeting internet-connected refrigeration controllers, risking spoiled stock, damage and fire hazards.",
+      "category": "cybersecurity",
+      "newsType": "news",
+      "type": "normal",
+      "date": "06/11/2026",
+      "readTime": "5 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/us-agencies-warn-cyberattacks-industrial-refrigeration-systems-2026-image.webp",
+      "imageAlt": "Worker inspects commercial supermarket refrigeration units amid warnings about cyberattacks on connected cooling systems",
+      "keywords": [
+        "Refrigeration cyberattacks",
+        "FBI",
+        "CISA",
+        "Critical Infrastructure",
+        "Operational Technology",
+        "Cold Chain Security",
+        "Cybersecurity Advisory",
+        "Industrial Control Systems"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Federal agencies in the United States are warning that hackers are actively going after industrial refrigeration systems, a threat that touches food storage, grocery retail and other industries that can't afford to lose their cooling. The alert was released on November 5."
+        },
+        {
+          "type": "paragraph",
+          "text": "It came as a joint advisory from the FBI, the Cybersecurity and Infrastructure Security Agency (CISA) and the Departments of Health and Human Services, Agriculture and Transportation. They said malicious actors are exploiting weaknesses in internet-connected electronic temperature controllers and commercial refrigeration management systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "The advisory follows several reported incidents involving compromised refrigeration equipment in both the United States and Europe. Officials say any organization that relies on these systems should treat cybersecurity as an immediate operational priority, not something to handle later."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to the agencies, attackers who break in could change temperature settings and interfere with how the equipment runs. The possible results include spoiled food, heavy inventory losses, damaged equipment and even fire hazards."
+        },
+        {
+          "type": "heading",
+          "text": "Why connected cooling systems are a target"
+        },
+        {
+          "type": "paragraph",
+          "text": "Industrial refrigeration sits behind supermarkets, food distribution centers, cold-storage warehouses and healthcare supply chains. Many of these sites use connected electronic controllers to track temperatures, manage cooling and operate equipment from a distance."
+        },
+        {
+          "type": "paragraph",
+          "text": "That convenience comes with a cost, because every connected controller is another door an attacker can try. When a control system is reachable from the internet and is poorly protected, set up incorrectly or running old software, it becomes an easier way in for attackers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Chris Butera, CISA's acting executive assistant director for cybersecurity, stressed that organizations depending on refrigeration and monitoring systems should think of themselves as possible targets. The FBI added that it has seen attacks against such systems across critical infrastructure sectors around the world."
+        },
+        {
+          "type": "heading",
+          "text": "Recent incidents add to the concern"
+        },
+        {
+          "type": "paragraph",
+          "text": "The new warning arrives after several incidents involving commercial refrigeration gear. Reuters reported that investigators were looking into suspected cyberattacks on refrigeration units at grocery stores on U.S. military bases in August."
+        },
+        {
+          "type": "paragraph",
+          "text": "Europe has seen its own disruptions. A major incident affecting French refrigeration systems reportedly caused tens of millions of euros in damage, and a separate wave of attacks hit more than 100 stores across the continent."
+        },
+        {
+          "type": "paragraph",
+          "text": "These cases worry security specialists because they involve operational technology, the systems that control physical machinery. A typical data breach exposes information. An attack on a control system can change what equipment actually does, and that makes the consequences more serious for businesses and the public."
+        },
+        {
+          "type": "heading",
+          "text": "What FBI and CISA want organizations to do"
+        },
+        {
+          "type": "paragraph",
+          "text": "The agencies urged operators of industrial refrigeration and cold-chain monitoring equipment to tighten their defenses. Their advice includes taking refrigeration controllers off direct public internet access, separating operational technology from corporate networks and installing available software updates without delay."
+        },
+        {
+          "type": "paragraph",
+          "text": "Organizations should also review how remote access is set up and make sure connected equipment is protected from unauthorized use. The guidance pushes companies to see industrial control systems as a part of their overall security plan, not as stand-alone machines that sit outside it."
+        },
+        {
+          "type": "heading",
+          "text": "A wider lesson for American infrastructure"
+        },
+        {
+          "type": "paragraph",
+          "text": "The warning points to a larger challenge as critical services lean more heavily on connected technology. Food distribution, healthcare, transportation and industry all depend on digital monitoring and automated controls."
+        },
+        {
+          "type": "paragraph",
+          "text": "Connectivity helps efficiency, but it also gives bad actors more openings to interfere with essential services. Security experts and infrastructure operators have been saying for some time that operational technology deserves the same protection as ordinary business networks."
+        },
+        {
+          "type": "paragraph",
+          "text": "The latest advisory shows that cyber threats are no longer limited to stolen data, fraud or websites knocked offline. Attacks on connected physical systems can create real operational and public-safety problems."
+        },
+        {
+          "type": "paragraph",
+          "text": "Investigations are still under way. In the meantime, and with the full scope of the problem not yet clear, American businesses that run refrigeration and cold-storage facilities are being told to review their systems now and close vulnerabilities before attackers find them."
+        }
+      ]
     }
   ],
 
