@@ -531,6 +531,12 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://www.os-intel.com/dark-web/operation-tornado-354-arrests-dark-web-crackdown-2026/</loc>
+        <lastmod>2026-11-13T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
       <!-- investigation Articles  -->
     <url>
         <loc>https://www.os-intel.com/investigation/benghazi-suspect-zubayar-al-bakoush-arrested-14-years/</loc>
