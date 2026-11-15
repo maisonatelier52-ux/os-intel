@@ -7717,6 +7717,111 @@
           "text": "Investigations are still under way. In the meantime, and with the full scope of the problem not yet clear, American businesses that run refrigeration and cold-storage facilities are being told to review their systems now and close vulnerabilities before attackers find them."
         }
       ]
+    },
+    {
+      "id": 15,
+      "slug": "microsoft-services-fully-restored-global-outage-network-upgrade-2026",
+      "metaTitle": "Microsoft Says Services Fully Restored After Outage",
+      "metaDescription": "Microsoft says services are fully restored after a global outage hit Outlook, Teams and Copilot, blaming a network upgrade issue rather than a cyberattack.",
+      "title": "Microsoft Says Services Fully Restored After Outage",
+      "excerpt": "Microsoft says services are fully restored after a global outage hit Outlook, Teams and Copilot, blaming a network upgrade issue rather than a cyberattack.",
+      "category": "cybersecurity",
+      "newsType": "news",
+      "type": "normal",
+      "date": "15/11/2026",
+      "readTime": "4 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/microsoft-services-fully-restored-global-outage-network-upgrade-2026-image.webp",
+      "imageAlt": "Microsoft headquarters in Redmond, Washington, as the company confirms full restoration of Outlook, Teams and Microsoft 365 services following a global network outage",
+      "keywords": [
+        "Microsoft Outage",
+        "Microsoft 365",
+        "Outlook",
+        "Teams",
+        "Copilot",
+        "Downdetector",
+        "Network Upgrade",
+        "Cloud Dependence",
+        "Technology"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Microsoft said Saturday that all of its services are back after a massive outage that lasted for hours. \"We have completed our efforts to address the underlying issue of the incident and restored service to the remaining impacted customers and regions,\" the company wrote in an update on X."
+        },
+        {
+          "type": "paragraph",
+          "text": "Users had reported interruptions across Microsoft 365, including Outlook, Teams and the Copilot AI assistant. Downdetector, an online outage tracker, said it received reports from users in more than 70 countries and territories. Problems began to appear around midday Thursday in the United States."
+        },
+        {
+          "type": "heading",
+          "text": "A global reach, felt quickly"
+        },
+        {
+          "type": "paragraph",
+          "text": "The outage spread fast. Within an hour of the first problems on Thursday, Downdetector had logged reports from 74 countries and territories. Governments, courts, healthcare services, businesses, airlines and banks in many places were affected, and officials in Japan, Singapore and Australia said some of their operations were hit."
+        },
+        {
+          "type": "paragraph",
+          "text": "Microsoft says more than 430 million people use its Microsoft 365 apps. The company also said in January that it had over 450 million paid commercial subscriptions to its 365 services. It is not clear how many people were affected in total."
+        },
+        {
+          "type": "heading",
+          "text": "What Microsoft says went wrong"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Redmond, Washington, company apologized on Friday and said the outage was \"not related to cyber\" or to artificial intelligence agents. It said there is no indication that malicious activity played a role."
+        },
+        {
+          "type": "paragraph",
+          "text": "According to Microsoft, the incident \"was introduced by an issue during an earlier network capacity upgrade\" that surfaced after a recent network change. The company added that it restored services gradually, which took longer. While addressing problems with Exchange Online mailboxes, it had earlier pointed to a failure that left a number of servers \"unexpectedly unavailable\" during automated checks."
+        },
+        {
+          "type": "paragraph",
+          "text": "A series of posts from the Microsoft 365 account on X suggested that engineers struggled for some time to get the problem under control, which drew teasing from other companies and users. For Outlook, many people said they could not send or receive emails or had trouble loading their inboxes, and those problems piled up across much of the world into Friday."
+        },
+        {
+          "type": "heading",
+          "text": "From the courtroom to the pharmacy"
+        },
+        {
+          "type": "paragraph",
+          "text": "In Britain, the outage stopped a trial in Manchester. Judge Maurice Greene sent jurors home because of delays that he said showed the danger of the court's reliance on technology. The British government said it was working closely with Microsoft to assess any effect on public services, but that robust contingency plans were in place."
+        },
+        {
+          "type": "paragraph",
+          "text": "British police said they could not receive crime reports online and urged people to phone in urgent requests. Some U.S. law enforcement was affected too. The sheriff's office in Colorado's Arapahoe County noted that online bond payments were disrupted."
+        },
+        {
+          "type": "paragraph",
+          "text": "The National Pharmacy Association warned of delays in getting medication, since the outage affected the National Health Service and threatened to stop doctors from emailing prescriptions to pharmacies. \"Please bear with your pharmacy teams today, where waits may be longer than normal and there may be delays to some prescriptions,\" a spokesperson said."
+        },
+        {
+          "type": "paragraph",
+          "text": "Governments in Singapore, Japan, Greece and Norway said some operations were affected, including email communications for certain ministries or agencies. Businesses were hit as well. Hong Kong businessperson Danny Lau, who runs an aluminum company, said his firm could not receive updates from its U.S. customers through Outlook, and some Hong Kong banks also saw disruptions."
+        },
+        {
+          "type": "paragraph",
+          "text": "OpenAI and Anthropic reported problems connecting with Microsoft 365 tools, a sign of the ripple effects as more people use AI platforms to work with other companies' software."
+        },
+        {
+          "type": "heading",
+          "text": "Questions about dependence on one provider"
+        },
+        {
+          "type": "paragraph",
+          "text": "The episode is the latest example of cascading problems when so many communications and technology platforms rely on the same provider. Some lawmakers outside the United States have argued that it shows the cost of overreliance on American tech."
+        },
+        {
+          "type": "paragraph",
+          "text": "\"With no emails coming or going, many office workers feel like they are having a virtual snow day,\" said Jeremy Singer, a professor at the University of Glasgow's School of Computing Science. Still, he added, the problem \"serves to emphasize the dependence we have built on one company's digital infrastructure, and may lead us to question whether we need more resilience in our IT ecosystem.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "With services restored, attention now turns to whether governments and companies rethink how much they lean on a single vendor, and to whether Microsoft offers more detail on the network upgrade that set the outage off."
+        }
+      ]
     }
   ],
 
