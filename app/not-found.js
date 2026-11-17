@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import articleData from "../public/data/articles.json";
+import { categoryLabel } from "@/utils/categoryLabel";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -125,7 +126,7 @@ export default function NotFound() {
             Browse:
           </span>
           {categories.map((cat) => {
-            const label = cat.charAt(0).toUpperCase() + cat.slice(1);
+            const label = categoryLabel(cat);
             return (
               <Link
                 key={cat}

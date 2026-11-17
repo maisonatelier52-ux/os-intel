@@ -1,5 +1,3 @@
-
-
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,6 +16,7 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter, FaReddit, FaQuora } from "react-icons/fa6";
 import { SiMedium } from "react-icons/si";
+import { categoryLabel } from "@/utils/categoryLabel";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -105,7 +104,7 @@ export async function generateMetadata({ params }) {
   )?.author;
 
   const formattedCategory =
-    categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+    categoryLabel(categoryKey);
   const imageUrl = absImage(article.image);
   const publishedIso = parseDate(article.date).toISOString();
 
@@ -239,7 +238,7 @@ export default async function ArticleDetailPage({ params }) {
 
   const authorSlug = slugify(author.name);
   const formattedCategory =
-    categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+    categoryLabel(categoryKey);
   const publishedIso = parseDate(article.date).toISOString();
 
   // ✅ SEO: Use metaTitle as H1 (short, keyword-rich, ~52 chars)

@@ -1,11 +1,10 @@
-
-
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import SidebarComponent from "@/components/Sidebarcomponent";
 import articleData from "../../public/data/articles.json";
 import authorData from "../../public/data/authors.json";
+import { categoryLabel } from "@/utils/categoryLabel";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -69,7 +68,7 @@ export async function generateMetadata({ params }) {
   const { category } = await params;
   const categoryKey = category.toLowerCase();
   const formattedCategory =
-    categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+    categoryLabel(categoryKey);
 
   if (!articleData[categoryKey]) {
     return {
@@ -91,6 +90,7 @@ export async function generateMetadata({ params }) {
     politics: `Breaking politics news & expert analysis on ${SITE_NAME}. Independent intel reporting on policy updated daily.`,
     business: `Breaking business news & expert analysis on ${SITE_NAME}. Independent intel reporting on markets updated daily.`,
     technology: `Breaking technology news & expert analysis on ${SITE_NAME}. Independent intel reporting on innovation updated daily.`,
+    "courts-justice": `Breaking courts & justice news & expert analysis on ${SITE_NAME}. Independent intel reporting on sentencing and court rulings.`,
   };
 
   const description =
@@ -160,6 +160,14 @@ export async function generateMetadata({ params }) {
 // ── Per-category keyword data ─────────────────────────────────────────────────
 
 const CATEGORY_COPY = {
+  "courts-justice": {
+    tagline: "Breaking Courts & Justice News & Expert Analysis",
+    intro:
+      "Stay informed with OS-Intel's breaking courts and justice news coverage. Our expert journalists deliver in-depth analysis of sentencings, federal prosecutions, and court rulings — intel you can trust, updated daily.",
+    subheading: "Latest Courts & Justice News — Expert Reporting & Analysis",
+    subtext:
+      "From breaking courts and justice news to long-form expert analysis, OS-Intel brings you independent intel on every major legal story today.",
+  },
   world: {
     tagline: "Breaking World News & Expert Analysis",
     intro:
@@ -218,7 +226,7 @@ export default async function CategoryPage({ params }) {
   const { category } = await params;
   const categoryKey = category.toLowerCase();
   const categoryName =
-    categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+    categoryLabel(categoryKey);
 
   if (!articleData[categoryKey]) notFound();
 

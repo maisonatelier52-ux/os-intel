@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import Image from "next/image";
@@ -12,6 +10,7 @@ import { usePathname, useRouter } from "next/navigation";
 import articlesData from "../public/data/articles.json";
 import { FaInstagram, FaRedditAlien } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { categoryLabel } from "@/utils/categoryLabel";
 
 // ── Static data derived from articles.json ────────────────────────────────────
 
@@ -33,9 +32,7 @@ const ALL_ARTICLES = Object.entries(articlesData)
 /** Category nav — "Home" first, then each category from the JSON */
 const CATEGORIES = [
   "Home",
-  ...Object.keys(articlesData).map(
-    (cat) => cat.charAt(0).toUpperCase() + cat.slice(1)
-  ),
+  ...Object.keys(articlesData),
 ];
 
 // const navLinks = ["CONTACT US", "ABOUT US", "WIDGETS", "TYPOGRAPHY"];
@@ -56,7 +53,7 @@ const navLinks = [
 ];
 
 const getCategoryHref = (cat) =>
-  cat === "Home" ? "/" : `/${cat.toLowerCase()}`;
+  cat === "Home" ? "/" : `/${cat}`;
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -154,8 +151,8 @@ export default function Header() {
   const isActive = (cat) =>
     cat === "Home"
       ? pathname === "/"
-      : pathname === `/${cat.toLowerCase()}` ||
-        pathname.startsWith(`/${cat.toLowerCase()}/`);
+      : pathname === `/${cat}` ||
+        pathname.startsWith(`/${cat}/`);
 
   // ── Render ──────────────────────────────────────────────────────────────────
 
@@ -402,12 +399,12 @@ export default function Header() {
               <Link
                 key={cat}
                 href={getCategoryHref(cat)}
-                title={`${cat} news`}
+                title={`${categoryLabel(cat)} news`}
                 className={`text-sm font-bold tracking-wide transition-colors hover:text-gray-500 relative group font-playfair ${
                   isActive(cat) ? "text-red-600" : "text-gray-800"
                 }`}
               >
-                {cat}
+                {categoryLabel(cat)}
                 {isActive(cat) ? (
                   <span className="absolute -bottom-3 left-0 right-0 h-0.5 bg-red-600" />
                 ) : (
@@ -419,7 +416,7 @@ export default function Header() {
 
           {/* LEFT — Mobile: active category label */}
           <span className="md:hidden text-sm font-bold text-black font-playfair relative">
-            {CATEGORIES.find((c) => isActive(c)) || "Home"}
+            {categoryLabel(CATEGORIES.find((c) => isActive(c)) || "Home")}
             <span className="absolute -bottom-3 left-0 right-0 h-0.5 bg-red-600" />
           </span>
 
@@ -552,7 +549,7 @@ export default function Header() {
               <Link
                 key={cat}
                 href={getCategoryHref(cat)}
-                title={`${cat} news`}
+                title={`${categoryLabel(cat)} news`}
                 className={`flex items-center justify-between px-6 py-4 border-b border-gray-700 transition-colors font-playfair font-bold text-sm tracking-wide ${
                   isActive(cat)
                     ? "text-red-400"
@@ -560,7 +557,7 @@ export default function Header() {
                 }`}
                 onClick={() => setBottomMenuOpen(false)}
               >
-                <span>{cat}</span>
+                <span>{categoryLabel(cat)}</span>
                 {isActive(cat) && (
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
                 )}

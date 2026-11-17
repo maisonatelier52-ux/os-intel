@@ -107,6 +107,24 @@
                     "medium": "https://medium.com/@derekholloway"
                 }
             }
-        }
+        },
+          {
+            "category": "courts-justice",
+            "author": {
+                "id": 7,
+                "name": "Marcus Whitfield",
+                "gender": "Male",
+                "profileImage": "/images/authors/marcus_whitfield.webp",
+                "country": "USA",
+                "bio": "Marcus Whitfield is a legal affairs reporter with 11 years of experience covering federal courts, criminal prosecutions, and sentencing decisions. A former courthouse reporter, he specializes in turning dense court filings and Justice Department announcements into clear, accurate reporting on fraud, tax crimes, and white-collar cases.",
+                "websiteLink": "",
+                "social": {
+                "twitter": "",
+                "quora": "",
+                "reddit": "",
+                "medium": ""
+                }
+            }
+            }
     ]
 }

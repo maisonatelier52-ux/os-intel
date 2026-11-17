@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -12,6 +9,7 @@ import { FaInstagram, FaRedditAlien } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiMedium } from "react-icons/si";
 import { BsSubstack } from "react-icons/bs";
+import { categoryLabel } from "@/utils/categoryLabel";
 
 function parseDate(str) {
   const [d, m, y] = str.split("/");
@@ -29,9 +27,7 @@ const ALL_ARTICLES = Object.entries(articlesData)
 const featuredArticles = ALL_ARTICLES.slice(0, 3);
 const popularArticles = ALL_ARTICLES.slice(3, 6);
 
-const CATEGORIES = Object.keys(articlesData).map(
-  (cat) => cat.charAt(0).toUpperCase() + cat.slice(1)
-);
+const CATEGORIES = Object.keys(articlesData);
 
 function formatDate(str) {
   const date = parseDate(str);
@@ -227,11 +223,11 @@ export default function Footer() {
               {CATEGORIES.map((cat, i) => (
                 <li key={i}>
                   <Link
-                    href={`/${cat.toLowerCase()}`}
-                    title={`${cat} news — Latest ${cat.replace(/-/g, " ")} stories | OS-Intel`}
+                    href={`/${cat}`}
+                    title={`${categoryLabel(cat)} news — Latest ${categoryLabel(cat)} stories | OS-Intel`}
                     className="flex items-center justify-between py-2.5 text-gray-700 text-sm font-serif hover:text-red-600 transition-colors group"
                   >
-                    <span>{cat}</span>
+                    <span>{categoryLabel(cat)}</span>
                     <span className="text-gray-300 group-hover:text-red-400 transition-colors text-xs">›</span>
                   </Link>
                 </li>

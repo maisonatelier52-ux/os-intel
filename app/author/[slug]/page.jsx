@@ -1,4 +1,3 @@
-
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +8,7 @@ import { slugify } from "../../../utils/slugify";
 import { FaClock } from "react-icons/fa";
 import { FaXTwitter, FaReddit, FaQuora } from "react-icons/fa6";
 import { SiMedium } from "react-icons/si";
+import { categoryLabel } from "@/utils/categoryLabel";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const SITE_URL = "https://www.os-intel.com";
@@ -80,7 +80,7 @@ export async function generateMetadata({ params }) {
   const author = authorEntry.author;
   const categoryKey = authorEntry.category.toLowerCase();
   const formattedCategory =
-    categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+    categoryLabel(categoryKey);
   const totalCount = (articleData[categoryKey] || []).length;
 
   return {
@@ -115,7 +115,7 @@ export default async function AuthorPage({ params }) {
   const author = authorEntry.author;
   const categoryKey = authorEntry.category.toLowerCase();
   const formattedCategory =
-    categoryKey.charAt(0).toUpperCase() + categoryKey.slice(1);
+    categoryLabel(categoryKey);
 
   const allCategoryArticles = [...(articleData[categoryKey] || [])].sort(
     (a, b) => parseDate(b.date) - parseDate(a.date)
