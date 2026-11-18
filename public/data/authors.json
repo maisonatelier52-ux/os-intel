@@ -108,7 +108,7 @@
                 }
             }
         },
-          {
+        {
             "category": "courts-justice",
             "author": {
                 "id": 7,
@@ -125,6 +125,6 @@
                 "medium": ""
                 }
             }
-            }
+        }
     ]
 }
