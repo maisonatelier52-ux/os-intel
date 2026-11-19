@@ -472,7 +472,7 @@ export default async function ArticleDetailPage({ params }) {
                   alt={article.imageAlt || article.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 75vw"
-                  className="object-cover grayscale"
+                  className="object-cover object-top grayscale"
                   priority
                 />
               </div>
