@@ -688,6 +688,13 @@
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
+    <url>
+        <loc>https://www.os-intel.com/investigation/white-house-cyber-director-sean-cairncross-leaves-post-tech-outages-2026/</loc>
+        <lastmod>2026-11-20T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
 
     <!-- courts-justice Articles  -->
     <url>
@@ -709,8 +716,20 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://www.os-intel.com//courts-justice/trump-third-supreme-court-bid-venezuelan-tps/</loc>
+        <loc>https://www.os-intel.com/courts-justice/trump-third-supreme-court-bid-venezuelan-tps/</loc>
         <lastmod>2026-11-19T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+     <url>
+        <loc>https://www.os-intel.com/courts-justice/trump-administration-drops-alaska-senate-election-lawsuit/</loc>
+        <lastmod>2026-11-20T00:00:00.000Z</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+     <url>
+        <loc>https://www.os-intel.com/courts-justice/federal-judge-permanently-bars-california-laws-restricting-federal-law-enforcement/</loc>
+        <lastmod>2026-11-20T00:00:00.000Z</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
