@@ -11240,6 +11240,111 @@
           "text": "The central question for investigators and lawmakers is whether these episodes were isolated technical failures or signs of deeper weaknesses in the systems that protect America's digital infrastructure."
         }
       ]
+    },
+    {
+      "id": 14,
+      "slug": "fbi-investigates-national-crime-information-database-hack",
+      "metaTitle": "FBI Investigates Hack of Crime Information Database",
+      "metaDescription": "The FBI is investigating an apparent hack of its NCIC law-enforcement database as officials assess possible exposure of sensitive criminal justice records.",
+      "title": "FBI Investigates Hack of National Crime Information Database",
+      "excerpt": "The FBI is investigating an apparent hack of its NCIC law-enforcement database as officials assess possible exposure of sensitive criminal justice records.",
+      "category": "investigations",
+      "newsType": "news",
+      "type": "normal",
+      "date": "22/11/2026",
+      "readTime": "5 Min Read",
+      "isPublished": "true",
+      "image": "/images/news/fbi-investigates-national-crime-information-database-hack.webp",
+      "imageAlt": "FBI Department of Justice seal on a wooden podium with American flag in the background, as the bureau investigates a hack of its NCIC database",
+      "keywords": [
+        "FBI",
+        "NCIC",
+        "National Crime Information Center",
+        "FBI Cybersecurity",
+        "Database Hack",
+        "Cyberattack",
+        "U.S. Law Enforcement",
+        "Federal Investigation",
+        "FBI database hack"
+      ],
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The FBI is investigating an apparent cyber intrusion into the National Crime Information Center, known as NCIC, a nationwide database that police agencies across the United States rely on for sensitive criminal justice information."
+        },
+        {
+          "type": "paragraph",
+          "text": "The reported breach came to light on Nov. 21, when people familiar with the investigation told news organizations that hackers had apparently gotten into the FBI-run system. The bureau has not publicly confirmed the full details, and it is not yet known how much data, if any, was exposed."
+        },
+        {
+          "type": "paragraph",
+          "text": "NCIC is among the most important information-sharing tools in American law enforcement. It gives federal, state and local authorities access to records on wanted people, missing persons, criminal histories, stolen property and other investigative information."
+        },
+        {
+          "type": "heading",
+          "text": "Why the intrusion raises concern"
+        },
+        {
+          "type": "paragraph",
+          "text": "Police departments across the country lean on NCIC to check for outstanding arrest warrants, identify fugitives, locate missing people and carry out other routine criminal justice checks. That is why an apparent break-in at the system has raised questions about the security of information used in everyday policing and in major investigations."
+        },
+        {
+          "type": "paragraph",
+          "text": "A successful intrusion could expose sensitive information or create risks if records were tampered with. Investigators have not said publicly whether the hackers viewed, downloaded or changed anything. The attackers' identity, the method they used and the exact date of the intrusion have also not been disclosed."
+        },
+        {
+          "type": "paragraph",
+          "text": "The FBI declined to comment on the reported incident. President Donald Trump acknowledged it in a Fox News interview on Nov. 21, saying he had just heard about it and calling the news \"not good.\""
+        },
+        {
+          "type": "heading",
+          "text": "A second FBI security incident this year"
+        },
+        {
+          "type": "paragraph",
+          "text": "The latest incident follows another reported cybersecurity breach involving the bureau in September 2026. The hacking group ShinyHunters claimed at the time that it had obtained sensitive information tied to FBIJobs.gov, the FBI's recruitment website. The bureau confirmed it was investigating a compromise of the portal and the possible exposure of employees' personal information."
+        },
+        {
+          "type": "paragraph",
+          "text": "The September incident and the NCIC intrusion involve different systems, and there is no publicly established evidence that the two are linked or that the same attackers were behind both. The FBI has also looked into suspicious activity on internal systems holding sensitive investigative and surveillance-related information in the past."
+        },
+        {
+          "type": "paragraph",
+          "text": "Taken together, these episodes have sharpened questions about how well government information systems are protected against increasingly sophisticated cyber threats."
+        },
+        {
+          "type": "heading",
+          "text": "What information could be at risk?"
+        },
+        {
+          "type": "paragraph",
+          "text": "NCIC holds several kinds of records that law enforcement uses: wanted persons, missing individuals, criminal histories, stolen vehicles, stolen property and other material relevant to police work."
+        },
+        {
+          "type": "paragraph",
+          "text": "If unauthorized people got hold of such information, the damage could go beyond exposed personal data. Compromised records might help criminals identify investigative targets, understand how police operate or take advantage of weak spots in law enforcement operations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Data integrity is another worry. Investigators and cybersecurity specialists would have to work out whether any records were changed, deleted or otherwise manipulated. So far, authorities have not publicly confirmed that any of these things happened."
+        },
+        {
+          "type": "heading",
+          "text": "The investigation continues"
+        },
+        {
+          "type": "paragraph",
+          "text": "The FBI's inquiry is ongoing, and several key questions remain open: how the attackers allegedly got in, whether the intrusion reached connected law enforcement systems and whether any sensitive information was taken."
+        },
+        {
+          "type": "paragraph",
+          "text": "The incident also comes amid wider concern about cybersecurity across American government. Recent reports of other technology disruptions and security incidents have increased scrutiny of how resilient federal computer systems are, although officials have not established that those events are connected to the NCIC case."
+        },
+        {
+          "type": "paragraph",
+          "text": "For police agencies, the first priority will be confirming that the database, and the information shared through it, remains secure and reliable. Until investigators determine the scope of the intrusion, the possible impact on law enforcement and the public stays uncertain. The FBI has not publicly named a suspect or confirmed the theft of any NCIC records."
+        }
+      ]
     }
   ]
   
