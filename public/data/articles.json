@@ -7519,7 +7519,7 @@
       "newsType": "news",
       "type": "normal",
       "date": "24/11/2026",
-      "readTime": "5 Min Read",
+      "readTime": "6 Min Read",
       "isPublished": "true",
       "image": "/images/news/appeals-court-revives-trump-hush-money-case-transfer-bid.webp",
       "imageAlt": "Man in a navy suit and red tie with a flag lapel pin stands at a microphone while other men appear blurred behind him",
@@ -7600,6 +7600,31 @@
         {
           "type": "paragraph",
           "text": "Manhattan prosecutors have opposed the transfer. They argue that the conduct behind the charges was personal and not part of Trump's official presidential duties, and that the case was properly brought under New York law. The Second Circuit's Nov. 23 decision did not settle the immunity dispute or decide whether any trial evidence violated the Supreme Court's ruling."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Case number and latest developments"
+        },
+        {
+          "type": "paragraph",
+          "text": "The case is docketed as People of the State of New York v. President Donald Trump, No. 26-2427, in the U.S. Court of Appeals for the Second Circuit. It comes on appeal from the U.S. District Court for the Southern District of New York, No. 23-cv-3773."
+        },
+        {
+          "type": "paragraph",
+          "text": "The panel acted quickly. On Monday, Nov. 23, 2026, just one week after hearing oral arguments, it issued a brief two-page summary order reversing the lower court. The order notes that a full written opinion will follow \"in due course.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "There is also a practical hurdle. Senior U.S. District Judge Alvin Hellerstein died in October 2026 at age 92, and the case has not yet been reassigned to a new district judge in Manhattan to carry out the Second Circuit's order."
+        },
+        {
+          "type": "paragraph",
+          "text": "Trump's attorney, Robert Giuffra Jr., also moved quickly on the state side. On Monday he sent a formal letter to New York's mid-level Appellate Division, notifying the state judges of the Second Circuit's directive that no further state court proceedings occur while federal removal is decided, which the order frames as something federal officials \"respectfully request.\""
+        },
+        {
+          "type": "paragraph",
+          "text": "The Second Circuit also laid out a roadmap if the transfer goes ahead. If the newly assigned federal district judge grants removal, that court should formally \"adopt the state court judgment.\" That would allow Trump to return directly to the Second Circuit and seek dismissal of his conviction on presidential immunity grounds."
         },
         {
           "type": "heading",
