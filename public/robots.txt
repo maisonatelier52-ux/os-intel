@@ -1,9 +1,5 @@
 User-agent: *
 Allow: /
 
-# Disallow admin/system paths
-Disallow: /api/
-Disallow: /_next/
-Disallow: /static/
-
 Sitemap: https://www.os-intel.com/sitemap.xml
+Sitemap: https://www.os-intel.com/news-sitemap.xml

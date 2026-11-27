@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Legal | ${SITE_NAME}`,
+  title: { absolute: `Legal | ${SITE_NAME}` },
   description:
     "Legal information for OS-Intel covering copyright, content reuse, formal notices, permissions, complaints about accuracy or rights, and how to contact us for legal matters.",
-  alternates: { canonical: `${SITE_URL}/legal` },
+  alternates: { canonical: `${SITE_URL}/legal/` },
   openGraph: {
     title: `Legal | ${SITE_NAME}`,
     description:
       "Copyright, content reuse, permissions, formal notices, and legal contact information for OS-Intel.",
-    url: `${SITE_URL}/legal`,
+    url: `${SITE_URL}/legal/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -161,16 +161,16 @@ export default function LegalPage() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/legal#webpage`,
+    "@id": `${SITE_URL}/legal/#webpage`,
     name: `Legal | ${SITE_NAME}`,
     description:
       "Legal information for OS-Intel covering copyright, content reuse, formal notices, permissions, and complaints.",
-    url: `${SITE_URL}/legal`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/legal/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -180,10 +180,10 @@ export default function LegalPage() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/legal#breadcrumb`,
+    "@id": `${SITE_URL}/legal/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Legal", item: `${SITE_URL}/legal` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Legal", item: `${SITE_URL}/legal/` },
     ],
   };
 
@@ -383,14 +383,14 @@ export default function LegalPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Editorial Policy", href: "/editorial-policy" },
-                { label: "Corrections Policy", href: "/corrections-policy" },
-                { label: "Source Methodology", href: "/source-methodology" },
-                { label: "Ownership & Funding", href: "/ownership-funding" },
-                { label: "Advertising Policy", href: "/advertising-policy" },
-                { label: "Right of Reply", href: "/right-of-reply" },
-                { label: "Privacy Policy", href: "/privacy-policy" },
-                { label: "Terms & Conditions", href: "/terms-and-condition" },
+                { label: "Editorial Policy", href: "/editorial-policy/" },
+                { label: "Corrections Policy", href: "/corrections-policy/" },
+                { label: "Source Methodology", href: "/source-methodology/" },
+                { label: "Ownership & Funding", href: "/ownership-funding/" },
+                { label: "Advertising Policy", href: "/advertising-policy/" },
+                { label: "Right of Reply", href: "/right-of-reply/" },
+                { label: "Privacy Policy", href: "/privacy-policy/" },
+                { label: "Terms & Conditions", href: "/terms-and-condition/" },
               ].map(({ label, href }) => (
                 <Link
                   key={label}

@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Right of Reply | ${SITE_NAME}`,
+  title: { absolute: `Right of Reply | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Right of Reply policy. How we give individuals and organisations a fair opportunity to respond to coverage before and after publication.",
-  alternates: { canonical: `${SITE_URL}/right-of-reply` },
+  alternates: { canonical: `${SITE_URL}/right-of-reply/` },
   openGraph: {
     title: `Right of Reply | ${SITE_NAME}`,
     description:
       "How OS-Intel gives individuals and organisations the opportunity to respond to coverage before and after publication.",
-    url: `${SITE_URL}/right-of-reply`,
+    url: `${SITE_URL}/right-of-reply/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -58,15 +58,15 @@ export default function RightOfReply() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/right-of-reply#webpage`,
+    "@id": `${SITE_URL}/right-of-reply/#webpage`,
     name: `Right of Reply | ${SITE_NAME}`,
     description: "OS-Intel's right of reply policy for individuals and organisations featured in intelligence reporting.",
-    url: `${SITE_URL}/right-of-reply`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/right-of-reply/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -76,10 +76,10 @@ export default function RightOfReply() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/right-of-reply#breadcrumb`,
+    "@id": `${SITE_URL}/right-of-reply/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Right of Reply", item: `${SITE_URL}/right-of-reply` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Right of Reply", item: `${SITE_URL}/right-of-reply/` },
     ],
   };
 
@@ -276,12 +276,12 @@ export default function RightOfReply() {
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 font-sans mb-4">Related Policies</p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Editorial Policy", href: "/editorial-policy" },
-                { label: "Corrections Policy", href: "/corrections-policy" },
-                { label: "Source Methodology", href: "/source-methodology" },
-                { label: "Advertising Policy", href: "/advertising-policy" },
-                { label: "Ownership & Funding", href: "/ownership-funding" },
-                { label: "Legal", href: "/legal" },
+                { label: "Editorial Policy", href: "/editorial-policy/" },
+                { label: "Corrections Policy", href: "/corrections-policy/" },
+                { label: "Source Methodology", href: "/source-methodology/" },
+                { label: "Advertising Policy", href: "/advertising-policy/" },
+                { label: "Ownership & Funding", href: "/ownership-funding/" },
+                { label: "Legal", href: "/legal/" },
               ].map(({ label, href }) => (
                 <Link key={label} href={href} title={label}
                   className="border border-gray-300 px-4 py-2 text-xs font-sans font-bold uppercase tracking-widest text-gray-600 hover:border-red-600 hover:text-red-600 transition-colors">

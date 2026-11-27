@@ -13,7 +13,7 @@ import { categoryLabel } from "@/utils/categoryLabel";
 
 function parseDate(str) {
   const [d, m, y] = str.split("/");
-  return new Date(Number(y), Number(m) - 1, Number(d));
+  return new Date(Date.UTC(Number(y), Number(m) - 1, Number(d)));
 }
 
 const ALL_ARTICLES = Object.entries(articlesData)
@@ -32,6 +32,7 @@ const CATEGORIES = Object.keys(articlesData);
 function formatDate(str) {
   const date = parseDate(str);
   return date.toLocaleDateString("en-US", {
+    timeZone: "UTC",
     month: "long",
     day: "numeric",
     year: "numeric",
@@ -41,7 +42,7 @@ function formatDate(str) {
 function ArticleCard({ article }) {
   return (
     <Link
-      href={`/${article.category}/${article.slug}`}
+      href={`/${article.category}/${article.slug}/`}
       title={`Read: ${article.title}`}
       className="flex gap-3 group items-start"
     >
@@ -190,13 +191,13 @@ export default function Footer() {
 
             <ul className="flex flex-col divide-y divide-gray-100">
               {[
-                { name: "Editorial Policy", href: "/editorial-policy" },
-                { name: "Corrections Policy", href: "/corrections-policy" },
-                { name: "Source Methodology", href: "/source-methodology" },
-                { name: "Ownership & Funding", href: "/ownership-funding" },
-                { name: "Advertising Policy", href: "/advertising-policy" },
-                { name: "Right of Reply", href: "/right-of-reply" },
-                { name: "Legal", href: "/legal" }
+                { name: "Editorial Policy", href: "/editorial-policy/" },
+                { name: "Corrections Policy", href: "/corrections-policy/" },
+                { name: "Source Methodology", href: "/source-methodology/" },
+                { name: "Ownership & Funding", href: "/ownership-funding/" },
+                { name: "Advertising Policy", href: "/advertising-policy/" },
+                { name: "Right of Reply", href: "/right-of-reply/" },
+                { name: "Legal", href: "/legal/" }
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -223,7 +224,7 @@ export default function Footer() {
               {CATEGORIES.map((cat, i) => (
                 <li key={i}>
                   <Link
-                    href={`/${cat}`}
+                    href={`/${cat}/`}
                     title={`${categoryLabel(cat)} news — Latest ${categoryLabel(cat)} stories | OS-Intel`}
                     className="flex items-center justify-between py-2.5 text-gray-700 text-sm font-serif hover:text-red-600 transition-colors group"
                   >
@@ -246,28 +247,28 @@ export default function Footer() {
         <div className="flex items-center gap-5">
 
            <Link
-            href="/about"
+            href="/about/"
             title="OS-Intel About Us"
             className="text-xs text-gray-400 hover:text-red-600 transition-colors font-sans"
           >
             About Us
           </Link>
           <Link
-            href="/privacy-policy"
+            href="/privacy-policy/"
             title="OS-Intel Privacy Policy"
             className="text-xs text-gray-400 hover:text-red-600 transition-colors font-sans"
           >
             Privacy Policy
           </Link>
           <Link
-            href="/terms-and-condition"
+            href="/terms-and-condition/"
             title="OS-Intel Terms of Use"
             className="text-xs text-gray-400 hover:text-red-600 transition-colors font-sans"
           >
             Terms of Use
           </Link>
           <a
-            href="/contact"
+            href="/contact/"
             title="Contact OS-Intel"
             className="text-xs text-gray-400 hover:text-red-600 transition-colors font-sans"
           >

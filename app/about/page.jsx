@@ -8,15 +8,15 @@ const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 // ✅ FIXED: og:image added
 // ✅ FIXED: twitter:site added
 export const metadata = {
-  title: `About Us — Independent News & Investigation | ${SITE_NAME}`,
+  title: { absolute: `About Us — Independent News & Investigation | ${SITE_NAME}` },
   description:
     "Discover OS-Intel: independent news & investigation platform. Uncompromised reporting on world affairs, conflict, cybersecurity & geo-politics.",
-  alternates: { canonical: `${SITE_URL}/about` },
+  alternates: { canonical: `${SITE_URL}/about/` },
   openGraph: {
     title: `About Us — Independent News & Investigation | ${SITE_NAME}`,
     description:
       "Discover OS-Intel: independent news & investigation platform. Uncompromised reporting on world affairs, conflict, cybersecurity & geo-politics.",
-    url: `${SITE_URL}/about`,
+    url: `${SITE_URL}/about/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -72,16 +72,16 @@ export default function AboutPage() {
   const aboutPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "@id": `${SITE_URL}/about#webpage`,
+    "@id": `${SITE_URL}/about/#webpage`,
     name: "About OS-Intel — Independent News & Investigation",
     description:
       "OS-Intel is an independent news and investigation platform providing uncompromised reporting on world affairs, conflict, cybersecurity, geo-politics, and dark web intelligence.",
-    url: `${SITE_URL}/about`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/about/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
   };
@@ -89,26 +89,26 @@ export default function AboutPage() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
-    "@id": `${SITE_URL}#organization`,
+    "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     logo: { "@type": "ImageObject", url: OG_IMAGE, width: 1200, height: 630 },
     description:
       "OS-Intel is an independent news and investigation platform providing uncompromised reporting on world affairs, conflict, cybersecurity, and geo-politics.",
     foundingDate: "2024",
-    publishingPrinciples: `${SITE_URL}/about`,
-    ethicsPolicy: `${SITE_URL}/about`,
-    correctionsPolicy: `${SITE_URL}/contact`,
+    publishingPrinciples: `${SITE_URL}/editorial-policy/`,
+    ethicsPolicy: `${SITE_URL}/editorial-policy/`,
+    correctionsPolicy: `${SITE_URL}/corrections-policy/`,
     sameAs: [],
   };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/about#breadcrumb`,
+    "@id": `${SITE_URL}/about/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "About Us", item: `${SITE_URL}/about` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "About Us", item: `${SITE_URL}/about/` },
     ],
   };
 
@@ -284,7 +284,7 @@ export default function AboutPage() {
               </div>
               <div className="shrink-0">
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   title="Contact the OS-Intel editorial team"
                   className="inline-block bg-red-600 hover:bg-red-700 text-white text-xs font-bold tracking-widest px-6 py-3 font-sans uppercase transition-colors"
                 >

@@ -29,11 +29,12 @@ const TWITTER_HANDLE = "@osintel";
 
 const parseDate = (dateStr) => {
   const [day, month, year] = dateStr.split("/");
-  return new Date(year, month - 1, day);
+  return new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
 };
 
 const formatDate = (dateStr) =>
   parseDate(dateStr).toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -107,6 +108,7 @@ export async function generateMetadata({ params }) {
     categoryLabel(categoryKey);
   const imageUrl = absImage(article.image);
   const publishedIso = parseDate(article.date).toISOString();
+  const modifiedIso = parseDate(article.lastModified || article.date).toISOString();
 
   // ✅ metaTitle is the SEO title — keep it short and keyword-rich
   // Format: "{Short keyword title} | {Category} — OS-Intel"
@@ -121,7 +123,7 @@ export async function generateMetadata({ params }) {
     `Read ${article.title} on ${SITE_NAME}.`;
 
   return {
-    title: metaTitle,
+    title: { absolute: /OS-Intel/i.test(metaTitle) ? metaTitle : `${metaTitle} | ${SITE_NAME}` },
     description: metaDescription,
     keywords: article.keywords?.join(", ") || `${categoryKey} news, ${SITE_NAME}`,
     authors: author
@@ -129,16 +131,16 @@ export async function generateMetadata({ params }) {
       : [{ name: `${SITE_NAME} Editorial Team` }],
     creator: SITE_NAME,
     publisher: SITE_NAME,
-    alternates: { canonical: `${SITE_URL}/${categoryKey}/${slug}` },
+    alternates: { canonical: `${SITE_URL}/${categoryKey}/${slug}/` },
     openGraph: {
       title: metaTitle,
       description: metaDescription,
-      url: `${SITE_URL}/${categoryKey}/${slug}`,
+      url: `${SITE_URL}/${categoryKey}/${slug}/`,
       siteName: SITE_NAME,
       type: "article",
       locale: "en_US",
       publishedTime: publishedIso,
-      modifiedTime: publishedIso,
+      modifiedTime: modifiedIso,
       authors: author ? [author.name] : [`${SITE_NAME} Editorial Team`],
       section: formattedCategory,
       tags: article.keywords || [formattedCategory],
@@ -187,12 +189,13 @@ const renderContent = (item, index) => {
         </p>
       );
     case "heading": {
-      const Tag = `h${item.level}`;
+      const level = [2, 3, 4].includes(Number(item.level)) ? Number(item.level) : 2;
+      const Tag = `h${level}`;
       return (
         <Tag
           key={index}
           className={`font-black font-serif text-gray-900 mb-3 mt-6 ${
-            item.level === 2 ? "text-2xl" : "text-xl"
+            level === 2 ? "text-2xl" : "text-xl"
           }`}
         >
           {item.text}
@@ -240,12 +243,7 @@ export default async function ArticleDetailPage({ params }) {
   const formattedCategory =
     categoryLabel(categoryKey);
   const publishedIso = parseDate(article.date).toISOString();
-
-  // ✅ SEO: Use metaTitle as H1 (short, keyword-rich, ~52 chars)
-  // Use article.title as H2 subtitle (the full descriptive title)
-  const seoH1 =
-    article.metaTitle ||
-    `${article.title.slice(0, 65)}`;
+  const modifiedIso = parseDate(article.lastModified || article.date).toISOString();
 
   const sortedPosts = [...categoryPosts].sort(
     (a, b) => parseDate(b.date) - parseDate(a.date)
@@ -256,34 +254,42 @@ export default async function ArticleDetailPage({ params }) {
       ? sortedPosts[currentIndex + 1]
       : null;
   const nextPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
-  const morePosts = sortedPosts.filter((p) => p.slug !== slug).slice(0, 3);
+  // Prefer related stories by shared editorial keywords; recency breaks ties.
+  const normalizeKeyword = (keyword) => String(keyword).trim().toLowerCase();
+  const currentKeywords = new Set((article.keywords || []).map(normalizeKeyword));
+  const overlap = (post) => [...new Set((post.keywords || []).map(normalizeKeyword))]
+    .filter((keyword) => currentKeywords.has(keyword)).length;
+  const morePosts = sortedPosts
+    .filter((post) => post.slug !== slug)
+    .sort((a, b) => overlap(b) - overlap(a) || parseDate(b.date) - parseDate(a.date))
+    .slice(0, 3);
 
   const pool = getLatestFromOtherCategories(categoryKey, 15);
   const latestNews = pool.slice(0, 6).map((a) => ({
     date: formatDate(a.date),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabLatest = pool.slice(6, 10).map((a) => ({
     img: a.image,
     date: formatDate(a.date).toUpperCase(),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabPopular = pool.slice(10, 14).map((a) => ({
     img: a.image,
     date: formatDate(a.date).toUpperCase(),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabData = { Latest: tabLatest, Popular: tabPopular };
   const mostPopular = pool.slice(0, 5).map((a) => ({
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
     img: a.image,
   }));
 
-  const encodedUrl = encodeURIComponent(`${SITE_URL}/${categoryKey}/${slug}`);
+  const encodedUrl = encodeURIComponent(`${SITE_URL}/${categoryKey}/${slug}/`);
   const encodedTitle = encodeURIComponent(article.title);
 
   // ── JSON-LD ───────────────────────────────────────────────────────────────
@@ -291,51 +297,51 @@ export default async function ArticleDetailPage({ params }) {
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "@id": `${SITE_URL}/${categoryKey}/${slug}#article`,
+    "@id": `${SITE_URL}/${categoryKey}/${slug}/#article`,
     headline: article.title,
     description: article.excerpt,
     image: [absImage(article.image)],
     datePublished: publishedIso,
-    dateModified: publishedIso,
+    dateModified: modifiedIso,
     author: {
       "@type": "Person",
-      "@id": `${SITE_URL}/author/${authorSlug}#person`,
+      "@id": `${SITE_URL}/author/${authorSlug}/#person`,
       name: author.name,
-      url: `${SITE_URL}/author/${authorSlug}`,
+      url: `${SITE_URL}/author/${authorSlug}/`,
       image: absImage(author.profileImage),
     },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: SITE_LOGO },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${SITE_URL}/${categoryKey}/${slug}`,
+      "@id": `${SITE_URL}/${categoryKey}/${slug}/`,
     },
     articleSection: formattedCategory,
     keywords: article.keywords?.join(", ") || formattedCategory,
-    url: `${SITE_URL}/${categoryKey}/${slug}`,
+    url: `${SITE_URL}/${categoryKey}/${slug}/`,
   };
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/${categoryKey}/${slug}#breadcrumb`,
+    "@id": `${SITE_URL}/${categoryKey}/${slug}/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
       {
         "@type": "ListItem",
         position: 2,
         name: `${formattedCategory} News`,
-        item: `${SITE_URL}/${categoryKey}`,
+        item: `${SITE_URL}/${categoryKey}/`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: article.title,
-        item: `${SITE_URL}/${categoryKey}/${slug}`,
+        item: `${SITE_URL}/${categoryKey}/${slug}/`,
       },
     ],
   };
@@ -365,7 +371,7 @@ export default async function ArticleDetailPage({ params }) {
               <li><span>›</span></li>
               <li>
                 <Link
-                  href={`/${categoryKey}`}
+                  href={`/${categoryKey}/`}
                   title={`${formattedCategory} news`}
                   className="hover:text-red-600 transition-colors"
                 >
@@ -386,7 +392,7 @@ export default async function ArticleDetailPage({ params }) {
 
               {/* Category badge */}
               <div className="mb-3 flex items-center gap-2 flex-wrap">
-                <Link href={`/${categoryKey}`} title={`${formattedCategory} news`}>
+                <Link href={`/${categoryKey}/`} title={`${formattedCategory} news`}>
                   <span className="bg-red-600 text-white text-[12px] font-bold tracking-widest px-2 py-1 font-serif uppercase hover:bg-red-700 transition-colors">
                     {formattedCategory}
                   </span>
@@ -398,41 +404,23 @@ export default async function ArticleDetailPage({ params }) {
                 )}
               </div>
 
-              {/*
-                ══════════════════════════════════════════════════════════════
-                SEO H1 STRATEGY:
 
-                Problem: article.title is 85 chars (too long) and missing
-                keywords: geneva, amid, warships, intel
-
-                Solution:
-                  H1 = metaTitle (short ~52 chars, has all keywords)
-                  H2 = article.title (full descriptive title, still indexed)
-
-                Title tag: "US-Iran Nuclear Talks in Geneva Amid Warships | OS-Intel"
-                H1 (metaTitle): "US-Iran Nuclear Talks in Geneva Amid Warships | OS-Intel"
-                H2 (article.title): full long title for readers
-
-                Keywords in H1: ✅ geneva ✅ amid ✅ warships ✅ intel (OS-Intel)
-                ══════════════════════════════════════════════════════════════
-              */}
-             {/* H1 = metaTitle — visible, short, matches title tag exactly */}
               {/* Main title – only one h1 per page */}
                 <h1 className="text-2xl md:text-4xl font-black font-serif text-gray-900 leading-tight mb-4">
                   {article.title}
                   </h1>
 
                 {/* Optional visible subtitle – use h2 or just styled p */}
-                <h2 className="text-sm md:text-sm mt-3 mb-6 text-gray-800">
-                  {article.excerpt || "Detailed analysis and OSINT insights"} {/* or leave out */}
-                </h2>
+                <p className="text-sm md:text-sm mt-3 mb-6 text-gray-800">
+                  {article.excerpt || "Detailed analysis and OSINT insights"}
+                </p>
             
 
               {/* Meta */}
               <div className="flex items-center flex-wrap gap-3 text-gray-400 text-xs font-sans mb-5">
                 <div className="flex items-center gap-2">
                   <Link
-                    href={`/author/${authorSlug}`}
+                    href={`/author/${authorSlug}/`}
                     title={`View all posts by ${author.name}`}
                   >
                     <div className="w-6 h-6 rounded-full overflow-hidden shrink-0 relative hover:opacity-80 transition-opacity">
@@ -448,7 +436,7 @@ export default async function ArticleDetailPage({ params }) {
                   <span>
                     by{" "}
                     <Link
-                      href={`/author/${authorSlug}`}
+                      href={`/author/${authorSlug}/`}
                       title={`View all posts by ${author.name}`}
                       className="text-gray-700 font-semibold hover:text-red-600 transition-colors"
                     >
@@ -462,6 +450,9 @@ export default async function ArticleDetailPage({ params }) {
                     {formatDate(article.date).toUpperCase()}
                   </time>
                 </div>
+                {article.lastModified && modifiedIso !== publishedIso && (
+                  <span>Updated <time dateTime={modifiedIso}>{formatDate(article.lastModified)}</time></span>
+                )}
                 {article.readTime && <span>• {article.readTime}</span>}
               </div>
 
@@ -525,7 +516,7 @@ export default async function ArticleDetailPage({ params }) {
               <div className="flex flex-col sm:flex-row gap-7 md:gap-4 mb-10">
                 {prevPost ? (
                   <Link
-                    href={`/${categoryKey}/${prevPost.slug}`}
+                    href={`/${categoryKey}/${prevPost.slug}/`}
                     title={prevPost.title}
                     className="flex-1 group border-l-4 border-red-600 hover:border-gray-400 transition-colors"
                   >
@@ -542,7 +533,7 @@ export default async function ArticleDetailPage({ params }) {
                 )}
                 {nextPost ? (
                   <Link
-                    href={`/${categoryKey}/${nextPost.slug}`}
+                    href={`/${categoryKey}/${nextPost.slug}/`}
                     title={nextPost.title}
                     className="flex-1 text-right group border-r-4 border-red-600 hover:border-gray-400 transition-colors"
                   >
@@ -564,13 +555,13 @@ export default async function ArticleDetailPage({ params }) {
                 <div className="mb-10">
                   {/* ✅ h2 section heading — correct level */}
                   <h2 className="text-lg font-black font-serif text-gray-900 inline-block border-b-2 border-red-600 pb-1 mb-6">
-                    More posts
+                    Related articles
                   </h2>
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                     {morePosts.map((post) => (
                       <Link
                         key={post.slug}
-                        href={`/${categoryKey}/${post.slug}`}
+                        href={`/${categoryKey}/${post.slug}/`}
                         title={post.title}
                         className="block group"
                       >
@@ -623,7 +614,7 @@ export default async function ArticleDetailPage({ params }) {
                   </div>
                   <div className="flex-1 min-w-0">
                     <Link
-                      href={`/author/${authorSlug}`}
+                      href={`/author/${authorSlug}/`}
                       title={`View all posts by ${author.name}`}
                     >
                       {/* ✅ h3 under h2 "About author" */}

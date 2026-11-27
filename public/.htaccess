@@ -1,6 +1,10 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
+# Redirect legacy homepage aliases, not Apache internal DirectoryIndex requests.
+RewriteCond %{THE_REQUEST} \s/+index(?:\.html)?[?\s] [NC]
+RewriteRule ^index(?:\.html)?$ https://www.os-intel.com/ [R=301,L]
+
 # --------------------------------------------------
 # FORCE HTTPS + WWW
 # --------------------------------------------------
@@ -98,3 +102,12 @@ Deny from all
 # CUSTOM 404 PAGE
 # --------------------------------------------------
 ErrorDocument 404 /404.html
+# XML sitemap MIME type and revalidation
+<IfModule mod_mime.c>
+AddType application/xml .xml
+</IfModule>
+<IfModule mod_headers.c>
+<FilesMatch "^(sitemap|news-sitemap)\.xml$">
+Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+</IfModule>

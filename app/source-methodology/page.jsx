@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Source Methodology | ${SITE_NAME}`,
+  title: { absolute: `Source Methodology | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Source Methodology. How we gather, verify, and assess intelligence from open sources, signals data, documents, and human contacts.",
-  alternates: { canonical: `${SITE_URL}/source-methodology` },
+  alternates: { canonical: `${SITE_URL}/source-methodology/` },
   openGraph: {
     title: `Source Methodology | ${SITE_NAME}`,
     description:
       "How OS-Intel gathers, verifies, and assesses intelligence from open sources, signals data, and documents.",
-    url: `${SITE_URL}/source-methodology`,
+    url: `${SITE_URL}/source-methodology/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -99,15 +99,15 @@ export default function SourceMethodology() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/source-methodology#webpage`,
+    "@id": `${SITE_URL}/source-methodology/#webpage`,
     name: `Source Methodology | ${SITE_NAME}`,
     description: "OS-Intel's OSINT-based source methodology, verification standards, and approach to intelligence gathering.",
-    url: `${SITE_URL}/source-methodology`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/source-methodology/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -117,10 +117,10 @@ export default function SourceMethodology() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/source-methodology#breadcrumb`,
+    "@id": `${SITE_URL}/source-methodology/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Source Methodology", item: `${SITE_URL}/source-methodology` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Source Methodology", item: `${SITE_URL}/source-methodology/` },
     ],
   };
 
@@ -333,12 +333,12 @@ export default function SourceMethodology() {
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 font-sans mb-4">Related Policies</p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Editorial Policy", href: "/editorial-policy" },
-                { label: "Corrections Policy", href: "/corrections-policy" },
-                { label: "Advertising Policy", href: "/advertising-policy" },
-                { label: "Ownership & Funding", href: "/ownership-funding" },
-                { label: "Right of Reply", href: "/right-of-reply" },
-                { label: "Legal", href: "/legal" },
+                { label: "Editorial Policy", href: "/editorial-policy/" },
+                { label: "Corrections Policy", href: "/corrections-policy/" },
+                { label: "Advertising Policy", href: "/advertising-policy/" },
+                { label: "Ownership & Funding", href: "/ownership-funding/" },
+                { label: "Right of Reply", href: "/right-of-reply/" },
+                { label: "Legal", href: "/legal/" },
               ].map(({ label, href }) => (
                 <Link key={label} href={href} title={label}
                   className="border border-gray-300 px-4 py-2 text-xs font-sans font-bold uppercase tracking-widest text-gray-600 hover:border-red-600 hover:text-red-600 transition-colors">

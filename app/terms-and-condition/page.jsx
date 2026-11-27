@@ -8,14 +8,14 @@ const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 // ✅ FIXED: og:image, twitter:site added
 export const metadata = {
-  title: `Terms & Conditions | ${SITE_NAME}`,
+  title: { absolute: `Terms & Conditions | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Terms and Conditions. These terms govern your use of our independent news and investigation platform.",
-  alternates: { canonical: `${SITE_URL}/terms-and-condition` },
+  alternates: { canonical: `${SITE_URL}/terms-and-condition/` },
   openGraph: {
     title: `Terms & Conditions | ${SITE_NAME}`,
     description: "Read the OS-Intel Terms and Conditions governing use of our platform.",
-    url: `${SITE_URL}/terms-and-condition`,
+    url: `${SITE_URL}/terms-and-condition/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -107,15 +107,15 @@ export default function TermsPage() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/terms-and-condition#webpage`,
+    "@id": `${SITE_URL}/terms-and-condition/#webpage`,
     name: `Terms & Conditions | ${SITE_NAME}`,
     description: "OS-Intel Terms and Conditions — the terms governing use of our independent news and investigation platform.",
-    url: `${SITE_URL}/terms-and-condition`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/terms-and-condition/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -124,10 +124,10 @@ export default function TermsPage() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/terms-and-condition#breadcrumb`,
+    "@id": `${SITE_URL}/terms-and-condition/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Terms & Conditions", item: `${SITE_URL}/terms-and-condition` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Terms & Conditions", item: `${SITE_URL}/terms-and-condition/` },
     ],
   };
 
@@ -221,7 +221,7 @@ export default function TermsPage() {
               By using the OS-Intel website, you acknowledge that you have read, understood, and
               agree to be bound by these Terms and Conditions and our{" "}
               <Link
-                href="/privacy-policy"
+                href="/privacy-policy/"
                 title="Read the OS-Intel Privacy Policy"
                 className="text-red-400 hover:text-red-300 transition-colors underline"
               >

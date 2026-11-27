@@ -11,16 +11,16 @@ const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 // ✅ metadata export now works because this is a server component
 export const metadata = {
-  title: `Contact Us — OS-Intel News & Investigation`,
+  title: { absolute: `Contact Us — OS-Intel News & Investigation` },
   // ✅ FIXED: under 160 chars, keyword-rich (world, conflict, cybersecurity, investigation, intel, contact)
   description:
     "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections & press enquiries. Independent intel, updated daily.",
-  alternates: { canonical: `${SITE_URL}/contact` },
+  alternates: { canonical: `${SITE_URL}/contact/` },
   openGraph: {
     title: `Contact Us — OS-Intel News & Investigation`,
     description:
       "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections & press enquiries. Independent intel, updated daily.",
-    url: `${SITE_URL}/contact`,
+    url: `${SITE_URL}/contact/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -44,16 +44,16 @@ export default function ContactPage() {
   const contactPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": `${SITE_URL}/contact#webpage`,
+    "@id": `${SITE_URL}/contact/#webpage`,
     name: "Contact OS-Intel — Independent News & Investigation",
     description:
       "Contact OS-Intel for news tips, cybersecurity investigations, world conflict reporting, corrections, and press enquiries.",
-    url: `${SITE_URL}/contact`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/contact/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
   };
@@ -61,10 +61,10 @@ export default function ContactPage() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/contact#breadcrumb`,
+    "@id": `${SITE_URL}/contact/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Contact Us", item: `${SITE_URL}/contact` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Contact Us", item: `${SITE_URL}/contact/` },
     ],
   };
 
@@ -110,8 +110,8 @@ export default function ContactPage() {
             {/* ✅ KEYWORD REINFORCEMENT — all title keywords appear visibly in body text */}
             <p className="text-gray-600 text-base font-serif leading-relaxed max-w-xl mb-3">
               Whether you have a world news tip, a conflict investigation lead, a cybersecurity
-              alert, a correction, or a press enquiry — contact us and we will respond.
-              We read every message sent to OS-Intel.
+              alert, a correction, or a press enquiry — contact the editorial team.
+              Use the email addresses below to reach the relevant team.
             </p>
             <p className="text-gray-500 text-sm font-serif leading-relaxed max-w-xl">
               OS-Intel covers world affairs, conflict zones, cybersecurity threats, and
@@ -128,7 +128,7 @@ export default function ContactPage() {
               {/* ── LEFT: Contact Form (client component) ── */}
               <div className="w-full md:w-[60%]">
                 <h2 className="text-xl font-black font-playfair text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
-                  Send a Message
+                  Contact by Email
                 </h2>
                 {/* ✅ Interactive form extracted to client component */}
                 <ContactForm />
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 {/* Response times */}
                 <div>
                   <h2 className="text-xl font-black font-playfair text-gray-900 mb-6 pb-2 border-b-2 border-red-600 inline-block">
-                    Response Times
+                    Indicative Response Times
                   </h2>
                   <div className="flex flex-col gap-0 border border-gray-200">
                     {[
@@ -174,8 +174,7 @@ export default function ContactPage() {
                   <p className="text-gray-400 text-xs font-sans leading-relaxed">
                     For sensitive tips, whistleblower disclosures, cybersecurity intel, or
                     documents requiring confidentiality — contact us and indicate the sensitivity
-                    and we will provide secure transmission details. We support Signal and
-                    end-to-end encrypted channels.
+                    without sharing confidential information until a secure channel has been agreed.
                   </p>
                 </div>
 

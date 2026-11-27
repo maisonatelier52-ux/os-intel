@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Ownership & Funding | ${SITE_NAME}`,
+  title: { absolute: `Ownership & Funding | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Ownership & Funding disclosure. Who operates OS-Intel, how it is funded, and how commercial relationships are kept separate from editorial decisions.",
-  alternates: { canonical: `${SITE_URL}/ownership-funding` },
+  alternates: { canonical: `${SITE_URL}/ownership-funding/` },
   openGraph: {
     title: `Ownership & Funding | ${SITE_NAME}`,
     description:
       "Who operates OS-Intel, how it is funded, and how commercial relationships are kept separate from editorial decisions.",
-    url: `${SITE_URL}/ownership-funding`,
+    url: `${SITE_URL}/ownership-funding/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -53,15 +53,15 @@ export default function OwnershipFunding() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/ownership-funding#webpage`,
+    "@id": `${SITE_URL}/ownership-funding/#webpage`,
     name: `Ownership & Funding | ${SITE_NAME}`,
     description: "Disclosure of OS-Intel's ownership structure, funding sources, and editorial independence framework.",
-    url: `${SITE_URL}/ownership-funding`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/ownership-funding/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -71,10 +71,10 @@ export default function OwnershipFunding() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/ownership-funding#breadcrumb`,
+    "@id": `${SITE_URL}/ownership-funding/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Ownership & Funding", item: `${SITE_URL}/ownership-funding` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Ownership & Funding", item: `${SITE_URL}/ownership-funding/` },
     ],
   };
 
@@ -108,7 +108,7 @@ export default function OwnershipFunding() {
             <p className="text-gray-600 text-sm font-serif leading-relaxed mt-4 max-w-2xl">
               Readers of intelligence journalism deserve to know who operates the platform,
               how it is funded, and whether those funding relationships affect what gets reported.
-              This page answers those questions directly.
+              This page describes our published policies.
             </p>
           </div>
         </section>
@@ -122,21 +122,22 @@ export default function OwnershipFunding() {
                   Who We Are
                 </p>
                 <h2 className="text-3xl md:text-4xl font-black font-playfair text-gray-900 leading-tight">
-                  Independent. Not affiliated. Not for sale.
+                  Publisher and editorial ownership
                 </h2>
               </div>
               <div className="flex-1 flex flex-col gap-5 font-serif text-gray-600 text-sm leading-relaxed">
                 <p>
-                  OS-Intel is an independent news and investigation platform founded in 2024. It is
-                  not owned by a media conglomerate, government entity, intelligence agency,
-                  political organisation, or corporate holding group. Editorial control rests entirely
-                  with the OS-Intel newsroom.
+                  OS-Intel is a news and investigation platform. For questions about the publisher, ownership or funding, contact the editorial team.
                 </p>
                 <p>
-                  No external investor, owner, or partner has authority over coverage decisions,
-                  publication timing, source selection, or editorial framing. The platform operates
-                  with a strict editorial firewall between commercial operations and reporting.
+                  Our stated editorial policy is to separate commercial relationships from editorial decisions.
                 </p>
+                {process.env.NEXT_PUBLIC_PUBLISHER_NAME && (
+                  <p>Publisher: <strong>{process.env.NEXT_PUBLIC_PUBLISHER_NAME}</strong></p>
+                )}
+                {process.env.NEXT_PUBLIC_PUBLISHER_OWNERSHIP && (
+                  <p>Ownership and funding: {process.env.NEXT_PUBLIC_PUBLISHER_OWNERSHIP}</p>
+                )}
                 <div className="bg-gray-900 text-white p-6 mt-2">
                   <p className="text-xs font-bold uppercase tracking-widest text-red-500 font-playfair mb-2">
                     Material Changes
@@ -265,12 +266,12 @@ export default function OwnershipFunding() {
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 font-sans mb-4">Related Policies</p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Editorial Policy", href: "/editorial-policy" },
-                { label: "Corrections Policy", href: "/corrections-policy" },
-                { label: "Source Methodology", href: "/source-methodology" },
-                { label: "Advertising Policy", href: "/advertising-policy" },
-                { label: "Right of Reply", href: "/right-of-reply" },
-                { label: "Legal", href: "/legal" },
+                { label: "Editorial Policy", href: "/editorial-policy/" },
+                { label: "Corrections Policy", href: "/corrections-policy/" },
+                { label: "Source Methodology", href: "/source-methodology/" },
+                { label: "Advertising Policy", href: "/advertising-policy/" },
+                { label: "Right of Reply", href: "/right-of-reply/" },
+                { label: "Legal", href: "/legal/" },
               ].map(({ label, href }) => (
                 <Link key={label} href={href} title={label}
                   className="border border-gray-300 px-4 py-2 text-xs font-sans font-bold uppercase tracking-widest text-gray-600 hover:border-red-600 hover:text-red-600 transition-colors">

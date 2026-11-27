@@ -17,7 +17,7 @@ import { categoryLabel } from "@/utils/categoryLabel";
 /** Parse DD/MM/YYYY → Date */
 function parseDate(str) {
   const [d, m, y] = str.split("/");
-  return new Date(Number(y), Number(m) - 1, Number(d));
+  return new Date(Date.UTC(Number(y), Number(m) - 1, Number(d)));
 }
 
 /** Flat sorted list of all articles (newest first) */
@@ -39,21 +39,21 @@ const CATEGORIES = [
 const navLinks = [
   {
     name : "ABOUT US",
-    href : "/about"
+    href : "/about/"
   },
   {
     name : "PRIVACY-POLICY",
-    href : "/privacy-policy"
+    href : "/privacy-policy/"
   },
   {
-    name : "TREMS-AND-CONDITIONS",
-    href : "/terms-and-condition"
+    name : "TERMS-AND-CONDITIONS",
+    href : "/terms-and-condition/"
   }
 
 ];
 
 const getCategoryHref = (cat) =>
-  cat === "Home" ? "/" : `/${cat}`;
+  cat === "Home" ? "/" : `/${cat}/`;
 
 // ── Component ─────────────────────────────────────────────────────────────────
 
@@ -125,7 +125,7 @@ export default function Header() {
 
   const handleResultClick = (category, slug) => {
     closeSearch();
-    setTimeout(() => router.push(`/${category}/${slug}`), 10);
+    setTimeout(() => router.push(`/${category}/${slug}/`), 10);
   };
 
   const highlightMatch = (text, query) => {
@@ -151,7 +151,7 @@ export default function Header() {
   const isActive = (cat) =>
     cat === "Home"
       ? pathname === "/"
-      : pathname === `/${cat}` ||
+      : pathname === `/${cat}/` ||
         pathname.startsWith(`/${cat}/`);
 
   // ── Render ──────────────────────────────────────────────────────────────────
@@ -175,7 +175,7 @@ export default function Header() {
                 {[...ALL_ARTICLES.slice(0, 5), ...ALL_ARTICLES.slice(0, 5)].map((article, i) => (
                   <span key={i} className="inline-flex items-center whitespace-nowrap">
                     <Link
-                      href={`/${article.category}/${article.slug}`}
+                      href={`/${article.category}/${article.slug}/`}
                       title={article.title}
                       className="text-gray-700 hover:text-red-600 transition-colors duration-200 text-xs md:text-sm px-2 md:px-3 font-playfair"
                     >
@@ -206,7 +206,8 @@ export default function Header() {
             {/* Current date */}
             <span className="font-serif text-xs font-semibold text-gray-600 tracking-wide whitespace-nowrap select-none">
               {new Date().toLocaleDateString("en-US", {
-                weekday: "long",
+                timeZone: "UTC",
+    weekday: "long",
                 year: "numeric",
                 month: "long",
                 day: "numeric",
@@ -297,7 +298,8 @@ export default function Header() {
               {/* Date */}
               <span className="font-playfair text-xs font-semibold text-gray-600 tracking-wide text-center select-none">
                 {new Date().toLocaleDateString("en-US", {
-                  weekday: "long",
+                  timeZone: "UTC",
+    weekday: "long",
                   year: "numeric",
                   month: "long",
                   day: "numeric",
@@ -354,9 +356,9 @@ export default function Header() {
         ══════════════════════════════════════════ */}
         <div className="flex flex-col md:flex-row md:items-center px-4 md:px-6 py-4 border-b border-gray-200 gap-4 md:gap-0">
 
-          {/* Logo — OL-Intel */}
+          {/* Logo — OS-Intel */}
           <div className="w-full md:w-[30%] flex items-center justify-center md:justify-start">
-            <Link href="/" className="flex items-baseline" title="OL-Intel — Home">
+            <Link href="/" className="flex items-baseline" title="OS-Intel — Home">
               <span className="text-5xl md:text-4xl font-black text-black tracking-tight font-playfair">
                 OS
               </span>
@@ -372,7 +374,7 @@ export default function Header() {
           {/* Ad Banner */}
           <div className="w-full md:w-[70%] flex items-center justify-center">
             <Link
-              href="https://os-intel.com"
+              href="/"
               title="Visit os-intel"
               target="_blank"
               className="block w-full md:max-w-2xl h-[70px] md:h-[90px] overflow-hidden"

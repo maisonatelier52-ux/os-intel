@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Advertising Policy | ${SITE_NAME}`,
+  title: { absolute: `Advertising Policy | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Advertising Policy. How we separate commercial content from intelligence reporting and label all advertising and sponsored material clearly.",
-  alternates: { canonical: `${SITE_URL}/advertising-policy` },
+  alternates: { canonical: `${SITE_URL}/advertising-policy/` },
   openGraph: {
     title: `Advertising Policy | ${SITE_NAME}`,
     description:
       "How OS-Intel separates commercial content from intelligence reporting and labels all advertising clearly.",
-    url: `${SITE_URL}/advertising-policy`,
+    url: `${SITE_URL}/advertising-policy/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -66,15 +66,15 @@ export default function AdvertisingPolicy() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/advertising-policy#webpage`,
+    "@id": `${SITE_URL}/advertising-policy/#webpage`,
     name: `Advertising Policy | ${SITE_NAME}`,
     description: "OS-Intel's advertising and sponsored content policy.",
-    url: `${SITE_URL}/advertising-policy`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/advertising-policy/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -84,10 +84,10 @@ export default function AdvertisingPolicy() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/advertising-policy#breadcrumb`,
+    "@id": `${SITE_URL}/advertising-policy/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Advertising Policy", item: `${SITE_URL}/advertising-policy` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Advertising Policy", item: `${SITE_URL}/advertising-policy/` },
     ],
   };
 
@@ -255,12 +255,12 @@ export default function AdvertisingPolicy() {
             <p className="text-xs font-bold uppercase tracking-widest text-gray-500 font-sans mb-4">Related Policies</p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Editorial Policy", href: "/editorial-policy" },
-                { label: "Corrections Policy", href: "/corrections-policy" },
-                { label: "Source Methodology", href: "/source-methodology" },
-                { label: "Ownership & Funding", href: "/ownership-funding" },
-                { label: "Right of Reply", href: "/right-of-reply" },
-                { label: "Legal", href: "/legal" },
+                { label: "Editorial Policy", href: "/editorial-policy/" },
+                { label: "Corrections Policy", href: "/corrections-policy/" },
+                { label: "Source Methodology", href: "/source-methodology/" },
+                { label: "Ownership & Funding", href: "/ownership-funding/" },
+                { label: "Right of Reply", href: "/right-of-reply/" },
+                { label: "Legal", href: "/legal/" },
               ].map(({ label, href }) => (
                 <Link key={label} href={href} title={label}
                   className="border border-gray-300 px-4 py-2 text-xs font-sans font-bold uppercase tracking-widest text-gray-600 hover:border-red-600 hover:text-red-600 transition-colors">

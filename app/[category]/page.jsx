@@ -17,11 +17,12 @@ const TWITTER_HANDLE = "@osintel";
 
 const parseDate = (dateStr) => {
   const [day, month, year] = dateStr.split("/");
-  return new Date(year, month - 1, day);
+  return new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
 };
 
 const formatDate = (dateStr) =>
   parseDate(dateStr).toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -100,7 +101,7 @@ export async function generateMetadata({ params }) {
  const ogImage = SITE_LOGO;
 
   return {
-    title: `${formattedCategory} — Breaking News & Expert Analysis | ${SITE_NAME}`,
+    title: `${formattedCategory} News & Analysis`,
     description,
     keywords: [
       `${formattedCategory.toLowerCase()} news`,
@@ -117,12 +118,12 @@ export async function generateMetadata({ params }) {
     creator: SITE_NAME,
     publisher: SITE_NAME,
     alternates: {
-      canonical: `${SITE_URL}/${categoryKey}`,
+      canonical: `${SITE_URL}/${categoryKey}/`,
     },
     openGraph: {
       title: `${formattedCategory} — Breaking News & Expert Analysis | ${SITE_NAME}`,
       description,
-      url: `${SITE_URL}/${categoryKey}`,
+      url: `${SITE_URL}/${categoryKey}/`,
       siteName: SITE_NAME,
       type: "website",
       locale: "en_US",
@@ -234,7 +235,7 @@ export default async function CategoryPage({ params }) {
     (a, b) => parseDate(b.date) - parseDate(a.date)
   );
   const totalArticleCount = allArticles.length;
-  const sortedArticles = allArticles.slice(0, 10);
+  const sortedArticles = allArticles;
 
   const authorInfo = authorData.categories.find(
     (item) => item.category.toLowerCase() === categoryKey
@@ -245,24 +246,24 @@ export default async function CategoryPage({ params }) {
   const latestNews = pool.slice(0, 6).map((a) => ({
     date: formatDate(a.date),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabLatest = pool.slice(6, 10).map((a) => ({
     img: a.image,
     date: formatDate(a.date).toUpperCase(),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabPopular = pool.slice(10, 14).map((a) => ({
     img: a.image,
     date: formatDate(a.date).toUpperCase(),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabData = { Latest: tabLatest, Popular: tabPopular };
   const mostPopular = pool.slice(0, 5).map((a) => ({
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
     img: a.image,
   }));
 
@@ -275,11 +276,11 @@ export default async function CategoryPage({ params }) {
   const collectionPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "@id": `${SITE_URL}/${categoryKey}#webpage`,
+    "@id": `${SITE_URL}/${categoryKey}/#webpage`,
     name: `${categoryName} — Breaking News & Expert Analysis | ${SITE_NAME}`,
     description: copy.intro,
-    url: `${SITE_URL}/${categoryKey}`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/${categoryKey}/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     primaryImageOfPage: { "@type": "ImageObject", url: ogImage },
     mainEntity: {
       "@type": "ItemList",
@@ -288,13 +289,13 @@ export default async function CategoryPage({ params }) {
       itemListElement: sortedArticles.map((article, index) => ({
         "@type": "ListItem",
         position: index + 1,
-        url: `${SITE_URL}/${categoryKey}/${article.slug}`,
+        url: `${SITE_URL}/${categoryKey}/${article.slug}/`,
         item: {
           "@type": "NewsArticle",
           headline: article.title,
           description: article.excerpt,
           datePublished: parseDate(article.date).toISOString(),
-          dateModified: parseDate(article.date).toISOString(),
+          dateModified: parseDate(article.lastModified || article.date).toISOString(),
           image: article.image?.startsWith("http")
             ? article.image
             : `${SITE_URL}${article.image}`,
@@ -302,18 +303,18 @@ export default async function CategoryPage({ params }) {
             ? {
                 "@type": "Person",
                 name: authorInfo.name,
-                url: `${SITE_URL}/author/${authorInfo.name.toLowerCase().replace(/\s+/g, "-")}`,
+                url: `${SITE_URL}/author/${authorInfo.name.toLowerCase().replace(/\s+/g, "-")}/`,
               }
             : { "@type": "Organization", name: SITE_NAME },
           publisher: {
             "@type": "NewsMediaOrganization",
             name: SITE_NAME,
-            url: SITE_URL,
+            url: `${SITE_URL}/`,
             logo: { "@type": "ImageObject", url: SITE_LOGO },
           },
           mainEntityOfPage: {
             "@type": "WebPage",
-            "@id": `${SITE_URL}/${categoryKey}/${article.slug}`,
+            "@id": `${SITE_URL}/${categoryKey}/${article.slug}/`,
           },
         },
       })),
@@ -321,7 +322,7 @@ export default async function CategoryPage({ params }) {
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: SITE_LOGO },
     },
   };
@@ -329,14 +330,14 @@ export default async function CategoryPage({ params }) {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/${categoryKey}#breadcrumb`,
+    "@id": `${SITE_URL}/${categoryKey}/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
       {
         "@type": "ListItem",
         position: 2,
         name: `${categoryName} News`,
-        item: `${SITE_URL}/${categoryKey}`,
+        item: `${SITE_URL}/${categoryKey}/`,
       },
     ],
   };
@@ -427,7 +428,7 @@ export default async function CategoryPage({ params }) {
                       {/* Image */}
                       <div className="relative">
                         <Link
-                          href={`/${categoryKey}/${article.slug}`}
+                          href={`/${categoryKey}/${article.slug}/`}
                           title={article.title}
                           className="block w-full md:w-[280px] shrink-0 h-[220px] overflow-hidden group"
                         >
@@ -460,7 +461,7 @@ export default async function CategoryPage({ params }) {
                             <span>
                               by{" "}
                               <Link
-                                href={`/author/${authorInfo.name.toLowerCase().replace(/\s+/g, "-")}`}
+                                href={`/author/${authorInfo.name.toLowerCase().replace(/\s+/g, "-")}/`}
                                 title={`View all posts by ${authorInfo.name}`}
                                 className="hover:text-red-600 transition-colors font-medium text-gray-600"
                               >
@@ -479,7 +480,7 @@ export default async function CategoryPage({ params }) {
                         </div>
 
                         {/* ✅ h2 under h1 — correct heading order */}
-                        <Link href={`/${categoryKey}/${article.slug}`} title={article.title}>
+                        <Link href={`/${categoryKey}/${article.slug}/`} title={article.title}>
                           <h2 className="text-gray-900 text-2xl md:text-3xl font-black font-serif leading-snug hover:text-red-600 transition-colors mb-2">
                             {article.title}
                           </h2>
@@ -491,7 +492,7 @@ export default async function CategoryPage({ params }) {
 
                         {/* ✅ Descriptive link text */}
                         <Link
-                          href={`/${categoryKey}/${article.slug}`}
+                          href={`/${categoryKey}/${article.slug}/`}
                           title={`Read full article: ${article.title}`}
                           aria-label={`Read full article: ${article.title}`}
                           className="self-start mt-3 bg-red-600 hover:bg-red-700 text-white text-[11px] font-bold tracking-widest px-4 py-2 font-sans uppercase transition-colors"
@@ -517,9 +518,9 @@ export default async function CategoryPage({ params }) {
                 <p className="text-sm text-gray-500 font-sans leading-relaxed max-w-2xl">
                   {copy.subtext}
                 </p>
-                {totalArticleCount > 10 && (
+                {totalArticleCount > 0 && (
                   <p className="text-sm text-gray-400 font-sans mt-2">
-                    Showing 10 of {totalArticleCount} articles in{" "}
+                    Showing all {totalArticleCount} articles in{" "}
                     <span className="font-semibold text-gray-700">{categoryName}</span>.
                   </p>
                 )}

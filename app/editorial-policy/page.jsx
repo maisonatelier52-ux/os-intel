@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Editorial Policy | ${SITE_NAME}`,
+  title: { absolute: `Editorial Policy | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Editorial Policy. How we verify intelligence, maintain independence, handle sourcing, and uphold journalistic standards across all reporting.",
-  alternates: { canonical: `${SITE_URL}/editorial-policy` },
+  alternates: { canonical: `${SITE_URL}/editorial-policy/` },
   openGraph: {
     title: `Editorial Policy | ${SITE_NAME}`,
     description:
       "How OS-Intel verifies intelligence, maintains editorial independence, and upholds strict journalistic standards across all reporting.",
-    url: `${SITE_URL}/editorial-policy`,
+    url: `${SITE_URL}/editorial-policy/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -107,19 +107,19 @@ export default function EditorialPolicyPage() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/editorial-policy#webpage`,
+    "@id": `${SITE_URL}/editorial-policy/#webpage`,
     name: `Editorial Policy | ${SITE_NAME}`,
     description:
       "OS-Intel's editorial standards covering intelligence verification, source protection, editorial independence, and content labelling.",
-    url: `${SITE_URL}/editorial-policy`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/editorial-policy/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
-      ethicsPolicy: `${SITE_URL}/editorial-policy`,
-      publishingPrinciples: `${SITE_URL}/editorial-policy`,
+      ethicsPolicy: `${SITE_URL}/editorial-policy/`,
+      publishingPrinciples: `${SITE_URL}/editorial-policy/`,
     },
     dateModified: "2026-03-01",
     inLanguage: "en-US",
@@ -128,10 +128,10 @@ export default function EditorialPolicyPage() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/editorial-policy#breadcrumb`,
+    "@id": `${SITE_URL}/editorial-policy/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Editorial Policy", item: `${SITE_URL}/editorial-policy` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Editorial Policy", item: `${SITE_URL}/editorial-policy/` },
     ],
   };
 
@@ -274,12 +274,12 @@ export default function EditorialPolicyPage() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Corrections Policy", href: "/corrections-policy" },
-                { label: "Source Methodology", href: "/source-methodology" },
-                { label: "Advertising Policy", href: "/advertising-policy" },
-                { label: "Ownership & Funding", href: "/ownership-funding" },
-                { label: "Right of Reply", href: "/right-of-reply" },
-                { label: "Legal", href: "/legal" },
+                { label: "Corrections Policy", href: "/corrections-policy/" },
+                { label: "Source Methodology", href: "/source-methodology/" },
+                { label: "Advertising Policy", href: "/advertising-policy/" },
+                { label: "Ownership & Funding", href: "/ownership-funding/" },
+                { label: "Right of Reply", href: "/right-of-reply/" },
+                { label: "Legal", href: "/legal/" },
               ].map(({ label, href }) => (
                 <Link
                   key={label}

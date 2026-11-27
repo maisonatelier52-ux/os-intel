@@ -69,7 +69,7 @@ export default function ArticleListSection({ listArticles, mostPopular, latestNe
                       )}
                       <span className="text-gray-500 text-sm font-sans">
                         by{" "}
-                       <Link href={`/author/${slugify(article.author.name)}`} title={article.author.name}>
+                       <Link href={`/author/${slugify(article.author.name)}/`} title={article.author.name}>
                         <span className="text-gray-800 font-semibold hover:text-red-600 transition-colors cursor-pointer">
                           {article.author.name}
                         </span>

@@ -8,18 +8,19 @@ import CarouselSection from "@/components/homecomponents/Carouselsection";
 import articlesData from "../public/data/articles.json";
 import authorsData from "../public/data/authors.json";
 
-const SITE_URL = "https://www.os-intel.com/";
+const SITE_URL = "https://www.os-intel.com";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function parseDate(str) {
   const [d, m, y] = str.split("/");
-  return new Date(Number(y), Number(m) - 1, Number(d));
+  return new Date(Date.UTC(Number(y), Number(m) - 1, Number(d)));
 }
 
 function formatDate(str) {
   const date = parseDate(str);
   return date.toLocaleDateString("en-US", {
+    timeZone: "UTC",
     month: "long",
     day: "numeric",
     year: "numeric",
@@ -61,19 +62,19 @@ function pick(pool, n, usedIds, differentCategories = false) {
 }
 
 function href(article) {
-  return `/${article.category}/${article.slug}`;
+  return `/${article.category}/${article.slug}/`;
 }
 
 // ── Homepage SEO metadata ─────────────────────────────────────────────────────
 
 export async function generateMetadata() {
   return {
-    title: "OS-Intel — Breaking World News, Conflict & Cybersecurity Today",
+    title: { absolute: "OS-Intel — Independent Intelligence & Security News" },
     // ✅ FIXED: 142 chars — under 160 limit, contains all key terms
     description:
       "OS-Intel: breaking world news, conflict & cybersecurity investigations today. Independent global reporting on geo-politics & dark web.",
     alternates: {
-      canonical: SITE_URL,
+      canonical: `${SITE_URL}/`,
     },
     keywords: [
       "OS-Intel",
@@ -91,7 +92,7 @@ export async function generateMetadata() {
       title: "OS-Intel — Breaking World News, Conflict & Cybersecurity Today",
       description:
         "OS-Intel: breaking world news, conflict & cybersecurity investigations today. Independent global reporting on geo-politics & dark web.",
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       siteName: "OS-Intel",
       type: "website",
       locale: "en_US",
@@ -211,14 +212,14 @@ function buildPageData() {
       name: a.author?.name || "Editorial",
       href: a.author?.websiteLink || "#",
     },
-    views: Math.floor(Math.random() * 600) + 100,
-    likes: Math.floor(Math.random() * 25) + 1,
+
+
   }));
 
   const mostPopular = popularRaw.map((a) => ({
     title: a.title,
     href: href(a),
-    shares: Math.floor(Math.random() * 40) + 2,
+
     img: a.image,
   }));
 
@@ -272,8 +273,8 @@ function buildPageData() {
       name: a.author?.name || "Editorial",
       href: a.author?.websiteLink || "#",
     },
-    views: Math.floor(Math.random() * 600) + 100,
-    likes: Math.floor(Math.random() * 25) + 1,
+
+
   }));
 
   const rightTopArticles = rightTopRaw.map((a) => ({
@@ -305,11 +306,11 @@ function buildPageData() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Latest Breaking News from OS-Intel",
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     itemListElement: topArticles.map((article, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      url: `${SITE_URL}/${article.category}/${article.slug}`,
+      url: `${SITE_URL}/${article.category}/${article.slug}/`,
       name: article.title,
     })),
   };
@@ -362,24 +363,16 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "OS-Intel",
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     description:
       "Breaking world news, conflict & cybersecurity investigations today. Independent global reporting on geo-politics and dark web.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "NewsMediaOrganization",
     name: "OS-Intel",
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     logo: {
       "@type": "ImageObject",
       url: `${SITE_URL}/images/os-intel-og-image.webp`,
@@ -458,4 +451,3 @@ export default function Home() {
     </>
   );
 }
-

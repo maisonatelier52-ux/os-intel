@@ -6,15 +6,15 @@ const LAST_UPDATED = "March 1, 2026";
 const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 export const metadata = {
-  title: `Corrections Policy | ${SITE_NAME}`,
+  title: { absolute: `Corrections Policy | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Corrections Policy. How we identify, review, and publicly correct errors in our intelligence reporting and investigations.",
-  alternates: { canonical: `${SITE_URL}/corrections-policy` },
+  alternates: { canonical: `${SITE_URL}/corrections-policy/` },
   openGraph: {
     title: `Corrections Policy | ${SITE_NAME}`,
     description:
       "How OS-Intel identifies, reviews, and corrects errors in intelligence reporting and investigations.",
-    url: `${SITE_URL}/corrections-policy`,
+    url: `${SITE_URL}/corrections-policy/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -64,17 +64,17 @@ export default function CorrectionsPolicy() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/corrections-policy#webpage`,
+    "@id": `${SITE_URL}/corrections-policy/#webpage`,
     name: `Corrections Policy | ${SITE_NAME}`,
     description: "OS-Intel's corrections policy for handling factual errors in intelligence reporting.",
-    url: `${SITE_URL}/corrections-policy`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/corrections-policy/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
-      correctionsPolicy: `${SITE_URL}/corrections-policy`,
+      correctionsPolicy: `${SITE_URL}/corrections-policy/`,
     },
     dateModified: "2026-03-01",
     inLanguage: "en-US",
@@ -83,10 +83,10 @@ export default function CorrectionsPolicy() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/corrections-policy#breadcrumb`,
+    "@id": `${SITE_URL}/corrections-policy/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Corrections Policy", item: `${SITE_URL}/corrections-policy` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Corrections Policy", item: `${SITE_URL}/corrections-policy/` },
     ],
   };
 
@@ -299,12 +299,12 @@ export default function CorrectionsPolicy() {
             </p>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "Editorial Policy", href: "/editorial-policy" },
-                { label: "Source Methodology", href: "/source-methodology" },
-                { label: "Right of Reply", href: "/right-of-reply" },
-                { label: "Advertising Policy", href: "/advertising-policy" },
-                { label: "Ownership & Funding", href: "/ownership-funding" },
-                { label: "Legal", href: "/legal" },
+                { label: "Editorial Policy", href: "/editorial-policy/" },
+                { label: "Source Methodology", href: "/source-methodology/" },
+                { label: "Right of Reply", href: "/right-of-reply/" },
+                { label: "Advertising Policy", href: "/advertising-policy/" },
+                { label: "Ownership & Funding", href: "/ownership-funding/" },
+                { label: "Legal", href: "/legal/" },
               ].map(({ label, href }) => (
                 <Link
                   key={label}

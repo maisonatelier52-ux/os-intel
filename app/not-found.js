@@ -7,7 +7,7 @@ import { categoryLabel } from "@/utils/categoryLabel";
 
 const parseDate = (dateStr) => {
   const [day, month, year] = dateStr.split("/");
-  return new Date(year, month - 1, day);
+  return new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
 };
 
 // Get 3 latest articles across all categories for suggestions
@@ -68,7 +68,7 @@ export default function NotFound() {
             ← Back to Homepage
           </Link>
           <Link
-            href={`/${categories[0]}`}
+            href={`/${categories[0]}/`}
             title={`Browse ${categories[0]} news`}
             className="border-2 border-gray-900 hover:bg-gray-900 hover:text-white text-gray-900 text-[12px] font-bold tracking-widest px-6 py-3 font-sans uppercase transition-colors"
           >
@@ -94,7 +94,7 @@ export default function NotFound() {
             return (
               <Link
                 key={article.slug}
-                href={`/${article.categoryKey}/${article.slug}`}
+                href={`/${article.categoryKey}/${article.slug}/`}
                 title={article.title}
                 className="group text-left block"
               >
@@ -130,7 +130,7 @@ export default function NotFound() {
             return (
               <Link
                 key={cat}
-                href={`/${cat}`}
+                href={`/${cat}/`}
                 title={`${label} news`}
                 className="border border-gray-300 hover:border-red-600 hover:text-red-600 text-gray-500 text-[11px] font-bold font-sans px-3 py-1.5 uppercase tracking-wide transition-colors"
               >
@@ -146,7 +146,7 @@ export default function NotFound() {
         <p className="text-gray-400 text-xs font-sans">
           Lost?{" "}
           <Link href="/" className="text-red-600 hover:underline font-semibold">
-            Return to OL-Intel homepage
+            Return to OS-Intel homepage
           </Link>
         </p>
       </div>

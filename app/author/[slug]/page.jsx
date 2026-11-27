@@ -12,16 +12,17 @@ import { categoryLabel } from "@/utils/categoryLabel";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const SITE_URL = "https://www.os-intel.com";
-const SITE_NAME = "OL-Intel";
+const SITE_NAME = "OS-Intel";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 const parseDate = (dateStr) => {
   const [day, month, year] = dateStr.split("/");
-  return new Date(year, month - 1, day);
+  return new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
 };
 
 const formatDate = (dateStr) =>
   parseDate(dateStr).toLocaleDateString("en-US", {
+    timeZone: "UTC",
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -84,14 +85,14 @@ export async function generateMetadata({ params }) {
   const totalCount = (articleData[categoryKey] || []).length;
 
   return {
-    title: `${author.name} — ${formattedCategory} Journalist at ${SITE_NAME}`,
+    title: `${author.name} — ${formattedCategory} Journalist`,
     description: `${author.name} is a ${formattedCategory.toLowerCase()} journalist at ${SITE_NAME}. Read ${totalCount} in-depth articles covering ${formattedCategory} news, geopolitics, and open-source intelligence.`,
     keywords: `${author.name}, ${formattedCategory} journalist, ${formattedCategory} news, ${SITE_NAME} articles, investigative journalism`,
-    alternates: { canonical: `${SITE_URL}/author/${slug}` },
+    alternates: { canonical: `${SITE_URL}/author/${slug}/` },
     openGraph: {
       title: `${author.name} — ${formattedCategory} Journalist`,
       description: author.bio,
-      url: `${SITE_URL}/author/${slug}`,
+      url: `${SITE_URL}/author/${slug}/`,
       type: "profile",
       images: [{ url: `${SITE_URL}${author.profileImage}`, width: 800, height: 800 }],
     },
@@ -121,31 +122,31 @@ export default async function AuthorPage({ params }) {
     (a, b) => parseDate(b.date) - parseDate(a.date)
   );
   const totalArticleCount = allCategoryArticles.length;
-  const latestArticles = allCategoryArticles.slice(0, 7);
+  const latestArticles = allCategoryArticles;
 
   // Sidebar data
   const pool = getLatestFromOtherCategories(categoryKey, 15);
   const latestNews = pool.slice(0, 6).map((a) => ({
     date: formatDate(a.date),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabLatest = pool.slice(6, 10).map((a) => ({
     img: a.image,
     date: formatDate(a.date).toUpperCase(),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabPopular = pool.slice(10, 14).map((a) => ({
     img: a.image,
     date: formatDate(a.date).toUpperCase(),
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
   }));
   const tabData = { Latest: tabLatest, Popular: tabPopular };
   const mostPopular = pool.slice(0, 5).map((a) => ({
     title: a.title,
-    href: `/${a.categoryKey}/${a.slug}`,
+    href: `/${a.categoryKey}/${a.slug}/`,
     img: a.image,
   }));
 
@@ -154,11 +155,11 @@ export default async function AuthorPage({ params }) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: author.name,
-    url: `${SITE_URL}/author/${slug}`,
+    url: `${SITE_URL}/author/${slug}/`,
     image: `${SITE_URL}${author.profileImage}`,
     description: author.bio,
     jobTitle: `${formattedCategory} Journalist`,
-    worksFor: { "@type": "NewsMediaOrganization", name: SITE_NAME, url: SITE_URL },
+    worksFor: { "@type": "NewsMediaOrganization", name: SITE_NAME, url: `${SITE_URL}/` },
     sameAs: [
       author.social?.twitter,
       author.social?.reddit,
@@ -172,8 +173,8 @@ export default async function AuthorPage({ params }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: author.name, item: `${SITE_URL}/author/${slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: author.name, item: `${SITE_URL}/author/${slug}/` },
     ],
   };
 
@@ -231,7 +232,7 @@ export default async function AuthorPage({ params }) {
                 </div>
 
                 <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-4 flex-wrap">
+                  <div className="flex flex-col items-start gap-3 mb-4 md:flex-row md:items-center md:gap-4 md:flex-wrap">
                     <h2 className="text-2xl font-black font-serif text-gray-900">
                       {author.name}
                     </h2>
@@ -311,7 +312,7 @@ export default async function AuthorPage({ params }) {
 
               {/* Latest Articles Section */}
               <h2 className="text-2xl font-black font-serif text-gray-900 mb-8 border-b-2 border-red-600 inline-block pb-1">
-                Latest Articles by {author.name}
+                All Articles by {author.name}
               </h2>
 
               {latestArticles.length === 0 ? (
@@ -321,7 +322,7 @@ export default async function AuthorPage({ params }) {
                   {latestArticles.map((article, index) => (
                     <Link
                       key={article.slug}
-                      href={`/${categoryKey}/${article.slug}`}
+                      href={`/${categoryKey}/${article.slug}/`}
                       title={`${article.title}`}
                       className="block group"
                       aria-label={`Read article: ${article.title} — ${formattedCategory} news by ${author.name}`}
@@ -370,14 +371,14 @@ export default async function AuthorPage({ params }) {
                 </div>
               )}
 
-              {totalArticleCount > 7 && (
+              {totalArticleCount > 0 && (
                 <div className="mt-10">
                   <Link
-                    href={`/${categoryKey}`}
+                    href={`/${categoryKey}/`}
                     className="inline-flex items-center gap-2 text-red-600 font-bold hover:text-red-800"
                     title={`view ${categoryKey} page`}
                   >
-                    View all {totalArticleCount} {formattedCategory} articles →
+                    Browse {formattedCategory} news →
                   </Link>
                 </div>
               )}

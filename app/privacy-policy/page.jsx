@@ -8,14 +8,14 @@ const OG_IMAGE = `${SITE_URL}/images/os-intel-og-image.webp`;
 
 // ✅ FIXED: og:image, twitter:site added
 export const metadata = {
-  title: `Privacy Policy | ${SITE_NAME}`,
+  title: { absolute: `Privacy Policy | ${SITE_NAME}` },
   description:
     "Read the OS-Intel Privacy Policy. Learn how we collect, use, and protect your personal information when you visit our news and investigation platform.",
-  alternates: { canonical: `${SITE_URL}/privacy-policy` },
+  alternates: { canonical: `${SITE_URL}/privacy-policy/` },
   openGraph: {
     title: `Privacy Policy | ${SITE_NAME}`,
     description: "Read the OS-Intel Privacy Policy — how we collect, use, and protect your data.",
-    url: `${SITE_URL}/privacy-policy`,
+    url: `${SITE_URL}/privacy-policy/`,
     siteName: SITE_NAME,
     type: "website",
     locale: "en_US",
@@ -128,15 +128,15 @@ export default function PrivacyPolicyPage() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `${SITE_URL}/privacy-policy#webpage`,
+    "@id": `${SITE_URL}/privacy-policy/#webpage`,
     name: `Privacy Policy | ${SITE_NAME}`,
     description: "OS-Intel Privacy Policy — how we collect, use, and protect your personal information.",
-    url: `${SITE_URL}/privacy-policy`,
-    isPartOf: { "@type": "WebSite", url: SITE_URL, name: SITE_NAME },
+    url: `${SITE_URL}/privacy-policy/`,
+    isPartOf: { "@type": "WebSite", url: `${SITE_URL}/`, name: SITE_NAME },
     publisher: {
       "@type": "NewsMediaOrganization",
       name: SITE_NAME,
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       logo: { "@type": "ImageObject", url: OG_IMAGE },
     },
     dateModified: "2026-03-01",
@@ -145,10 +145,10 @@ export default function PrivacyPolicyPage() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "@id": `${SITE_URL}/privacy-policy#breadcrumb`,
+    "@id": `${SITE_URL}/privacy-policy/#breadcrumb`,
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Privacy Policy", item: `${SITE_URL}/privacy-policy` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+      { "@type": "ListItem", position: 2, name: "Privacy Policy", item: `${SITE_URL}/privacy-policy/` },
     ],
   };
 
